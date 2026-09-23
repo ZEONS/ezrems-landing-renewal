@@ -1,0 +1,964 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="imagetoolbar" content="no">
+    <meta http-equiv="X-UA-Compatible" content="IE=10,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+
+    <meta name="keywords" content="이지램스, ezREMS, PMS, ERP, 부동산자산관리, 빌딩관리, 임대관리, 프롭테크, 핀테크, 리츠, AMC, PM, FM, 전자계약, 세금계산서, SaaS" />
+    <meta name="description" content="이지램스(ezREMS)™ - 대한민국 대표 금융 연동형 부동산 자산관리(PMS/Prop-FinTech) 플랫폼. CSAP 클라우드 표준등급 보안 인증, 수납 자동화, AI 자산가치 극대화." />
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="이지램스 (ezREMS) - 엔터프라이즈 부동산 자산관리 플랫폼">
+    <meta property="og:description" content="수천억 대 부동산 자산, DX를 넘어 AX 기반으로 관리하십시오. 대한민국 210+ 대기업과 리츠사가 선택한 차세대 PMS">
+    <meta property="og:image" content="./resources/images/common/sns_image2.png">
+    <meta property="og:url" content="https://www.ezrems.com/">
+    <meta property="og:site_name" content="이지램스">
+
+    <link rel="canonical" href="https://www.ezrems.com/index.html" />
+    <link rel="icon" type="image/png" href="./resources/images/common/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./resources/images/common/favicon-16x16.png" sizes="16x16" />
+
+    <title>이지램스 (ezREMS) - 엔터프라이즈 부동산 자산관리 플랫폼</title>
+
+    <!-- Web Fonts (Paperlogy & Pretendard) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy.css">
+
+    <!-- FontAwesome & Bootstrap & Plugins -->
+    <link rel="stylesheet" type="text/css" href="./resources/css/common/fontawesome-all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./resources/css/common/aos.css">
+    <link rel="stylesheet" type="text/css" href="./resources/css/common/swiper.min.css">
+    
+    <!-- Enterprise High-Tech Theme (v2.1) -->
+    <link rel="stylesheet" type="text/css" href="./resources/css/enterprise-theme.css">
+
+    <!-- Core Scripts -->
+    <script src="./resources/js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./resources/js/aos.js"></script>
+    <script src="./resources/js/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+    <script src="./resources/js/jquery.counterup.min.js"></script>
+
+    <!-- ezREMS Multilingual (i18n) Engine -->
+    <script src="./resources/js/i18n.js"></script>
+
+    <!-- Google Tag Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-102197268-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-102197268-1');
+    </script>
+
+    <!-- Kakao Channel SDK -->
+    <script>
+        if (window.location.pathname === '/chat') {
+            window.location.href = 'https://pf.kakao.com/_yRjWj/chat';
+        }
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://t1.kakaocdn.net/kakao_js_sdk/2.7.0/kakao.channel.min.js';
+            js.integrity = 'sha384-BSbysXza7dDuXIO1tS8Xj7Em8iygTWPkqxIJhWSA7ATH4plc58qTJmIJ19toGZ8g';
+            js.crossOrigin = 'anonymous';
+            fjs.parentNode.insertBefore(js, fjs);
+        })(document, 'script', 'kakao-js-sdk');
+    </script>
+
+    <style>
+        /* Notice Modal */
+        .modal { display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; background: none; }
+        .modal-dialog { position: absolute; top: 50px; right: 50px; margin: 0; }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+
+<body class="enterprise-body">
+
+    <!-- 공지사항 팝업 모달 -->
+    <div class="container" style="position: absolute;">
+        <div class="modal" id="myModal4" style="right: 100%; background: none; display: none;">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content" style="background:#111C30; border:1px solid rgba(255,255,255,0.2); border-radius:16px;">
+                    <div class="modal-header" style="border-bottom:1px solid rgba(255,255,255,0.1); padding:14px 20px;">
+                        <h5 class="modal-title" style="color:#fff; font-size:1rem; font-weight:700;">이지램스 공지사항</h5>
+                        <button type="button" id="myModal4_close" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body" style="padding:20px; text-align:center;">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdjOJcptUph-aCZrBVNrv5hMsnJV3FsCnHiy_KGisNgObt0pQ/viewform?pli=1" target="_blank">
+                            <img src="./resources/images/notice_popup.png" alt="공지사항" style="max-width:100%; height:auto; border-radius:10px;">
+                        </a>
+                    </div>
+                    <div class="modal-footer" style="border-top:1px solid rgba(255,255,255,0.1); padding:10px 20px;">
+                        <button type="button" id="myModal4_close_1day" class="btn btn-sm btn-link" style="color:#94A3B8; text-decoration:none; font-size:12px;">오늘 하루 열지 않기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================================================
+       1. Enterprise Header / GNB
+       ========================================================================== -->
+    <header id="enterpriseHeader">
+        <div class="header-inner">
+            <div class="brand-logo-area">
+                <a href="./index.html">
+                    <img src="./resources/images/common/logo_rw.png" alt="이지램스" class="logo-img" />
+                    <span class="brand-pill">ENTERPRISE</span>
+                </a>
+            </div>
+
+            <!-- Main Navigation Links (본문 섹션 순서와 완벽 일치) -->
+            <nav>
+                <ul class="header-nav" id="headerNav">
+                    <li><a href="#sectionClients" data-i18n="nav_clients">고객사</a></li>
+                    <li><a href="#sectionCapabilities" data-i18n="nav_features">핵심기능</a></li>
+                    <li><a href="#sectionSolutions" data-i18n="nav_solution">엔터프라이즈 솔루션</a></li>
+                    <li><a href="#sectionPreview" data-i18n="nav_preview">시스템화면</a></li>
+                    <li><a href="#sectionFaq" data-i18n="nav_faq">자주 묻는 질문</a></li>
+                    <li><a href="#sectionContact" data-i18n="nav_contact">도입 문의</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <!-- Multilingual Language Selector -->
+                <div class="lang-dropdown-wrapper">
+                    <button type="button" class="lang-dropdown-btn" id="langDropdownToggle" aria-label="Language Selector">
+                        <i class="fal fa-globe"></i>
+                        <span id="currentLangLabel">한국어</span>
+                        <i class="fal fa-chevron-down" style="font-size:0.75rem;"></i>
+                    </button>
+                    <div class="lang-dropdown-menu">
+                        <button type="button" class="lang-select-btn active" data-lang="ko">🇰🇷 한국어</button>
+                        <button type="button" class="lang-select-btn" data-lang="en">🇺🇸 English</button>
+                        <button type="button" class="lang-select-btn" data-lang="ja">🇯🇵 日本語</button>
+                        <button type="button" class="lang-select-btn" data-lang="zh">🇨🇳 简体中文</button>
+                    </div>
+                </div>
+
+                <a href="https://basic.ezrems.com/" target="_blank" class="btn-ghost-nav d-none d-sm-inline-block" data-i18n="btn_basic">간편형</a>
+                <a href="https://pms.ezrems.com/" target="_blank" class="btn-outline-tech d-none d-md-inline-block" data-i18n="btn_pms">기업형</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOO18akLULTgK-XD6x8gj6WgpFNXiW2z_m3AC2mVgXUVUDGA/viewform" target="_blank" class="btn-crimson-cta">
+                    <i class="fal fa-paper-plane"></i>
+                    <span data-i18n="btn_counsel">도입 문의</span>
+                </a>
+
+                <!-- Mobile Navigation Toggle -->
+                <button type="button" class="mobile-nav-toggle" id="mobileNavToggle" aria-label="메뉴 열기">
+                    <i class="fal fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="mainContainer">
+        <!-- ==========================================================================
+           2. Hero Section (Enterprise Control Tower)
+           ========================================================================== -->
+        <section class="enterprise-hero">
+            <div class="hero-glow-orb orb-blue"></div>
+            <div class="hero-glow-orb orb-indigo"></div>
+
+            <div class="hero-content">
+                <div class="hero-csap-pill" data-aos="fade-down">
+                    <i class="fal fa-shield-check"></i>
+                    <span data-i18n="hero_badge">CSAP 클라우드 표준등급 획득 | 차세대 프롭-핀테크 플랫폼</span>
+                </div>
+
+                <h1 class="hero-title tech-gradient-text" data-aos="fade-up" data-aos-delay="100" data-i18n="hero_title">
+                    수천억 대 부동산 자산,<br/>DX를 넘어 AX 기반으로 관리하십시오
+                </h1>
+
+                <p class="hero-description" data-aos="fade-up" data-aos-delay="150" data-i18n="hero_desc">
+                    엑셀과 수기 관리의 한계를 벗어나십시오. 대한민국 유일의 금융 연동형 프롭-핀테크(Prop-FinTech) 플랫폼 이지램스가 자산운용사, 리츠사, 전문 PM사를 위한 무결점 자산관리를 제공합니다.
+                </p>
+
+                <div class="hero-cta-group" data-aos="fade-up" data-aos-delay="200">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOO18akLULTgK-XD6x8gj6WgpFNXiW2z_m3AC2mVgXUVUDGA/viewform" target="_blank" class="btn-hero-primary">
+                        <i class="fal fa-rocket"></i>
+                        <span data-i18n="hero_btn_inquire">엔터프라이즈 도입 문의</span>
+                    </a>
+                    <a href="https://basic.ezrems.com/" target="_blank" class="btn-hero-secondary">
+                        <i class="fal fa-play-circle"></i>
+                        <span data-i18n="hero_btn_demo">간편형 무료 체험</span>
+                    </a>
+                </div>
+
+                <!-- 3대 공인 클라우드 보안 및 성능 인증 -->
+                <div class="hero-cert-badges" data-aos="fade-up" data-aos-delay="220">
+                    <span class="cert-badge-item"><i class="fal fa-shield-check"></i> <span data-i18n="trust_csap">CSAP 클라우드 표준등급</span></span>
+                    <span class="cert-badge-item"><i class="fal fa-check-circle"></i> <span data-i18n="trust_kaci">클라우드 확인제 인증</span></span>
+                    <span class="cert-badge-item"><i class="fal fa-award"></i> <span data-i18n="trust_nipa">품질·성능 검증 획득</span></span>
+                </div>
+
+                <!-- 3D Tilt Enterprise Live Dashboard Preview -->
+                <div class="hero-dashboard-container" data-aos="zoom-in" data-aos-delay="250">
+                    <!-- Left Floating Pill -->
+                    <div class="dash-floating-pill pill-left">
+                        <i class="fal fa-bolt"></i>
+                        <span data-i18n="hero_stat_trans">실시간 금융 수납 통제 중</span>
+                    </div>
+
+                    <!-- Right Floating Pill -->
+                    <div class="dash-floating-pill pill-right">
+                        <i class="fal fa-shield-alt"></i>
+                        <span data-i18n="hero_stat_security">금융기관급 데이터 암호화</span>
+                    </div>
+
+                    <div class="hero-dashboard-tilt">
+                        <div class="dashboard-topbar">
+                            <div class="window-dots">
+                                <span class="dot dot-red"></span>
+                                <span class="dot dot-yellow"></span>
+                                <span class="dot dot-green"></span>
+                            </div>
+                            <div class="dashboard-title-tag">
+                                <i class="fal fa-server"></i>
+                                <span>ezREMS™ Intelligent Command Center</span>
+                                <span class="badge-live">LIVE ACTIVE</span>
+                            </div>
+                            <div style="font-size:0.75rem; color:#64748B;">CSAP CLOUD v2.4</div>
+                        </div>
+
+                        <div class="dashboard-screen">
+                            <!-- Sidebar -->
+                            <div class="dash-sidebar">
+                                <div class="dash-menu-item active"><i class="fal fa-chart-pie"></i> 통합 관제 대시보드</div>
+                                <div class="dash-menu-item"><i class="fal fa-building"></i> 포트폴리오 자산관리</div>
+                                <div class="dash-menu-item"><i class="fal fa-file-invoice-dollar"></i> 가상계좌·CMS·PG 수납 자동화</div>
+                                <div class="dash-menu-item"><i class="fal fa-file-signature"></i> 전자계약·전자문서 지원</div>
+                                <div class="dash-menu-item"><i class="fal fa-calculator"></i> 세금계산서 일괄발행</div>
+                                <div class="dash-menu-item"><i class="fal fa-plug"></i> API 제공 (공실,계약,청구 등)</div>
+                                <div class="dash-menu-item"><i class="fal fa-users-cog"></i> 다중 권한 보안감사</div>
+                            </div>
+
+                            <!-- Center KPI & Chart -->
+                            <div class="dash-main-center">
+                                <div class="kpi-row">
+                                    <div class="kpi-card">
+                                        <div class="kpi-title">월간 총 청구/수납 규모</div>
+                                        <div class="kpi-value">₩ 65,420,800,000</div>
+                                        <div class="kpi-trend"><i class="fal fa-arrow-up"></i> 전월 대비 +14.8% 정상 수납</div>
+                                    </div>
+                                    <div class="kpi-card">
+                                        <div class="kpi-title">전국 관리 세대 및 호수</div>
+                                        <div class="kpi-value">51,280 <span style="font-size:1rem; font-weight:500;">세대</span></div>
+                                        <div class="kpi-trend"><i class="fal fa-check-circle"></i> 평균 공실률 2.1% (초안정)</div>
+                                    </div>
+                                </div>
+
+                                <div class="dash-chart-mock">
+                                    <div class="chart-header">
+                                        <span>실시간 월별 수납 및 연체 회수 추이</span>
+                                        <span style="color:#0EA5E9; font-size:0.8rem;">● 정상 수납  ● 자동 회수</span>
+                                    </div>
+                                    <div class="chart-bars">
+                                        <div class="bar-col" style="height: 45%;"></div>
+                                        <div class="bar-col" style="height: 60%;"></div>
+                                        <div class="bar-col" style="height: 55%;"></div>
+                                        <div class="bar-col" style="height: 75%;"></div>
+                                        <div class="bar-col" style="height: 70%;"></div>
+                                        <div class="bar-col" style="height: 85%;"></div>
+                                        <div class="bar-col" style="height: 92%;"></div>
+                                        <div class="bar-col" style="height: 88%;"></div>
+                                        <div class="bar-col" style="height: 96%;"></div>
+                                        <div class="bar-col" style="height: 100%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Right Status Panel -->
+                            <div class="dash-right-panel">
+                                <div class="alert-widget">
+                                    <div class="alert-widget-header">
+                                        <i class="fal fa-exclamation-triangle"></i>
+                                        <span>이상 징후 및 연체 통제</span>
+                                    </div>
+                                    <div class="alert-widget-body" data-i18n="hero_stat_overdue">
+                                        연체 자동 감지 및 회수 연동: 1건 발생 즉시 최고장 전자고지 발송 처리 완료 (회수율 98.4%)
+                                    </div>
+                                </div>
+
+                                <div class="security-status-widget">
+                                    <div class="security-status-widget-header">
+                                        <i class="fal fa-shield-check"></i>
+                                        <span>CSAP 보안 상태: 무결</span>
+                                    </div>
+                                    <div style="font-size:0.8rem; color:#94A3B8;">
+                                        이중화 클라우드 서버 무중단 가동 99.99% 달성. 금융 전산 암호화 전송 프로토콜 작동 중.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+           3. Enterprise Social Proof Bar (Clients Ticker)
+           ========================================================================== -->
+        <section class="enterprise-clients-bar" id="sectionClients">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag" data-i18n="client_tag">ENTERPRISE CLIENTS</span>
+                <h2 class="section-heading tech-gradient-text" data-i18n="trust_title">
+                    대한민국 50+ 대표 기업 및 금융 리츠사가 신뢰하는 이지램스
+                </h2>
+            </div>
+
+            <div class="clients-logo-track" data-aos="fade-up">
+                <span class="client-chip">KT에스테이트</span>
+                <span class="client-chip">신세계프라퍼티</span>
+                <span class="client-chip">CBRE</span>
+                <span class="client-chip">MGRV</span>
+                <span class="client-chip">KT리빙</span>
+                <span class="client-chip">GS리테일</span>
+                <span class="client-chip">파르나스호텔</span>
+                <span class="client-chip">롯데건설</span>
+                <span class="client-chip">롯데물산</span>
+                <span class="client-chip">롯데호텔</span>
+                <span class="client-chip">우미건설</span>
+                <span class="client-chip">경방</span>
+                <span class="client-chip">KR서비스</span>
+                <span class="client-chip">전자랜드</span>
+                <span class="client-chip">디캠프</span>
+                <span class="client-chip">한국엔젤투자협회</span>
+                <span class="client-chip">파크원</span>
+                <span class="client-chip">SMPMC</span>
+                <span class="client-chip">스파크플러스</span>
+                <span class="client-chip">에스엔아이코퍼레이션</span>
+                <span class="client-chip">케이탑리츠</span>
+                <span class="client-chip">REMAX Korea</span>
+                <span class="client-chip">글로벌PMC</span>
+                <span class="client-chip">NIPA</span>
+                <span class="client-chip">안양도시공사</span>
+                <span class="client-chip">안산도시공사</span>
+                <span class="client-chip">광명도시공사</span>
+                <span class="client-chip">하남도시공사</span>
+                <span class="client-chip">한화커넥트</span>
+                <span class="client-chip">MDM+</span>
+                <span class="client-chip">현대프라퍼티</span>
+                <span class="client-chip">안녕인사동</span>
+                <span class="client-chip">삼선개발</span>
+                <span class="client-chip">삼구아이앤씨</span>
+                <span class="client-chip">한국자산매입</span>
+                <span class="client-chip">네오벨류프라퍼티</span>
+                <span class="client-chip client-chip-more">+ 50개 이상 기업</span>
+            </div>
+
+            <!-- 이지램스 지원 4대 핵심 부동산 자산 유형 -->
+            <div class="asset-types-row" data-aos="fade-up" data-aos-delay="100">
+                <span class="asset-type-item asset-type-residential"><i class="fal fa-home-alt"></i> <span data-i18n="asset_type_residential">임대주택</span></span>
+                <span class="asset-type-item asset-type-office"><i class="fal fa-building"></i> <span data-i18n="asset_type_office">오피스</span></span>
+                <span class="asset-type-item asset-type-retail"><i class="fal fa-store"></i> <span data-i18n="asset_type_retail">리테일</span></span>
+                <span class="asset-type-item asset-type-senior"><i class="fal fa-hands-heart"></i> <span data-i18n="asset_type_senior">시니어 레지던스</span></span>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+           3-1. Managed Landmarks Section
+           ========================================================================== -->
+        <section class="section-landmarks" id="sectionLandmarks">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag" data-i18n="landmark_tag">MANAGED LANDMARKS</span>
+                <h2 class="section-heading tech-gradient-text" data-i18n="landmark_title">
+                    이지램스로 관리되는 랜드마크
+                </h2>
+                <p class="section-subheading" data-i18n="landmark_subtitle">
+                    대한민국을 대표하는 초대형 상업시설과 프리미엄 복합자산이 이지램스 클라우드로 운영됩니다.
+                </p>
+            </div>
+
+            <div class="landmarks-grid" data-aos="fade-up" data-aos-delay="100">
+                <!-- 리테일 (Retail: 앰버 골드 색상) -->
+                <div class="landmark-chip type-retail"><i class="fal fa-store"></i> <span>스타필드</span></div>
+                <div class="landmark-chip type-retail"><i class="fal fa-city"></i> <span>타임스퀘어</span></div>
+                <div class="landmark-chip type-retail"><i class="fal fa-shopping-bag"></i> <span>파미어스몰</span></div>
+                <div class="landmark-chip type-retail"><i class="fal fa-store"></i> <span>안녕인사동</span></div>
+                <div class="landmark-chip type-retail"><i class="fal fa-street-view"></i> <span>엘리웨이</span></div>
+                <div class="landmark-chip type-retail"><i class="fal fa-water"></i> <span>레이크꼬모</span></div>
+                <div class="landmark-chip type-retail"><i class="fal fa-sparkles"></i> <span>라끄몽</span></div>
+
+                <!-- 오피스 (Office: 사이버 블루 색상) -->
+                <div class="landmark-chip type-office"><i class="fal fa-monument"></i> <span>롯데타워</span></div>
+                <div class="landmark-chip type-office"><i class="fal fa-building"></i> <span>파르나스타워·몰</span></div>
+                <div class="landmark-chip type-office"><i class="fal fa-landmark"></i> <span>파크원</span></div>
+                <div class="landmark-chip type-office"><i class="fal fa-building"></i> <span>원그로브</span></div>
+                <div class="landmark-chip type-office"><i class="fal fa-hotel"></i> <span>조선호텔</span></div>
+                <div class="landmark-chip type-office"><i class="fal fa-hospital"></i> <span>서울대병원</span></div>
+
+                <!-- 임대주택 (Residential: 에메랄드 그린 색상) -->
+                <div class="landmark-chip type-residential"><i class="fal fa-home-alt"></i> <span>리마크빌</span></div>
+                <div class="landmark-chip type-residential"><i class="fal fa-seedling"></i> <span>맹그로브</span></div>
+
+                <!-- 시니어 레지던스 (Senior: 바이올렛 퍼플 색상) -->
+                <div class="landmark-chip type-senior"><i class="fal fa-hands-heart"></i> <span>VL르웨스트</span></div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+           4. Bento Grid (6 Core Capabilities) - NO BOOTSTRAP COLLISION
+           ========================================================================== -->
+        <section class="section-bento" id="sectionCapabilities">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag" data-i18n="bento_tag">CORE CAPABILITIES</span>
+                <h2 class="section-heading tech-gradient-text" data-i18n="bento_title">엔터프라이즈를 위한 6대 핵심 기술</h2>
+                <p class="section-subheading" data-i18n="bento_subtitle">모든 부동산 유형과 반복적인 금융 전산 업무를 단일 클라우드 엔진으로 통합합니다.</p>
+            </div>
+
+            <div class="bento-grid">
+                <!-- Bento 1: Large (bento-col-8) -->
+                <div class="bento-card bento-col-8" data-aos="fade-up">
+                    <div>
+                        <div class="bento-card-tag" data-i18n="b1_tag">FinTech Automation</div>
+                        <h3 class="bento-card-title" data-i18n="b1_title">금융 연동형 실시간 수납 자동화</h3>
+                        <p class="bento-card-desc" data-i18n="b1_desc">
+                            은행 CMS(자동이체) 및 가상계좌 실시간 연동으로 월 수백억 원의 임대료와 관리비를 1초 만에 자동 대사하고, 미수 발생 시 연체료를 자동 계산합니다.
+                        </p>
+                    </div>
+                    <div style="background: rgba(14, 165, 233, 0.08); border: 1px solid rgba(14, 165, 233, 0.2); border-radius: 12px; padding: 18px; display: flex; align-items: center; justify-content: space-between;">
+                        <div>
+                            <span style="font-size:0.85rem; color:#94A3B8;">수납 대사 소요 시간</span>
+                            <div style="font-size:1.4rem; font-weight:800; color:#38BDF8;">3일 소요 → 즉시(1초) 완결</div>
+                        </div>
+                        <i class="fal fa-money-check-edit-alt" style="font-size: 2.2rem; color: #38BDF8;"></i>
+                    </div>
+                </div>
+
+                <!-- Bento 2: Medium (bento-col-4) -->
+                <div class="bento-card bento-col-4" data-aos="fade-up" data-aos-delay="100">
+                    <div>
+                        <div class="bento-card-tag" data-i18n="b2_tag">Gov-Tech & E-Doc</div>
+                        <h3 class="bento-card-title" data-i18n="b2_title">전자계약·전자문서 지원</h3>
+                        <p class="bento-card-desc" data-i18n="b2_desc">
+                            국토부 공식 전자계약 체결부터 임대차 전자계약서, 전자고지서 및 각종 증명서 발급까지 전 과정을 비대면 전자문서로 완결합니다.
+                        </p>
+                    </div>
+                    <div class="bento-card-icon"><i class="fal fa-file-signature"></i></div>
+                </div>
+
+                <!-- Bento 3: Medium (bento-col-4) -->
+                <div class="bento-card bento-col-4" data-aos="fade-up" data-aos-delay="150">
+                    <div>
+                        <div class="bento-card-tag" data-i18n="b3_tag">Tax & Billing</div>
+                        <h3 class="bento-card-title" data-i18n="b3_title">1클릭 전자세금계산서 대량 발행</h3>
+                        <p class="bento-card-desc" data-i18n="b3_desc">
+                            국세청 홈택스 시스템과 직접 연동되어 매월 수천 건의 세금계산서 및 현금영수증을 단 1회의 클릭으로 일괄 자동 전송합니다.
+                        </p>
+                    </div>
+                    <div class="bento-card-icon"><i class="fal fa-calculator"></i></div>
+                </div>
+
+                <!-- Bento 4: Medium (bento-col-4) -->
+                <div class="bento-card bento-col-4" data-aos="fade-up" data-aos-delay="200">
+                    <div>
+                        <div class="bento-card-tag" data-i18n="b4_tag">AI Intelligence</div>
+                        <h3 class="bento-card-title" data-i18n="b4_title">AI 기반 빌딩 밸류업(Value-Up) 대시보드</h3>
+                        <p class="bento-card-desc" data-i18n="b4_desc">
+                            공실률 예측, 적정 임대료 AI 시뮬레이션, 임차인 계약 만기 사전 알림을 제공하여 자산 가치와 운영 수익률을 극대화합니다.
+                        </p>
+                    </div>
+                    <div class="bento-card-icon"><i class="fal fa-chart-line"></i></div>
+                </div>
+
+                <!-- Bento 5: Medium (bento-col-4) -->
+                <div class="bento-card bento-col-4" data-aos="fade-up" data-aos-delay="250">
+                    <div>
+                        <div class="bento-card-tag" data-i18n="b5_tag">Enterprise ERP & API</div>
+                        <h3 class="bento-card-title" data-i18n="b5_title">API 제공 (공실·계약·청구 등) & ERP 연동</h3>
+                        <p class="bento-card-desc" data-i18n="b5_desc">
+                            공실 정보, 계약 내역, 청구 및 수납 데이터를 자유롭게 연계할 수 있는 표준 REST API를 제공하며, SAP·더존 등 기업 ERP와 양방향 자동 연동됩니다.
+                        </p>
+                    </div>
+                    <div class="bento-card-icon"><i class="fal fa-network-wired"></i></div>
+                </div>
+
+                <!-- Bento 6: Wide (bento-col-12) -->
+                <div class="bento-card bento-col-12" data-aos="fade-up" data-aos-delay="300" style="background: linear-gradient(135deg, #111C30 0%, #152744 100%);">
+                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+                        <div style="max-width: 800px;">
+                            <div class="bento-card-tag" data-i18n="b6_tag">Bank-Grade Security</div>
+                            <h3 class="bento-card-title" data-i18n="b6_title">CSAP 금융기관급 클라우드 보안</h3>
+                            <p class="bento-card-desc" style="margin-bottom:0;" data-i18n="b6_desc">
+                                KISA CSAP 표준등급을 획득하여 금융기관 및 공공기관의 까다로운 보안 감사를 완벽하게 통과하는 최고 수준의 인프라를 보장합니다.
+                            </p>
+                        </div>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOO18akLULTgK-XD6x8gj6WgpFNXiW2z_m3AC2mVgXUVUDGA/viewform" target="_blank" class="btn-crimson-cta">
+                            <i class="fal fa-file-alt"></i> 보안 백서 및 도입 안내서 신청
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+           5. Persona Solutions (Interactive Switcher)
+           ========================================================================== -->
+        <section class="section-persona" id="sectionSolutions">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag" data-i18n="persona_tag">TAILORED SOLUTIONS</span>
+                <h2 class="section-heading tech-gradient-text" data-i18n="persona_title">직무별 맞춤형 엔터프라이즈 솔루션</h2>
+                <p class="section-subheading" data-i18n="persona_subtitle">조직의 역할과 의사결정 계층에 최적화된 전용 워크플로우를 제공합니다.</p>
+            </div>
+
+            <div class="persona-tabs-nav" data-aos="fade-up" data-aos-delay="100">
+                <button type="button" class="persona-tab-btn active" data-target="tabAmc" data-i18n="tab_amc">리츠사 · AMC · 오너</button>
+                <button type="button" class="persona-tab-btn" data-target="tabPm" data-i18n="tab_pm">자산관리사 · PM</button>
+                <button type="button" class="persona-tab-btn" data-target="tabFm" data-i18n="tab_fm">시설관리 · FM</button>
+            </div>
+
+            <div class="persona-panel-container">
+                <!-- Tab 1: AMC -->
+                <div class="persona-content-card active" id="tabAmc">
+                    <div class="persona-left">
+                        <h3 data-i18n="amc_h3">미수금 누수 차단 및 자산 가치(Value-Up) 극대화</h3>
+                        <p data-i18n="amc_p">
+                            연체 자동 감지와 법적 절차 연동으로 연체율을 0%에 수렴시킵니다. 공실률, 수익률, 지출 현황을 실시간 데이터로 시각화하여 투자자 및 오너 보고서를 클릭 한 번에 완성합니다.
+                        </p>
+                        <ul class="persona-feature-list">
+                            <li><i class="fal fa-check-circle"></i> <span data-i18n="amc_feat1">연체료 자동 산정 및 즉시 청구</span></li>
+                            <li><i class="fal fa-check-circle"></i> <span data-i18n="amc_feat2">월간 오너 정산 리포트 원클릭 생성</span></li>
+                            <li><i class="fal fa-check-circle"></i> <span data-i18n="amc_feat3">실시간 포트폴리오 자산 가치 분석</span></li>
+                        </ul>
+                    </div>
+                    <div class="persona-right">
+                        <div style="font-size:0.9rem; color:#0EA5E9; font-weight:700; margin-bottom:12px;">AMC 핵심 성과 지표</div>
+                        <div style="font-size:2.2rem; font-weight:900; color:#fff; margin-bottom:8px;">98% <span style="font-size:1.2rem; font-weight:500;">미수금 회수율</span></div>
+                        <div style="font-size:0.95rem; color:#94A3B8; line-height:1.6;">
+                            "사람이 직접 독촉할 필요 없이, 시스템이 공신력 있는 절차에 따라 채권을 관리하여 감정 소모 없이 회수율을 극대화합니다."
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 2: PM -->
+                <div class="persona-content-card" id="tabPm">
+                    <div class="persona-left">
+                        <h3 data-i18n="pm_h3">엑셀 수작업 지옥 탈출, 수납부터 계약까지 자동화</h3>
+                        <p data-i18n="pm_p">
+                            매달 수작업으로 대조하던 수백 행의 엑셀 정산과 세금계산서 발행을 시스템이 대신 처리합니다. 서류와 도장 없는 비대면 전자계약으로 행정 소요 시간을 80% 이상 단축합니다.
+                        </p>
+                        <ul class="persona-feature-list">
+                            <li><i class="fal fa-check-circle"></i> <span data-i18n="pm_feat1">CMS 및 가상계좌 입금 실시간 자동 대사</span></li>
+                            <li><i class="fal fa-check-circle"></i> <span data-i18n="pm_feat2">국토부 공식 전자계약 비대면 체결</span></li>
+                            <li><i class="fal fa-check-circle"></i> <span data-i18n="pm_feat3">부가세 및 세무 신고 데이터 일괄 연동</span></li>
+                        </ul>
+                    </div>
+                    <div class="persona-right">
+                        <div style="font-size:0.9rem; color:#0EA5E9; font-weight:700; margin-bottom:12px;">PM 핵심 성과 지표</div>
+                        <div style="font-size:2.2rem; font-weight:900; color:#fff; margin-bottom:8px;">-80% <span style="font-size:1.2rem; font-weight:500;">단순 반복 업무 시간</span></div>
+                        <div style="font-size:0.95rem; color:#94A3B8; line-height:1.6;">
+                            "매달 말일과 10일 야근을 유발하던 엑셀 입금 확인 및 영수증 발행 업무를 1클릭으로 끝내고 가치 있는 자산 분석에 집중합니다."
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 3: FM -->
+                <div class="persona-content-card" id="tabFm">
+                    <div class="persona-left">
+                        <h3 data-i18n="fm_h3">시설 점검 및 안전관리 업무의 완벽한 디지털화</h3>
+                        <p data-i18n="fm_p">
+                            수기 장부와 종이 서류 대신 모바일로 현장 시설을 점검하고 중대재해처벌법 대응 안전관리 문서를 체계적으로 전산화합니다. 임차인 민원 접수 및 처리 상태를 실시간 공유합니다.
+                        </p>
+                        <ul class="persona-feature-list">
+                            <li><i class="fal fa-check-circle"></i> <span data-i18n="fm_feat1">모바일 현장 점검 및 하자 접수</span></li>
+                            <li><i class="fal fa-check-circle"></i> <span data-i18n="fm_feat2">법정 안전점검 일지 클라우드 아카이빙</span></li>
+                            <li><i class="fal fa-check-circle"></i> <span data-i18n="fm_feat3">임차인 모바일 전용 앱(ezREMS Connect) 연동</span></li>
+                        </ul>
+                    </div>
+                    <div class="persona-right">
+                        <div style="font-size:0.9rem; color:#0EA5E9; font-weight:700; margin-bottom:12px;">FM 핵심 성과 지표</div>
+                        <div style="font-size:2.2rem; font-weight:900; color:#fff; margin-bottom:8px;">100% <span style="font-size:1.2rem; font-weight:500;">점검 이력 전산화</span></div>
+                        <div style="font-size:0.95rem; color:#94A3B8; line-height:1.6;">
+                            "현장에서 스마트폰으로 사진을 찍어 등록하면 본사와 임차인에게 즉시 상태가 공유되며, 법적 보관 서류가 안전하게 클라우드에 영구 저장됩니다."
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+           6. Enterprise Metrics / Counters
+           ========================================================================== -->
+        <section class="section-metrics">
+            <div class="metrics-grid">
+                <div class="metric-card" data-aos="fade-up">
+                    <div class="metric-number"><span class="counter">210</span>+</div>
+                    <div class="metric-label" data-i18n="metric_clients">엔터프라이즈 고객사</div>
+                </div>
+                <div class="metric-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="metric-number"><span class="counter">51000</span>+</div>
+                    <div class="metric-label" data-i18n="metric_units">전국 관리 세대수</div>
+                </div>
+                <div class="metric-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="metric-number">₩ <span class="counter">650</span>억+</div>
+                    <div class="metric-label" data-i18n="metric_billing">월 관리 청구 규모</div>
+                </div>
+                <div class="metric-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="metric-number"><span class="counter">98</span>%</div>
+                    <div class="metric-label" data-i18n="metric_recovery">미수금 자동 회수율</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+           7. System Preview Showcase (Interactive Tabs)
+           ========================================================================== -->
+        <section class="section-bento" id="sectionPreview" style="padding-top:40px;">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag" data-i18n="preview_tag">SYSTEM PREVIEW</span>
+                <h2 class="section-heading tech-gradient-text" data-i18n="preview_title">전문가를 위한 직관적인 통합 관제 화면</h2>
+                <p class="section-subheading" data-i18n="preview_subtitle">복잡한 자산 현황을 한눈에 파악할 수 있는 사용자 중심의 대시보드를 직접 경험해보세요.</p>
+            </div>
+
+            <div style="background:var(--bg-surface-dark); border:1px solid var(--border-dark); border-radius:20px; padding:32px; box-shadow:0 30px 80px rgba(0,0,0,0.5);" data-aos="zoom-in">
+                <div class="row align-items-center">
+                    <div class="col-lg-7">
+                        <img src="./resources/images/preview_img08.gif" alt="통합 관제 시스템 화면" class="img-fluid" style="border-radius:12px; border:1px solid rgba(255,255,255,0.1); box-shadow:0 10px 30px rgba(0,0,0,0.4); width:100%; height:auto;" />
+                    </div>
+                    <div class="col-lg-5 mt-4 mt-lg-0 ps-lg-4">
+                        <div style="color:var(--color-cyber-cyan); font-weight:700; font-size:0.9rem; margin-bottom:8px;">ALL-IN-ONE PLATFORM</div>
+                        <h3 style="font-size:1.8rem; font-weight:800; color:#fff; margin-bottom:16px;">한눈에 통제하는 자산 관리 허브</h3>
+                        <p style="color:var(--text-secondary-dark); line-height:1.7; margin-bottom:24px;">
+                            입주 현황, 청구/수납 대사, 계약 만기 예고, 민원 및 시설 점검까지 분산되어 있던 전산 업무를 단일 통합 화면에서 마우스 몇 번으로 모두 완결할 수 있습니다.
+                        </p>
+                        <a href="https://pms.ezrems.com/" target="_blank" class="btn-outline-tech">
+                            <i class="fal fa-external-link-alt"></i> 기업형 데모 화면 둘러보기
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+           8. FAQ Accordion Section
+           ========================================================================== -->
+        <section class="section-faq" id="sectionFaq">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag" data-i18n="faq_tag">FAQ</span>
+                <h2 class="section-heading tech-gradient-text" data-i18n="faq_title">자주 묻는 질문</h2>
+                <p class="section-subheading" data-i18n="faq_subtitle">이지램스 도입에 관해 가장 많이 궁금해하시는 사항들입니다.</p>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item active" data-aos="fade-up">
+                    <div class="faq-question">
+                        <span data-i18n="faq_q1">이지램스 이용 신청 시 실제 사용까지 기간이 얼마나 소요되나요?</span>
+                        <i class="fal fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer" data-i18n="faq_a1">
+                        이지램스는 클라우드 기반 플랫폼 서비스이기 때문에 기초 데이터만 설정하시면 바로 사용하실 수 있습니다. 보통 사용 신청 후, 1주일 후면 사용이 가능합니다.
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="50">
+                    <div class="faq-question">
+                        <span data-i18n="faq_q2">이지램스를 기업형으로 구축 가능한가요?</span>
+                        <i class="fal fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer" data-i18n="faq_a2">
+                        KT, 롯데건설, 롯데물산, SK D&D, 우미건설, 파크원디벨롭먼트, 라이크홈, 해피투게더하우스 등 많은 기업들이 솔루션 기반으로 구축하였습니다. 기업 환경에 맞도록 구축형으로 가능합니다. 구축기간은 보통 6개월 정도 소요됩니다.
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faq-question">
+                        <span data-i18n="faq_q3">이지램스는 오피스, 주택 등 다양한 부동산 관리에 적용 가능한가요?</span>
+                        <i class="fal fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer" data-i18n="faq_a3">
+                        이지램스는 매달 임대료를 청구하는 주거용 건물 등 외에도 분기별, 반기별로 임대료를 청구하는 오피스, 중소형 빌딩, 쇼핑몰 등 관리에도 적합합니다.
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
+                    <div class="faq-question">
+                        <span data-i18n="faq_q4">이지램스 관련 매뉴얼이나 교육이 제공되나요?</span>
+                        <i class="fal fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer" data-i18n="faq_a4">
+                        사용자매뉴얼과 초기 데이터 셋팅 외 별도로 담당자 교육을 진행합니다. 이지램스를 사용하고 있는 중에도, 업무지원팀과의 핫라인을 통해 VoC, 문의사항 등 업무 소통이 가능합니다.
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faq-question">
+                        <span data-i18n="faq_q5">입주민 편의 서비스도 함께 이용할 수 있나요?</span>
+                        <i class="fal fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer" data-i18n="faq_a5">
+                        이지램스는 고객사에 계약, 청구, 수납 등 입주 관련 API를 제공하기 때문에 각 기업 특성에 맞는 입주민 편의서비스 제공이 가능합니다. 제온스의 다양한 협력사들이 이지램스 제공 API를 활용해 각 사 입주민 플랫폼을 운영하고 있습니다.
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
+                    <div class="faq-question">
+                        <span data-i18n="faq_q6">관리비 청구도 가능한가요?</span>
+                        <i class="fal fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer" data-i18n="faq_a6">
+                        이지램스 솔루션을 통해 매달 관리비 청구가 가능합니다. 오피스 등 상업용 건물의 경우 계약 특수성을 반영해 분할/병합 청구도 가능합니다.
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="faq-question">
+                        <span data-i18n="faq_q7">기존에 사용하던 엑셀 데이터 이전이 가능한가요?</span>
+                        <i class="fal fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer" data-i18n="faq_a7">
+                        네, 전문 데이터 컨설팅 팀이 계약 내역, 임차인 정보, 수납 이력 등 기존 엑셀 데이터를 표준 데이터베이스 규격으로 안전하고 신속하게 일괄 마이그레이션해 드립니다.
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="350">
+                    <div class="faq-question">
+                        <span data-i18n="faq_q8">금융기관이나 공공기관에서도 도입할 수 있나요?</span>
+                        <i class="fal fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer" data-i18n="faq_a8">
+                        이지램스는 KISA CSAP 표준등급 클라우드 보안 인증을 획득하여 국내 주요 금융지주 계열사, 대기업 자산관리사, 공공기관의 까다로운 보안 심사를 모두 통과한 검증된 플랫폼입니다.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+           9. Final Call to Action (CTA) & Contact
+           ========================================================================== -->
+        <section class="section-final-cta" id="sectionContact">
+            <div class="cta-box-inner" data-aos="fade-up">
+                <span class="cta-box-badge" data-i18n="cta_badge">START YOUR DIGITAL TRANSFORMATION</span>
+                <h2 class="cta-box-title" data-i18n="cta_title">
+                    부동산 자산관리, 이제는 사람이 아닌<br/><span style="color:#EC2527;">'엔터프라이즈 플랫폼'</span>의 영역입니다.
+                </h2>
+                <p class="cta-box-desc" data-i18n="cta_desc">
+                    이지램스 전문 컨설턴트가 귀사의 포트폴리오 규모에 맞춘 최적 도입 플랜과 데모 계정을 48시간 내에 안내해 드립니다.
+                </p>
+
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOO18akLULTgK-XD6x8gj6WgpFNXiW2z_m3AC2mVgXUVUDGA/viewform" target="_blank" class="btn-hero-primary" style="font-size:1.15rem; padding:18px 44px;">
+                    <i class="fal fa-paper-plane"></i>
+                    <span data-i18n="cta_btn">1:1 엔터프라이즈 도입 문의</span>
+                </a>
+
+                <div class="cta-contacts-row">
+                    <a href="tel:07088118880" class="cta-contact-item">
+                        <i class="fal fa-phone-alt"></i>
+                        <span data-i18n="cta_phone">전화 문의: 070-8811-8880</span>
+                    </a>
+                    <a href="mailto:sales@zeons.co.kr" class="cta-contact-item">
+                        <i class="fal fa-envelope"></i>
+                        <span data-i18n="cta_email">이메일: sales@zeons.co.kr</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==========================================================================
+       10. Enterprise Footer
+       ========================================================================== -->
+    <footer class="enterprise-footer">
+        <div class="footer-inner">
+            <div>
+                <div style="display:flex; align-items:center; gap:16px; margin-bottom:18px;">
+                    <img src="./resources/images/common/logo_zeons_w.png" alt="제온스" style="height:22px; opacity:0.8;" />
+                    <img src="./resources/images/common/logo_rw.png" alt="이지램스" style="height:24px;" />
+                </div>
+                <ul class="footer-links">
+                    <li><a href="./info_1.html" data-i18n="foot_privacy">개인정보처리방침</a></li>
+                    <li><a href="./info_2.html" data-i18n="foot_terms">이용약관</a></li>
+                    <li><a href="./info_3.html" data-i18n="foot_email_reject">이메일주소무단수집거부</a></li>
+                </ul>
+                <div class="footer-company-info">
+                    <p data-i18n="foot_ceo">대표이사 : 김인섭</p>
+                    <p data-i18n="foot_tel">TEL : 070-8811-8881 | FAX : 070-4850-8848</p>
+                    <p data-i18n="foot_email">EMAIL : support@zeons.co.kr</p>
+                    <p data-i18n="foot_biz">사업자등록번호 : 220-88-84510 | 통신판매업신고번호 : 2016-서울강남-02252</p>
+                    <p data-i18n="foot_addr">본사 : 서울시 강남구 선릉로 93길 40 (역삼동, 스파크플러스 선릉3호점)</p>
+                    <p style="margin-top:10px; color:#475569;" data-i18n="foot_copy">COPYRIGHT © 2018 ZEONS, Inc. All rights reserved.</p>
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            <div style="display:flex; flex-direction:column; gap:16px; justify-content:center;">
+                <div style="display:flex; align-items:center; gap:12px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.06); padding:10px 16px; border-radius:10px;">
+                    <img src="./resources/images/footer_mark_nipa.png" alt="NIPA 인증" style="height:36px;" />
+                    <div style="font-size:0.8rem; color:#94A3B8;">클라우드 컴퓨팅 서비스<br/>품질·성능 검증 획득</div>
+                </div>
+                <div style="display:flex; align-items:center; gap:12px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.06); padding:10px 16px; border-radius:10px;">
+                    <img src="./resources/images/footer_mark_kaci.png" alt="KACI 인증" style="height:36px;" />
+                    <div style="font-size:0.8rem; color:#94A3B8;">클라우드 서비스 확인제 인증<br/>한국클라우드산업협회</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 플로팅 버튼 영역 (세로 일직선 정렬) -->
+    <ul class="floating_area" id="floatingArea">
+        <!-- 1. 고객별 맞춤 솔루션 -->
+        <li class="float-solution">
+            <a href="./target_marketing.html" class="float-btn-solution" title="고객별 맞춤 솔루션">
+                <span class="txt">고객별 맞춤 솔루션</span>
+                <span class="float-icon"><i class="fal fa-user-check"></i></span>
+            </a>
+        </li>
+        <!-- 2. 카카오 상담 -->
+        <li class="float-kakao">
+            <a href="https://pf.kakao.com/_yRjWj/chat" target="_blank" class="float-btn-kakao" title="카카오 상담">
+                <span class="txt">카카오 상담</span>
+                <span class="float-icon"><span class="iconImg"></span></span>
+            </a>
+        </li>
+        <!-- 3. 맨 위로 가기 (Top) -->
+        <li class="float-top" id="backToTopItem" style="display: none;">
+            <a href="javascript:;" id="backToTop" class="float-btn-top" title="맨 위로 가기">
+                <span class="txt">맨 위로</span>
+                <span class="float-icon"><i class="fal fa-arrow-up"></i></span>
+            </a>
+        </li>
+    </ul>
+
+    <!-- Initialization Script -->
+    <script>
+        $(document).ready(function () {
+            // AOS Animation
+            AOS.init({
+                once: true,
+                duration: 800,
+                offset: 50
+            });
+
+            // CounterUp Numbers
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1200
+            });
+
+            // Mobile Navigation Menu Toggle
+            $('#mobileNavToggle').click(function(e) {
+                e.stopPropagation();
+                $('#headerNav').toggleClass('mobile-active');
+            });
+
+            $('#headerNav a').click(function() {
+                $('#headerNav').removeClass('mobile-active');
+            });
+
+            $(document).click(function(e) {
+                if (!$(e.target).closest('#enterpriseHeader').length) {
+                    $('#headerNav').removeClass('mobile-active');
+                }
+            });
+
+            // GNB Scroll Effect & Back to Top Toggle
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    $('#enterpriseHeader').addClass('scrolled');
+                    $('#backToTopItem').fadeIn(200).css('display', 'flex');
+                } else {
+                    $('#enterpriseHeader').removeClass('scrolled');
+                    $('#backToTopItem').fadeOut(200);
+                }
+            });
+
+            // Back to Top Scroll
+            $('#backToTop').click(function (e) {
+                e.preventDefault();
+                $('html, body').animate({ scrollTop: 0 }, 500);
+            });
+
+            // Persona Tabs Switcher
+            $('.persona-tab-btn').click(function () {
+                var target = $(this).data('target');
+                $('.persona-tab-btn').removeClass('active');
+                $(this).addClass('active');
+
+                $('.persona-content-card').removeClass('active');
+                $('#' + target).addClass('active');
+            });
+
+            // FAQ Accordion Toggle
+            $('.faq-question').click(function () {
+                var parentItem = $(this).closest('.faq-item');
+                parentItem.toggleClass('active');
+            });
+
+            // Notice Modal (localStorage + Cookie 하이브리드 지원)
+            var NOTICE_STORAGE_KEY = 'ezrems_notice_hide_until';
+            var NOTICE_COOKIE_KEY = 'ezrems_notice_hide';
+
+            function isNoticeSuppressed() {
+                var now = new Date().getTime();
+
+                // 1. localStorage 검사 (로컬 file:// 및 웹 환경 모두 완벽 지원)
+                try {
+                    var hideUntil = localStorage.getItem(NOTICE_STORAGE_KEY);
+                    if (hideUntil && parseInt(hideUntil, 10) > now) {
+                        return true;
+                    }
+                } catch (e) {
+                    console.warn('[ezREMS] localStorage 접근 불가:', e);
+                }
+
+                // 2. Cookie 검사 (하위 호환 및 보조 수단)
+                try {
+                    var cookies = document.cookie.split(';');
+                    for (var i = 0; i < cookies.length; i++) {
+                        var c = cookies[i].trim();
+                        if (c.indexOf(NOTICE_COOKIE_KEY + '=Y') === 0 || c.indexOf('close=Y') === 0) {
+                            return true;
+                        }
+                    }
+                } catch (e) {
+                    console.warn('[ezREMS] Cookie 접근 불가:', e);
+                }
+
+                return false;
+            }
+
+            function suppressNoticeFor24Hours() {
+                var expireTime = new Date().getTime() + (24 * 60 * 60 * 1000);
+                var expireDate = new Date(expireTime);
+
+                // 1. localStorage에 24시간 만료 시각 저장
+                try {
+                    localStorage.setItem(NOTICE_STORAGE_KEY, expireTime.toString());
+                } catch (e) {}
+
+                // 2. Cookie에도 저장
+                try {
+                    document.cookie = NOTICE_COOKIE_KEY + "=Y; expires=" + expireDate.toUTCString() + "; path=/; SameSite=Lax";
+                    document.cookie = "close=Y; expires=" + expireDate.toUTCString() + "; path=/; SameSite=Lax";
+                } catch (e) {}
+            }
+
+            // 팝업 표시 여부 결정
+            if (!isNoticeSuppressed()) {
+                $("#myModal4").css('display', 'block');
+            } else {
+                $("#myModal4").css('display', 'none');
+            }
+
+            // 일반 닫기 버튼
+            $("#myModal4_close").click(function () {
+                $("#myModal4").fadeOut(200);
+            });
+
+            // 오늘 하루 열지 않기 버튼
+            $("#myModal4_close_1day").click(function () {
+                suppressNoticeFor24Hours();
+                $("#myModal4").fadeOut(200);
+            });
+        });
+    </script>
+</body>
+</html>

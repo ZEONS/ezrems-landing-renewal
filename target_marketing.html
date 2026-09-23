@@ -1,0 +1,2395 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="imagetoolbar" content="no">
+    <meta http-equiv="X-UA-Compatible" content="IE=10,chrome=1">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+
+    <meta name="keywords" content="이지램스, ezREMS, 건물주, AMC, 자산관리사, PM, 임대관리, 부동산 솔루션, SaaS" />
+    <meta name="description"
+        content="이지램스(ezREMS)™ - 건물주(AMC)와 자산관리사(PM)를 위한 맞춤형 부동산 자산관리 솔루션. 미수금 차단, 엑셀 지옥 탈출, 데이터 기반 운영을 경험하세요." />
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="이지램스 - 고객별 맞춤 솔루션">
+    <meta property="og:description" content="건물주와 자산관리사를 위한 지능형 프롭-핀테크 플랫폼, 이지램스(ezREMS)">
+    <meta property="og:image" content="./resources/images/common/sns_image2.png">
+    <meta property="og:site_name" content="이지램스">
+
+    <link rel="icon" type="image/png" href="./resources/images/common/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./resources/images/common/favicon-16x16.png" sizes="16x16" />
+    <meta name="application-name" content="이지램스" />
+    <meta name="msapplication-TileColor" content="#EC2527" />
+    <meta name="msapplication-TileImage" content="./resources/images/common/mstile-144x144.png" />
+
+    <title>이지램스 - 고객별 맞춤 솔루션</title>
+
+    <link rel="stylesheet" type="text/css" href="./resources/css/common/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="./resources/css/common/fontawesome-all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./resources/css/common/aos.css">
+    <link rel="stylesheet" type="text/css" href="./resources/css/common/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="./resources/css/common/base.css" />
+    <link rel="stylesheet" type="text/css" href="./resources/css/common/theme-setting.css" />
+    <link rel="stylesheet" type="text/css" href="./resources/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="./resources/css/main.css" />
+
+    <script src="./resources/js/jquery-3.3.1.min.js"></script>
+    <script src="./resources/js/jquery-ui.min.js"></script>
+    <script src="./resources/js/jquery.easing.1.3.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="./resources/js/aos.js"></script>
+    <script src="./resources/js/swiper-bundle.min.js"></script>
+    <script src="./resources/js/common.js"></script>
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-102197268-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-102197268-1');
+    </script>
+
+    <style>
+        /* ===== 타겟 마케팅 랜딩 페이지 전용 스타일 ===== */
+
+        /* 히어로 섹션 */
+        .tm-hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: url('./resources/images/service_bg.jpg') no-repeat center center / cover;
+            padding: 160px 20px 80px;
+            overflow: hidden;
+        }
+
+        .tm-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(15, 100, 159, 0.88) 0%, rgba(29, 38, 56, 0.92) 60%, rgba(236, 37, 39, 0.55) 100%);
+        }
+
+        .tm-hero .respon {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+
+        .tm-hero .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 6px 18px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            border-radius: 100px;
+            background: rgba(255, 255, 255, 0.12);
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.5rem;
+            letter-spacing: 0.05em;
+            backdrop-filter: blur(4px);
+        }
+
+        .badge-pulse {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background: #EC2527;
+            border-radius: 50%;
+            margin-right: 10px;
+            vertical-align: middle;
+            position: relative;
+            flex-shrink: 0;
+        }
+
+        .badge-pulse::before,
+        .badge-pulse::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(1);
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #EC2527;
+            animation: badgePulse 2s ease-out infinite;
+        }
+
+        .badge-pulse::after {
+            animation-delay: 1s;
+        }
+
+        @keyframes badgePulse {
+            0% {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 0.8;
+            }
+
+            100% {
+                transform: translate(-50%, -50%) scale(3.5);
+                opacity: 0;
+            }
+        }
+
+        .tm-hero .hero-main-copy {
+            font-family: var(--font-point-bold);
+            font-size: 3rem;
+            line-height: 1.3;
+            color: #fff;
+            margin-bottom: 24px;
+            word-break: keep-all;
+        }
+
+        .tm-hero .hero-main-copy strong {
+            color: #fff;
+            font-family: var(--font-point-bold);
+        }
+
+        .tm-hero .hero-sub-copy {
+            font-size: 1.6rem;
+            line-height: 1.9;
+            color: rgba(255, 255, 255, 0.82);
+            max-width: 780px;
+            margin: 0 auto 40px;
+            word-break: keep-all;
+        }
+
+        .tm-hero .hero-btns {
+            display: flex;
+            justify-content: center;
+        }
+
+        .tm-hero .hero-btns a {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 20px 48px;
+            border-radius: 50px;
+            font-size: 1.8rem;
+            font-weight: 700;
+            transition: all .25s;
+        }
+
+        .tm-hero .btn-primary-red {
+            background: var(--color-red);
+            color: #fff;
+            border: 2px solid var(--color-red);
+            box-shadow: 0 8px 28px rgba(236, 37, 39, 0.4);
+        }
+
+        .tm-hero .btn-hero-single {
+            letter-spacing: 0.02em;
+        }
+
+        .tm-hero .btn-primary-red:hover {
+            background: #c81e20;
+            border-color: #c81e20;
+            color: #fff;
+            transform: translateY(-3px);
+            box-shadow: 0 14px 36px rgba(236, 37, 39, 0.5);
+        }
+
+        /* ===== Split 페르소나 선택 섹션 ===== */
+
+        @keyframes splitSlideLeft {
+            from {
+                transform: translateX(-50px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 0.8;
+            }
+        }
+
+        @keyframes splitSlideRight {
+            from {
+                transform: translateX(50px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 0.8;
+            }
+        }
+
+        @keyframes tabFadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .tm-split {
+            position: relative;
+            display: flex;
+            height: 100vh;
+            min-height: 600px;
+            overflow: hidden;
+        }
+
+        /* 중앙 구분선 */
+        .tm-split-divider {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 1px;
+            background: rgba(255, 255, 255, 0.18);
+            z-index: 10;
+            transform: translateX(-50%);
+            transition: left 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            pointer-events: none;
+        }
+
+        /* 구분선 1 · 2 기본 위치 (3등분) */
+        .tm-split-d1 {
+            left: 33.33%;
+        }
+
+        .tm-split-d2 {
+            left: 66.66%;
+        }
+
+        /* AMC hover: 55% | 22.5% | 22.5% */
+        .tm-split:has(.panel-amc:hover) .tm-split-d1 {
+            left: 55%;
+        }
+
+        .tm-split:has(.panel-amc:hover) .tm-split-d2 {
+            left: 77.5%;
+        }
+
+        /* PM hover: 22.5% | 55% | 22.5% */
+        .tm-split:has(.panel-pm:hover) .tm-split-d1 {
+            left: 22.5%;
+        }
+
+        .tm-split:has(.panel-pm:hover) .tm-split-d2 {
+            left: 77.5%;
+        }
+
+        /* FM hover: 22.5% | 22.5% | 55% */
+        .tm-split:has(.panel-fm:hover) .tm-split-d1 {
+            left: 22.5%;
+        }
+
+        .tm-split:has(.panel-fm:hover) .tm-split-d2 {
+            left: 45%;
+        }
+
+        /* 패널 공통 */
+        .tm-split-panel {
+            flex: 1 1 33.33%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: flex-grow 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+                flex-basis 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            overflow: hidden;
+        }
+
+        /* hover: 확장/축소 — 3패널 기준 55% / 22.5% / 22.5% */
+        .tm-split:hover .tm-split-panel {
+            flex: 0 0 22.5%;
+        }
+
+        .tm-split .tm-split-panel:hover {
+            flex: 0 0 55%;
+        }
+
+        /* 비-hover 패널 dim 처리 */
+        .tm-split-panel::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0);
+            transition: background 0.5s;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .tm-split:hover .tm-split-panel::before {
+            background: rgba(0, 0, 0, 0.32);
+        }
+
+        .tm-split .tm-split-panel:hover::before {
+            background: rgba(0, 0, 0, 0);
+        }
+
+        /* AMC — 네이비 + 격자 패턴 */
+        .panel-amc {
+            background:
+                linear-gradient(rgba(255, 255, 255, 0.028) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.028) 1px, transparent 1px),
+                linear-gradient(155deg, #0d1b2a 0%, #112236 60%, #0a1520 100%);
+            background-size: 48px 48px, 48px 48px, 100% 100%;
+        }
+
+        /* PM — 슬레이트 + 대각선 패턴 */
+        .panel-pm {
+            background:
+                repeating-linear-gradient(-45deg,
+                    transparent 0px,
+                    transparent 22px,
+                    rgba(255, 255, 255, 0.022) 22px,
+                    rgba(255, 255, 255, 0.022) 23px),
+                linear-gradient(155deg, #1a2540 0%, #1e2e52 50%, #131d3a 100%);
+        }
+
+        /* FM — 다크청록 + 도트 패턴 */
+        .panel-fm {
+            background:
+                radial-gradient(circle, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+                linear-gradient(155deg, #0d2b2a 0%, #0f3632 55%, #081e1d 100%);
+            background-size: 28px 28px, 100% 100%;
+        }
+
+        /* 선택 상태 하단 강조선 */
+        .tm-split-panel.selected::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            z-index: 3;
+        }
+
+        .panel-amc.selected::after {
+            background: var(--color-red);
+        }
+
+        .panel-pm.selected::after {
+            background: var(--color-sky);
+        }
+
+        .panel-fm.selected::after {
+            background: #2ec4b6;
+        }
+
+        /* 콘텐츠 */
+        .split-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: 40px 28px;
+            opacity: 0.75;
+            transform: scale(0.97);
+            transition: opacity 0.4s ease, transform 0.4s ease;
+            max-width: 340px;
+            width: 100%;
+        }
+
+        .panel-amc .split-content {
+            animation: splitSlideLeft 1s cubic-bezier(0.22, 1, 0.36, 1) 0.3s both;
+        }
+
+        .panel-pm .split-content {
+            animation: splitSlideRight 1s cubic-bezier(0.22, 1, 0.36, 1) 0.5s both;
+        }
+
+        .panel-fm .split-content {
+            animation: splitSlideRight 1s cubic-bezier(0.22, 1, 0.36, 1) 0.7s both;
+        }
+
+        .tm-split-panel:hover .split-content,
+        .tm-split-panel.selected .split-content {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .split-icon {
+            font-size: 6rem;
+            line-height: 1;
+            margin-bottom: 22px;
+            color: rgba(255, 255, 255, 0.9);
+            display: block;
+            transition: transform 0.4s ease;
+        }
+
+        .tm-split-panel:hover .split-icon {
+            transform: scale(1.12) translateY(-5px);
+        }
+
+        .split-title {
+            font-family: var(--font-point-bold);
+            font-size: 2.8rem;
+            color: #fff;
+            margin-bottom: 12px;
+            line-height: 1.2;
+        }
+
+        .split-sub {
+            font-size: 1.6rem;
+            color: rgba(255, 255, 255, 0.6);
+            margin-bottom: 32px;
+            line-height: 1.65;
+            word-break: keep-all;
+        }
+
+        .split-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 28px;
+            border-radius: 50px;
+            border: 2px solid rgba(255, 255, 255, 0.28);
+            background: rgba(255, 255, 255, 0.07);
+            color: rgba(255, 255, 255, 0.82);
+            font-size: 1.5rem;
+            font-weight: 700;
+            backdrop-filter: blur(4px);
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .panel-amc:hover .split-btn,
+        .panel-amc.selected .split-btn {
+            background: var(--color-red);
+            border-color: var(--color-red);
+            color: #fff;
+            box-shadow: 0 8px 26px rgba(236, 37, 39, 0.5);
+        }
+
+        .panel-pm:hover .split-btn,
+        .panel-pm.selected .split-btn {
+            background: var(--color-blue);
+            border-color: var(--color-blue);
+            color: #fff;
+            box-shadow: 0 8px 26px rgba(15, 100, 159, 0.55);
+        }
+
+        .panel-fm:hover .split-btn,
+        .panel-fm.selected .split-btn {
+            background: #1a9e96;
+            border-color: #1a9e96;
+            color: #fff;
+            box-shadow: 0 8px 26px rgba(26, 158, 150, 0.55);
+        }
+
+        /* 탭 컨텐츠 show/hide */
+        .tm-tab-content {
+            display: none;
+        }
+
+        .tm-tab-content.active {
+            display: block;
+            animation: tabFadeIn 0.45s ease forwards;
+        }
+
+        /* 섹션 공통 */
+        .tm-section {
+            padding: 80px 20px;
+        }
+
+        .tm-section.bg-light-gray {
+            background: var(--bg-gray-light);
+        }
+
+        .tm-section.bg-dark {
+            background: var(--bg-footer);
+            color: #fff;
+        }
+
+        .tm-section.bg-blue {
+            background: var(--color-blue);
+            color: #fff;
+        }
+
+        .tm-section.bg-red {
+            background: var(--color-red);
+            color: #fff;
+        }
+
+        .tm-section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .tm-section-title .pre-label {
+            display: inline-block;
+            padding: 5px 16px;
+            margin-bottom: 14px;
+            border-radius: 100px;
+            font-size: 1.4rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .tm-section-title .pre-label.red {
+            background: rgba(236, 37, 39, 0.1);
+            color: var(--color-red);
+        }
+
+        .tm-section-title .pre-label.blue {
+            background: rgba(15, 100, 159, 0.1);
+            color: var(--color-blue);
+        }
+
+        .tm-section-title .pre-label.teal {
+            background: rgba(46, 196, 182, 0.12);
+            color: #1a9e96;
+        }
+
+        .tm-section-title .pre-label.white {
+            background: rgba(255, 255, 255, 0.15);
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        /* pre-label 단독 사용 (tm-section-title 밖) */
+        .pre-label {
+            display: inline-block;
+            padding: 5px 16px;
+            border-radius: 100px;
+            font-size: 1.4rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .pre-label.teal {
+            background: rgba(46, 196, 182, 0.12);
+            color: #1a9e96;
+        }
+
+        .tm-section-title h2 {
+            font-family: var(--font-point-bold);
+            font-size: 2.8rem;
+            line-height: 1.3;
+            margin-bottom: 14px;
+            word-break: keep-all;
+        }
+
+        .tm-section-title p {
+            font-size: 1.6rem;
+            color: var(--color-gray);
+            line-height: 1.8;
+            word-break: keep-all;
+        }
+
+        .tm-section.bg-dark .tm-section-title p,
+        .tm-section.bg-blue .tm-section-title p,
+        .tm-section.bg-red .tm-section-title p {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* 슬로건 카드 */
+        .slogan-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .slogan-card {
+            position: relative;
+            padding: 30px 28px 28px 28px;
+            border-radius: 16px;
+            background: #fff;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+            border-left: 5px solid var(--color-red);
+            overflow: hidden;
+        }
+
+        .slogan-card.blue-accent {
+            border-left-color: var(--color-blue);
+        }
+
+        .slogan-card.teal-accent {
+            border-left-color: #2ec4b6;
+        }
+
+        /* 슬로건 키워드 강조 */
+        .slogan-card em.kw {
+            font-style: normal;
+            font-weight: 900;
+            color: #EC2527;
+            font-size: 1.05em;
+            letter-spacing: -0.02em;
+            position: relative;
+            display: inline-block;
+        }
+
+        .slogan-card em.kw::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -2px;
+            height: 2px;
+            background: #EC2527;
+            border-radius: 2px;
+        }
+
+        /* PM 탭: 파란 계열 */
+        #tab-pm .slogan-card em.kw {
+            color: #0e5a90;
+        }
+
+        #tab-pm .slogan-card em.kw::after {
+            background: #0e5a90;
+        }
+
+        /* FM 탭: 청록 계열 */
+        #tab-fm .slogan-card em.kw {
+            color: #1a9e96;
+        }
+
+        #tab-fm .slogan-card em.kw::after {
+            background: #1a9e96;
+        }
+
+        .slogan-card .card-num {
+            position: absolute;
+            top: 20px;
+            right: 24px;
+            font-family: var(--font-point-bold);
+            font-size: 4rem;
+            color: rgba(0, 0, 0, 0.04);
+            line-height: 1;
+        }
+
+        .slogan-card p {
+            font-family: var(--font-point);
+            font-size: 1.8rem;
+            line-height: 1.6;
+            color: #222;
+            word-break: keep-all;
+        }
+
+        /* 페인포인트 카드 */
+        /* 숫자 임팩트 카드 */
+        .impact-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .impact-card {
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            border-top: 3px solid transparent;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .impact-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 48px rgba(0, 0, 0, 0.14);
+        }
+
+        .impact-card.accent-red {
+            border-top-color: var(--color-red);
+        }
+
+        .impact-card.accent-sky {
+            border-top-color: var(--color-sky);
+        }
+
+        .impact-card.accent-blue {
+            border-top-color: var(--color-blue);
+        }
+
+        .impact-card.accent-teal {
+            border-top-color: #2ec4b6;
+        }
+
+        /* 상단: 숫자 영역 */
+        .impact-stat {
+            padding: 28px 28px 18px;
+            text-align: center;
+        }
+
+        .impact-num {
+            font-family: var(--font-point-bold);
+            font-size: 5rem;
+            font-weight: 900;
+            line-height: 1;
+            background: linear-gradient(135deg, #EC2527 0%, #ff6b35 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .impact-label {
+            font-size: 1.4rem;
+            color: #aaa;
+            letter-spacing: 0.04em;
+        }
+
+        /* 구분선 */
+        .impact-divider {
+            height: 1px;
+            background: #f0f0f0;
+            margin: 0 24px;
+        }
+
+        /* 하단: 아이콘 + 콘텐츠 */
+        .impact-body {
+            padding: 20px 28px 28px;
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+        }
+
+        .impact-icon {
+            flex-shrink: 0;
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: #fff;
+        }
+
+        .impact-icon.red {
+            background: var(--color-red);
+        }
+
+        .impact-icon.sky {
+            background: var(--color-sky);
+        }
+
+        .impact-icon.blue {
+            background: var(--color-blue);
+        }
+
+        .impact-icon.teal {
+            background: #1a9e96;
+        }
+
+        .impact-num.teal {
+            background: linear-gradient(135deg, #2ec4b6 0%, #1a9e96 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .impact-txt h3 {
+            font-family: var(--font-point-bold);
+            font-size: 1.8rem;
+            color: #111;
+            margin-bottom: 6px;
+            line-height: 1.3;
+        }
+
+        .impact-txt p {
+            font-size: 1.5rem;
+            color: var(--color-gray);
+            line-height: 1.7;
+            word-break: keep-all;
+        }
+
+        /* 핵심 기능 카드 */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            padding: 32px 28px;
+            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.07);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            transition: background .25s;
+        }
+
+        .feature-card:hover {
+            background: rgba(255, 255, 255, 0.13);
+        }
+
+        .feature-card .fc-icon {
+            font-size: 3.2rem;
+            color: var(--color-sky);
+            margin-bottom: 18px;
+        }
+
+        .feature-card h3 {
+            font-family: var(--font-point-bold);
+            font-size: 2rem;
+            color: #fff;
+            margin-bottom: 12px;
+        }
+
+        .feature-card p {
+            font-size: 1.6rem;
+            color: rgba(255, 255, 255, 0.68);
+            line-height: 1.8;
+            word-break: keep-all;
+        }
+
+        .feature-card ul {
+            margin-top: 14px;
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .feature-card ul li {
+            font-size: 1.6rem;
+            color: rgba(255, 255, 255, 0.65);
+            padding: 4px 0;
+        }
+
+        .feature-card ul li::before {
+            content: '—';
+            margin-right: 8px;
+            color: var(--color-sky);
+        }
+
+        /* 신뢰 섹션 */
+        .trust-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            max-width: 860px;
+            margin: 0 auto 60px;
+        }
+
+        .trust-stat {
+            background: #ffffff;
+            border: 1px solid #e8e8e8;
+            border-radius: 20px;
+            padding: 48px 32px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.12);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .trust-stat:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 48px rgba(0, 0, 0, 0.2);
+        }
+
+        .trust-stat::before {
+            content: '';
+            position: absolute;
+            width: 160px;
+            height: 160px;
+            background: radial-gradient(circle, rgba(236, 37, 39, 0.15) 0%, transparent 70%);
+            top: -40px;
+            right: -40px;
+            border-radius: 50%;
+        }
+
+        .trust-stat::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 10%;
+            right: 10%;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #EC2527, transparent);
+            border-radius: 2px;
+        }
+
+        .trust-stat .stat-num {
+            font-family: var(--font-point-bold);
+            font-size: 5.5rem;
+            font-weight: 900;
+            color: #EC2527;
+            -webkit-text-fill-color: #EC2527;
+            line-height: 1;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .trust-stat .stat-label {
+            font-size: 1.5rem;
+            color: #555555;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            margin-top: 0;
+        }
+
+        .trust-badge-area {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+        }
+
+        .trust-badge {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 20px;
+            border-radius: 12px;
+            background: var(--bg-gray-light);
+            border: 1px solid #e8e8e8;
+        }
+
+        .trust-badge .badge-icon {
+            font-size: 2rem;
+            color: var(--color-blue);
+        }
+
+        .trust-badge span {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #333;
+        }
+
+        .trust-logos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .trust-logo-chip {
+            padding: 8px 16px;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+            background: #fff;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #444;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        /* 하단 CTA */
+        .tm-final-cta {
+            position: relative;
+            padding: 120px 20px 100px;
+            text-align: center;
+            overflow: hidden;
+            background:
+                linear-gradient(180deg, #0a1628 0%, #0d1f3c 40%, #071220 100%);
+        }
+
+        /* 그리드 패턴 레이어 */
+        .tm-final-cta::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(68, 201, 227, 0.06) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(68, 201, 227, 0.06) 1px, transparent 1px);
+            background-size: 60px 60px;
+            animation: cta-grid-drift 20s linear infinite;
+            pointer-events: none;
+        }
+
+        /* 빌딩 실루엣 그라디언트 레이어 */
+        .tm-final-cta::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 220px;
+            background:
+                linear-gradient(to top, rgba(236, 37, 39, 0.07) 0%, transparent 100%),
+                repeating-linear-gradient(90deg,
+                    transparent 0px,
+                    transparent 28px,
+                    rgba(255, 255, 255, 0.025) 28px,
+                    rgba(255, 255, 255, 0.025) 30px,
+                    transparent 30px,
+                    transparent 80px,
+                    rgba(255, 255, 255, 0.03) 80px,
+                    rgba(255, 255, 255, 0.03) 82px,
+                    transparent 82px,
+                    transparent 140px);
+            pointer-events: none;
+        }
+
+        @keyframes cta-grid-drift {
+            from {
+                background-position: 0 0;
+            }
+
+            to {
+                background-position: 60px 60px;
+            }
+        }
+
+        /* 글로우 오브 배경 */
+        .cta-glow-orb {
+            position: absolute;
+            border-radius: 50%;
+            pointer-events: none;
+            filter: blur(80px);
+        }
+
+        .cta-glow-orb.orb-blue {
+            width: 500px;
+            height: 500px;
+            top: -120px;
+            left: -100px;
+            background: rgba(15, 100, 159, 0.25);
+        }
+
+        .cta-glow-orb.orb-red {
+            width: 400px;
+            height: 400px;
+            bottom: -80px;
+            right: -60px;
+            background: rgba(236, 37, 39, 0.18);
+        }
+
+        .cta-inner {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* 신뢰 지표 상단 바 */
+        .cta-trust-bar {
+            display: inline-flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 40px;
+        }
+
+        .cta-trust-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            padding: 8px 18px;
+            border-radius: 100px;
+            background: rgba(255, 255, 255, 0.07);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 1.4rem;
+            font-weight: 700;
+            backdrop-filter: blur(6px);
+            white-space: nowrap;
+        }
+
+        .cta-trust-chip i {
+            font-size: 1.4rem;
+        }
+
+        .cta-trust-chip .chip-stars {
+            color: #FFD700;
+            font-size: 1.3rem;
+            letter-spacing: -1px;
+        }
+
+        .cta-trust-chip.chip-csap {
+            border-color: rgba(68, 201, 227, 0.4);
+            color: var(--color-sky);
+        }
+
+        .cta-trust-chip.chip-csap i {
+            color: var(--color-sky);
+        }
+
+        .cta-headline-kicker {
+            font-size: 1.4rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            color: var(--color-sky);
+            text-transform: uppercase;
+            margin-bottom: 18px;
+        }
+
+        .tm-final-cta h2 {
+            font-family: var(--font-point-bold);
+            font-size: 2.8rem;
+            color: #fff;
+            margin-bottom: 16px;
+            line-height: 1.35;
+            word-break: keep-all;
+        }
+
+        .tm-final-cta h2 em {
+            color: #EC2527;
+            font-style: normal;
+        }
+
+        .tm-final-cta .cta-sub {
+            font-size: 1.6rem;
+            color: rgba(255, 255, 255, 0.62);
+            margin-bottom: 48px;
+            word-break: keep-all;
+            line-height: 1.8;
+        }
+
+        /* 메인 버튼 */
+        .tm-final-cta .cta-main-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 22px 60px;
+            border-radius: 50px;
+            background: var(--color-red);
+            color: #fff;
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            transition: all .28s ease;
+            box-shadow:
+                0 8px 30px rgba(236, 37, 39, 0.45),
+                0 0 0 0 rgba(236, 37, 39, 0);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tm-final-cta .cta-main-btn::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 50px;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.12) 0%, transparent 60%);
+            pointer-events: none;
+        }
+
+        .tm-final-cta .cta-main-btn:hover {
+            color: #fff;
+            transform: translateY(-4px) scale(1.03);
+            box-shadow:
+                0 18px 48px rgba(236, 37, 39, 0.55),
+                0 0 0 8px rgba(236, 37, 39, 0.12),
+                0 0 60px rgba(236, 37, 39, 0.25);
+        }
+
+        /* 안심 문구 */
+        .cta-reassure {
+            margin-top: 18px;
+            font-size: 1.4rem;
+            color: rgba(255, 255, 255, 0.45);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+        }
+
+        .cta-reassure i {
+            color: rgba(68, 201, 227, 0.7);
+            font-size: 1.4rem;
+        }
+
+        /* 연락처 */
+        .tm-final-cta .contact-info {
+            margin-top: 44px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding-top: 36px;
+        }
+
+        .tm-final-cta .contact-info a {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 1.6rem;
+            font-weight: 700;
+            transition: color .2s;
+            padding: 8px 28px;
+            border-right: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .tm-final-cta .contact-info a:last-child {
+            border-right: none;
+        }
+
+        .tm-final-cta .contact-info a i {
+            font-size: 1.7rem;
+            color: var(--color-sky);
+        }
+
+        .tm-final-cta .contact-info a:hover {
+            color: #fff;
+        }
+
+        /* upScrollBtn — main.css의 .floating_area 스타일을 그대로 활용 */
+        .upScrollBtn {
+            position: fixed;
+            right: 24px;
+            bottom: 30px;
+            z-index: 9999;
+            display: none;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.25);
+            color: #fff;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            transition: background .2s;
+            backdrop-filter: blur(4px);
+        }
+
+        .upScrollBtn:hover {
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+        }
+
+        /* 반응형 */
+
+        /* 모바일 전체 최적화 */
+        @media screen and (max-width: 767px) {
+
+            /* ── 히어로 ── */
+            .tm-hero {
+                padding: 100px 16px 56px;
+                min-height: auto;
+            }
+
+            .tm-hero .hero-badge {
+                font-size: 1.2rem;
+                padding: 5px 14px;
+            }
+
+            .tm-hero .hero-main-copy {
+                font-size: 2.4rem;
+            }
+
+            .tm-hero .hero-sub-copy {
+                font-size: 1.4rem;
+                line-height: 1.75;
+                margin-bottom: 32px;
+            }
+
+            .tm-hero .hero-btns a {
+                padding: 16px 32px;
+                font-size: 1.6rem;
+            }
+
+            /* ── Split: 3패널 세로 스택, 각 36vh ── */
+            .tm-split {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .tm-split-panel {
+                height: 36vh;
+                min-height: 200px;
+                flex: none !important;
+            }
+
+            .tm-split-divider {
+                top: 50%;
+                left: 0;
+                right: 0;
+                bottom: auto;
+                width: 100%;
+                height: 1px;
+                transform: none;
+                transition: top 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+
+            .tm-split:has(.panel-amc:hover) .tm-split-divider,
+            .tm-split:has(.panel-pm:hover) .tm-split-divider,
+            .tm-split:has(.panel-fm:hover) .tm-split-divider {
+                left: 0;
+                top: 50%;
+            }
+
+            .split-content {
+                padding: 20px 16px;
+            }
+
+            .split-icon {
+                font-size: 4rem;
+                margin-bottom: 12px;
+            }
+
+            .split-title {
+                font-size: 2rem;
+            }
+
+            .split-sub {
+                font-size: 1.35rem;
+                margin-bottom: 18px;
+            }
+
+            .split-btn {
+                font-size: 1.3rem;
+                padding: 11px 22px;
+            }
+
+            /* ── 섹션 공통 ── */
+            .tm-section {
+                padding: 56px 16px;
+            }
+
+            .tm-section-title {
+                margin-bottom: 32px;
+            }
+
+            .tm-section-title h2 {
+                font-size: 2.2rem;
+            }
+
+            .tm-section-title p {
+                font-size: 1.5rem;
+            }
+
+            /* ── 슬로건 카드 ── */
+            .slogan-card {
+                padding: 24px 20px 20px;
+            }
+
+            .slogan-card p {
+                font-size: 1.6rem;
+            }
+
+            /* ── 임팩트 카드 ── */
+            .impact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .impact-stat {
+                padding: 24px 20px 14px;
+            }
+
+            .impact-num {
+                font-size: 4rem;
+            }
+
+            .impact-body {
+                padding: 16px 20px 22px;
+            }
+
+            /* ── 핵심 기능 카드 ── */
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .feature-card {
+                padding: 26px 20px;
+            }
+
+            /* ── 신뢰 수치 ── */
+            .trust-stats {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+
+            .trust-stat {
+                padding: 28px 20px;
+            }
+
+            .trust-stat .stat-num {
+                font-size: 3.8rem;
+            }
+
+            .trust-stat .stat-label {
+                font-size: 1.4rem;
+            }
+
+            .trust-badge-area {
+                gap: 10px;
+            }
+
+            .trust-badge {
+                padding: 10px 14px;
+            }
+
+            .trust-badge span {
+                font-size: 1.3rem;
+            }
+
+            /* ── 하단 CTA ── */
+            .tm-final-cta {
+                padding: 72px 16px 60px;
+            }
+
+            .cta-glow-orb.orb-blue {
+                width: 260px;
+                height: 260px;
+                top: -80px;
+                left: -60px;
+            }
+
+            .cta-glow-orb.orb-red {
+                width: 200px;
+                height: 200px;
+                bottom: -50px;
+                right: -40px;
+            }
+
+            .cta-trust-bar {
+                width: 100%;
+            }
+
+            .cta-trust-chip {
+                font-size: 1.2rem;
+                padding: 7px 14px;
+            }
+
+            .tm-final-cta h2 {
+                font-size: 2.2rem;
+            }
+
+            .tm-final-cta .cta-sub {
+                font-size: 1.5rem;
+                margin-bottom: 32px;
+            }
+
+            .tm-final-cta .cta-main-btn {
+                padding: 18px 36px;
+                font-size: 1.7rem;
+                gap: 8px;
+            }
+
+            .tm-final-cta .contact-info {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .tm-final-cta .contact-info a {
+                border-right: none;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                padding: 12px 20px;
+                width: 100%;
+                justify-content: center;
+            }
+
+            .tm-final-cta .contact-info a:last-child {
+                border-bottom: none;
+            }
+        }
+
+        @media screen and (min-width: 639px) {
+            .split-icon {
+                font-size: 7rem;
+            }
+
+            .split-title {
+                font-size: 3.2rem;
+            }
+
+            .split-sub {
+                font-size: 1.7rem;
+            }
+
+            .split-btn {
+                font-size: 1.6rem;
+                padding: 15px 32px;
+            }
+
+            .slogan-card p {
+                font-size: 2rem;
+            }
+        }
+
+        @media screen and (min-width: 767px) {
+            .slogan-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .impact-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .feature-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media screen and (min-width: 979px) {
+            .split-icon {
+                font-size: 8rem;
+            }
+
+            .split-title {
+                font-size: 3.8rem;
+            }
+
+            .split-sub {
+                font-size: 1.8rem;
+            }
+
+            .split-content {
+                max-width: 420px;
+                padding: 48px 40px;
+            }
+
+            .split-btn {
+                font-size: 1.7rem;
+                padding: 16px 36px;
+            }
+
+            .tm-hero .hero-main-copy {
+                font-size: 5rem;
+            }
+
+            .tm-hero .hero-sub-copy {
+                font-size: 1.8rem;
+            }
+
+            .tm-section {
+                padding: 100px 40px;
+            }
+
+            .tm-section-title h2 {
+                font-size: 4rem;
+            }
+
+            .tm-section-title p {
+                font-size: 1.8rem;
+            }
+
+            .slogan-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .slogan-card p {
+                font-size: 2.2rem;
+            }
+
+            .impact-num {
+                font-size: 6rem;
+            }
+
+            .impact-txt h3 {
+                font-size: 2rem;
+            }
+
+            .impact-txt p {
+                font-size: 1.6rem;
+            }
+
+            .trust-stat .stat-num {
+                font-size: 4.4rem;
+            }
+
+            .trust-stat .stat-label {
+                font-size: 1.6rem;
+            }
+
+            .tm-final-cta h2 {
+                font-size: 3.6rem;
+            }
+
+            .tm-final-cta .cta-sub {
+                font-size: 1.8rem;
+            }
+
+            .cta-trust-chip {
+                font-size: 1.5rem;
+            }
+
+            .tm-final-cta .cta-main-btn {
+                font-size: 2.2rem;
+                padding: 24px 72px;
+            }
+        }
+
+        @media screen and (min-width: 1239px) {
+            .split-icon {
+                font-size: 9rem;
+            }
+
+            .split-title {
+                font-size: 4.2rem;
+            }
+
+            .split-content {
+                max-width: 480px;
+            }
+
+            .slogan-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="wrapper" class="ver-main">
+
+        <!-- 상단 헤더 { -->
+        <header id="header">
+            <h1><a href="./index.html"><span class="skip">이지램스</span></a></h1>
+
+            <nav id="gnb" class="gnb">
+                <ul class="nopm swiper-wrapper gnb-1ul">
+                    <li class="swiper-slide gnb-1li"><a href="./index.html#mainWhy" class="gnb-1a">Why ezREMS</a></li>
+                    <li class="swiper-slide gnb-1li"><a href="./index.html#mainService" class="gnb-1a">SERVICE</a></li>
+                    <li class="swiper-slide gnb-1li"><a href="./index.html#mainPreview" class="gnb-1a">주요 화면</a></li>
+                    <li class="swiper-slide gnb-1li"><a href="./index.html#mainPartner" class="gnb-1a">고객·파트너</a></li>
+                    <li class="swiper-slide gnb-1li"><a href="./index.html#mainLatest" class="gnb-1a">뉴스·소식</a></li>
+                    <li class="swiper-slide gnb-1li"><a href="./index.html#mainContact" class="gnb-1a">CONTACT</a></li>
+                </ul>
+                <script>
+                    var swiper = new Swiper(".gnb", {
+                        slidesPerView: 'auto',
+                        spaceBetween: 0,
+                        observer: true,
+                        observeParents: true,
+                    });
+                </script>
+            </nav>
+
+            <div class="side-mnu">
+                <a href="https://basic.ezrems.com/" target="_blank" class="pms-btn">간편형</a>
+                <a href="https://pms.ezrems.com/" target="_blank" class="pms-btn">기업형</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOO18akLULTgK-XD6x8gj6WgpFNXiW2z_m3AC2mVgXUVUDGA/viewform"
+                    target="_blank" class="counsel-btn">문의하기</a>
+            </div>
+        </header>
+        <!-- } 상단 헤더 -->
+
+        <main id="mainContainer">
+
+            <!-- ===== 히어로 섹션 ===== -->
+            <section class="tm-hero">
+                <div class="respon">
+                    <p class="hero-badge" data-aos="fade-down">
+                        <span class="badge-pulse"></span>
+                        Prop-FinTech Platform &nbsp;|&nbsp; PMS ERP &nbsp;|&nbsp; ezREMS™
+                    </p>
+                    <h2 class="hero-main-copy" data-aos="fade-up" data-aos-delay="100">
+                        수익형 부동산,<br />이제는 소유가 아닌<br /><span style="color: #ffd166;">운영</span>이 핵심이다
+                    </h2>
+                    <p class="hero-sub-copy" data-aos="fade-up" data-aos-delay="200">
+                        엑셀과 수기에 의존하던 과거를 벗어나십시오.<br />
+                        데이터와 AI로 자산의 가치를 극대화하는 지능형 프롭-핀테크(Prop-FinTech) 플랫폼,
+                        이지램스(ezREMS)가 부동산 자산관리의 완벽한 디지털 전환(DX)을 선도합니다.
+                    </p>
+                    <div class="hero-btns" data-aos="fade-up" data-aos-delay="300">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOO18akLULTgK-XD6x8gj6WgpFNXiW2z_m3AC2mVgXUVUDGA/viewform"
+                            target="_blank" class="btn-primary-red btn-hero-single">
+                            <i class="fal fa-paper-plane"></i>도입 문의하기
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- } 히어로 섹션 -->
+
+            <!-- ===== Split 페르소나 선택 섹션 ===== -->
+            <section class="tm-split" id="targetSplit">
+                <!--
+                <div class="tm-split-divider"></div>
+                -->
+                <!-- 좌: 리츠사 AMC -->
+                <div class="tm-split-panel panel-amc selected" data-target="tab-amc">
+                    <div class="split-content">
+                        <i class="fal fa-building split-icon"></i>
+                        <p class="split-title">리츠사 · AMC</p>
+                        <p class="split-sub">"결산 · 전표처리 · MR보고서<br />어려우신가요?"</p>
+                        <a href="https://pms.ezrems.com" target="_blank" class="split-btn">
+                            내 솔루션 보기 &nbsp;→
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 중앙: 자산관리사 PM -->
+                <div class="tm-split-panel panel-pm" data-target="tab-pm">
+                    <div class="split-content">
+                        <i class="fal fa-briefcase split-icon"></i>
+                        <p class="split-title">자산관리사 · PM</p>
+                        <p class="split-sub">"매달 엑셀 수백 행,<br />반복하시나요?"</p>
+                        <a href="https://pms.ezrems.com" target="_blank" class="split-btn">
+                            내 솔루션 보기 &nbsp;→
+                        </a>
+                    </div>
+                </div>
+                <!-- } 자산관리사 PM -->
+
+                <!-- 우: 시설관리 FM -->
+                <div class="tm-split-panel panel-fm" data-target="tab-fm">
+                    <div class="split-content">
+                        <i class="fal fa-tools split-icon"></i>
+                        <p class="split-title">시설관리 · FM</p>
+                        <p class="split-sub">"안전관리, 시설 점검과 민원<br />여전히 수기로 관리하시나요?"</p>
+                        <a href="https://www.easysafe.co.kr" target="_blank" class="split-btn">
+                            내 솔루션 보기 &nbsp;→
+                        </a>
+                    </div>
+                </div>
+                <!-- } 시설관리 FM -->
+            </section>
+            <!-- } Split 페르소나 선택 섹션 -->
+
+
+            <!-- ===== 건물주 AMC 컨텐츠 ===== -->
+            <div class="tm-tab-content active" id="tab-amc">
+
+                <!-- AMC 슬로건 -->
+                <section class="tm-section">
+                    <div class="respon">
+                        <div class="tm-section-title" data-aos="fade-up">
+                            <span class="pre-label red">건물주 · 리츠사 · AMC</span>
+                            <h2>돈을 벌어주는 솔루션</h2>
+                            <p>감정 말고 시스템으로. 자산의 가치를 극대화하는 3가지 원칙</p>
+                        </div>
+
+                        <div class="slogan-grid">
+                            <div class="slogan-card" data-aos="fade-up" data-aos-delay="0">
+                                <span class="card-num">01</span>
+                                <p>"결산을 제때 못하시나요? 회계 전표 입력이 힘드신가요?<br />시스템이 <em class="kw">원클릭</em>으로 <em
+                                        class="kw">결산</em>과 <em class="kw">전표처리</em>를 도와드립니다."</p>
+                            </div>
+                            <div class="slogan-card" data-aos="fade-up" data-aos-delay="100">
+                                <span class="card-num">02</span>
+                                <p>"<em class="kw">공실</em>을 하루라도 줄이면, <em class="kw">수익</em>은 늘어납니다."</p>
+                                <p>"단순 관리는 <em class="kw">지출</em>이지만, 체계적인 관리는 <em class="kw">수익</em>입니다."</p>
+                            </div>
+                            <div class="slogan-card" data-aos="fade-up" data-aos-delay="200">
+                                <span class="card-num">03</span>
+                                <p>"받아야 할 <em class="kw">연체료</em>, 미안해서 못 받으셨나요?<br /><em class="kw">악역</em>은 이지램스가
+                                    하겠습니다. 대표님은 <em class="kw">품격</em>만 유지하세요."</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- AMC 페인포인트 -->
+                <section class="tm-section bg-light-gray">
+                    <div class="respon">
+                        <div class="tm-section-title" data-aos="fade-up">
+                            <span class="pre-label red">핵심 가치</span>
+                            <h2>건물주가 경험하는 3가지 변화</h2>
+                        </div>
+
+                        <div class="impact-grid">
+                            <div class="impact-card accent-sky" data-aos="zoom-in" data-aos-delay="100">
+                                <div class="impact-stat">
+                                    <span class="impact-num" data-count="9" data-suffix="%">9%</span>
+                                    <span class="impact-label">자산가치 상승</span>
+                                </div>
+                                <div class="impact-divider"></div>
+                                <div class="impact-body">
+                                    <div class="impact-icon sky"><i class="fal fa-chart-line"></i></div>
+                                    <div class="impact-txt">
+                                        <h3>자산 가치 상승 (Value-Up)</h3>
+                                        <p>공실률, 임대수익, 관리비 흐름을 실시간 데이터로 시각화. 언제, 어떤 결정을 내려야 수익이 극대화되는지 명확하게 보여드립니다.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="impact-card accent-red" data-aos="zoom-in" data-aos-delay="0">
+                                <div class="impact-stat">
+                                    <span class="impact-num" data-count="0" data-suffix="건">0건</span>
+                                    <span class="impact-label">누락 건수 · 연체료 자동 회수율</span>
+                                </div>
+                                <div class="impact-divider"></div>
+                                <div class="impact-body">
+                                    <div class="impact-icon red"><i class="fal fa-shield-alt"></i></div>
+                                    <div class="impact-txt">
+                                        <h3>미수금 누수 차단</h3>
+                                        <p>연체 자동 감지, 연체료 자동 산정, 법적 절차 연동. 임차인에게 직접 말하지 않아도 시스템이 철저하게 채권을 관리합니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="impact-card accent-blue" data-aos="zoom-in" data-aos-delay="200">
+                                <div class="impact-stat">
+                                    <span class="impact-num" data-count-static="실시간">실시간</span>
+                                    <span class="impact-label">대시보드 현황 파악</span>
+                                </div>
+                                <div class="impact-divider"></div>
+                                <div class="impact-body">
+                                    <div class="impact-icon blue"><i class="fal fa-analytics"></i></div>
+                                    <div class="impact-txt">
+                                        <h3>데이터 기반 운영</h3>
+                                        <p>감과 경험에 의존하던 운영을 데이터 기반 의사결정으로 전환. AI가 분석한 인사이트로 선제적 자산관리 전략을 수립합니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+            <!-- } 건물주 AMC 컨텐츠 -->
+
+
+            <!-- ===== 자산관리사 PM 컨텐츠 ===== -->
+            <div class="tm-tab-content" id="tab-pm">
+
+                <!-- PM 슬로건 -->
+                <section class="tm-section">
+                    <div class="respon">
+                        <div class="tm-section-title" data-aos="fade-up">
+                            <span class="pre-label blue">자산관리사 · PM</span>
+                            <h2>스마트한 업무 혁신</h2>
+                            <p>야근과 실수의 반복을 끊어내는 3가지 선언</p>
+                        </div>
+
+                        <div class="slogan-grid">
+                            <div class="slogan-card blue-accent" data-aos="fade-up" data-aos-delay="0">
+                                <span class="card-num">01</span>
+                                <p>"<em class="kw">엑셀</em>은 밤새 일하지만,<br /><em class="kw">이지램스</em>는 당신을 정시 <em
+                                        class="kw">퇴근</em>시킵니다."</p>
+                            </div>
+                            <div class="slogan-card blue-accent" data-aos="fade-up" data-aos-delay="100">
+                                <span class="card-num">02</span>
+                                <p>"임차인의 <em class="kw">도장</em>, 서명을 기다리지 마세요.<br />비대면 서비스로 <em class="kw">클릭 한 번</em>에
+                                    업무는 이미 끝났습니다."</p>
+                            </div>
+                            <div class="slogan-card blue-accent" data-aos="fade-up" data-aos-delay="200">
+                                <span class="card-num">03</span>
+                                <p>"사람은 <em class="kw">실수</em>해도 시스템은 실수하지 않습니다.<br /><em class="kw">무결점</em> 관리를
+                                    시작하세요."</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- PM 페인포인트 -->
+                <section class="tm-section bg-light-gray">
+                    <div class="respon">
+                        <div class="tm-section-title" data-aos="fade-up">
+                            <span class="pre-label blue">핵심 가치</span>
+                            <h2>자산관리사가 경험하는 3가지 변화</h2>
+                        </div>
+
+                        <div class="impact-grid">
+                            <div class="impact-card accent-red" data-aos="zoom-in" data-aos-delay="0">
+                                <div class="impact-stat">
+                                    <span class="impact-num" data-count="100" data-suffix="%">100%</span>
+                                    <span class="impact-label">수납 자동 처리율</span>
+                                </div>
+                                <div class="impact-divider"></div>
+                                <div class="impact-body">
+                                    <div class="impact-icon red"><i class="fal fa-file-excel"></i></div>
+                                    <div class="impact-txt">
+                                        <h3>엑셀 지옥 탈출</h3>
+                                        <p>수납, 청구, 계약, 세금계산서 발행까지 모든 반복 업무를 자동화. 月 수십 시간의 단순 작업을 이지램스가 대신합니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="impact-card accent-sky" data-aos="zoom-in" data-aos-delay="100">
+                                <div class="impact-stat">
+                                    <span class="impact-num" data-count="3" data-suffix="배">3배</span>
+                                    <span class="impact-label">업무효율 · 도장 없는 전자계약</span>
+                                </div>
+                                <div class="impact-divider"></div>
+                                <div class="impact-body">
+                                    <div class="impact-icon sky"><i class="fal fa-file-signature"></i></div>
+                                    <div class="impact-txt">
+                                        <h3>언택트 행정</h3>
+                                        <p>국토부 전자계약 연동으로 임차인이 어디서든 계약 체결 가능. 서류 인쇄, 방문, 날인 없이 계약 전 과정을 비대면으로 처리합니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="impact-card accent-blue" data-aos="zoom-in" data-aos-delay="200">
+                                <div class="impact-stat">
+                                    <span class="impact-num" data-count-static="1클릭">1클릭</span>
+                                    <span class="impact-label">월간 보고서 완성</span>
+                                </div>
+                                <div class="impact-divider"></div>
+                                <div class="impact-body">
+                                    <div class="impact-icon blue"><i class="fal fa-file-chart-pie"></i></div>
+                                    <div class="impact-txt">
+                                        <h3>원클릭 리포팅</h3>
+                                        <p>오너 보고서, 월별 정산 리포트, 수납 현황 등 모든 보고서를 클릭 한 번으로 자동 생성. 보고 준비에 쓰던 시간을 가치 있는 업무에
+                                            집중합니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+            <!-- } 자산관리사 PM 컨텐츠 -->
+
+
+            <!-- ===== 시설관리 FM 컨텐츠 ===== -->
+            <div class="tm-tab-content" id="tab-fm">
+
+                <!-- FM 슬로건 -->
+                <section class="tm-section">
+                    <div class="respon">
+                        <div class="tm-section-title" data-aos="fade-up">
+                            <span class="pre-label teal">시설관리 · FM</span>
+                            <h2>시설관리 담당자가 경험하는 3가지 변화</h2>
+                            <p>수기와 전화에 의존하던 시설관리를 디지털로 전환하는 3가지 선언</p>
+                        </div>
+
+                        <div class="slogan-grid">
+                            <div class="slogan-card teal-accent" data-aos="fade-up" data-aos-delay="0">
+                                <span class="card-num">01</span>
+                                <p>"<em class="kw"> 중대재해처벌법</em> · <em class="kw">산업안전보건법</em><br />모바일 업무처리로 100%
+                                    대비하세요."</p>
+                            </div>
+                            <div class="slogan-card teal-accent" data-aos="fade-up" data-aos-delay="0">
+                                <span class="card-num">01</span>
+                                <p>"<em class="kw">종이 점검표</em>는 이제 그만.<br /><em class="kw">모바일</em>로 현장을 기록하세요."</p>
+                            </div>
+                            <div class="slogan-card teal-accent" data-aos="fade-up" data-aos-delay="100">
+                                <span class="card-num">02</span>
+                                <p>"<em class="kw">민원 전화</em> 놓쳐서 곤란했던 경험,<br />다시는 <em class="kw">없게</em> 해드립니다."</p>
+                            </div>
+                            <!--
+                            <div class="slogan-card teal-accent" data-aos="fade-up" data-aos-delay="200">
+                                <span class="card-num">03</span>
+                                <p>"수백 개의 <em class="kw">설비</em>, 한 화면에서<br /><em class="kw">이력</em>을 관리하세요."</p>
+                            </div>
+                            -->
+                        </div>
+                    </div>
+                </section>
+
+                <!-- FM 페인포인트 -->
+                <section class="tm-section bg-light-gray">
+                    <div class="respon">
+                        <div class="tm-section-title" data-aos="fade-up">
+                            <span class="pre-label teal">핵심 가치</span>
+                            <h2>시설관리 담당자가 경험하는 3가지 변화</h2>
+                        </div>
+
+                        <div class="impact-grid">
+                            <div class="impact-card accent-teal" data-aos="zoom-in" data-aos-delay="200">
+                                <div class="impact-stat">
+                                    <span class="impact-num teal" data-count="100" data-suffix="%">100%</span>
+                                    <span class="impact-label">중대재해처벌법 · 산업안전보건법 준수</span>
+                                </div>
+                                <div class="impact-divider"></div>
+                                <div class="impact-body">
+                                    <div class="impact-icon teal"><i class="fal fa-shield"></i></div>
+                                    <div class="impact-txt">
+                                        <h3>안전보건 통합 관리</h3>
+                                        <p>시니어, 외국인 근로자들도 쉽게 모바일 앱으로 안전보건 업무를 처리합니다.</p>
+                                        <p>TBM, 위험성평가, 안전교육, 작업관리등 스마트폰 하나로 관리됩니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="impact-card accent-teal" data-aos="zoom-in" data-aos-delay="0">
+                                <div class="impact-stat">
+                                    <span class="impact-num teal" data-count="3" data-suffix="배">3배</span>
+                                    <span class="impact-label">업무 효율</span>
+                                </div>
+                                <div class="impact-divider"></div>
+                                <div class="impact-body">
+                                    <div class="impact-icon teal"><i class="fal fa-clipboard-check"></i></div>
+                                    <div class="impact-txt">
+                                        <h3>모바일 점검 관리</h3>
+                                        <p>종이 점검표와 수기 기록을 스마트폰 하나로 대체. 현장 사진, 체크리스트, 서명까지 모든 점검 이력을 디지털로 남깁니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="impact-card accent-teal" data-aos="zoom-in" data-aos-delay="100">
+                                <div class="impact-stat">
+                                    <span class="impact-num teal" data-count-static="0건">0건</span>
+                                    <span class="impact-label">누락 민원</span>
+                                </div>
+                                <div class="impact-divider"></div>
+                                <div class="impact-body">
+                                    <div class="impact-icon teal"><i class="fal fa-bell"></i></div>
+                                    <div class="impact-txt">
+                                        <h3>민원 자동 접수</h3>
+                                        <p>전화·문자로 들어오던 민원을 시스템이 자동 접수. 담당자 배정, 처리 현황, 완료 알림까지 민원 하나도 놓치지 않습니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--
+                            <div class="impact-card accent-teal" data-aos="zoom-in" data-aos-delay="200">
+                                <div class="impact-stat">
+                                    <span class="impact-num teal" data-count-static="실시간">실시간</span>
+                                    <span class="impact-label">설비 현황 파악</span>
+                                </div>
+                                <div class="impact-divider"></div>
+                                <div class="impact-body">
+                                    <div class="impact-icon teal"><i class="fal fa-cogs"></i></div>
+                                    <div class="impact-txt">
+                                        <h3>설비 이력 통합 관리</h3>
+                                        <p>수백 개의 설비 정보, 점검 이력, 교체 주기를 한 화면에서 관리. 예방 정비로 갑작스러운 설비 고장을 사전에 차단합니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            -->
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+            <!-- } 시설관리 FM 컨텐츠 -->
+
+
+            <!-- ===== 핵심 기능 (공통) ===== -->
+            <section class="tm-section bg-dark">
+                <div class="respon">
+                    <div class="tm-section-title" data-aos="fade-up">
+                        <span class="pre-label white">CORE FEATURES</span>
+                        <h2 style="color:#fff;">이지램스가 제공하는<br />3가지 핵심 역량</h2>
+                        <p>모든 부동산 유형, 모든 업무 영역을 하나의 플랫폼으로</p>
+                    </div>
+
+                    <div class="feature-grid">
+                        <div class="feature-card" data-aos="fade-up" data-aos-delay="0">
+                            <div class="fc-icon"><i class="fal fa-cubes"></i></div>
+                            <h3>올인원 자산관리</h3>
+                            <p>단일 플랫폼으로 모든 공간 유형을 통합 관리합니다.</p>
+                            <ul>
+                                <li>임대주택 · 쉐어하우스 · 코리빙</li>
+                                <li>오피스 · 공유오피스 · 리테일</li>
+                                <li>시니어레지던스 · 창고 · 납골당</li>
+                                <li>기숙사 · 상가 · 쇼핑몰</li>
+                            </ul>
+                        </div>
+                        <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="fc-icon"><i class="fal fa-plug"></i></div>
+                            <h3>강력한 시스템 연동</h3>
+                            <p>외부 핵심 시스템과 완벽하게 연결됩니다.</p>
+                            <ul>
+                                <li>국토부 전자계약 시스템</li>
+                                <li>CMS(자동이체) 수납 자동화</li>
+                                <li>세금계산서 · 세무신고 연동</li>
+                                <li>ERP · 회계 시스템 연동</li>
+                            </ul>
+                        </div>
+                        <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="fc-icon"><i class="fal fa-mobile-alt"></i></div>
+                            <h3>이지램스 커넥트</h3>
+                            <p>임차인 전용 모바일 앱으로 서비스 만족도를 높입니다.</p>
+                            <ul>
+                                <li>임대료 · 관리비 조회 및 온라인 결제</li>
+                                <li>유지보수 · 민원 접수 및 처리 현황</li>
+                                <li>공지사항 · 커뮤니티 · 편의 서비스</li>
+                                <li>중개 서비스 · 공실 신청</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- } 핵심 기능 -->
+
+
+            <!-- ===== 신뢰 / 레퍼런스 (공통) ===== -->
+            <section class="tm-section" style="background:#f8f9fa;">
+                <div class="respon">
+                    <div class="tm-section-title" data-aos="fade-up">
+                        <span class="pre-label red">TRUST & REFERENCE</span>
+                        <h2>대한민국 대표 기업들이<br />선택한 이유가 있습니다</h2>
+                    </div>
+
+                    <!-- 수치 -->
+                    <div class="trust-stats">
+                        <div class="trust-stat" data-aos="fade-up" data-aos-delay="0">
+                            <div class="stat-num" data-count="210" data-suffix="+">210+</div>
+                            <div class="stat-label">기업 · 기관</div>
+                        </div>
+                        <div class="trust-stat" data-aos="fade-up" data-aos-delay="150">
+                            <div class="stat-num" data-count="51" data-suffix=",000+">51,000+</div>
+                            <div class="stat-label">관리 세대수</div>
+                        </div>
+                        <div class="trust-stat" data-aos="fade-up" data-aos-delay="300">
+                            <div class="stat-num" data-count="650" data-suffix="억+">650억+</div>
+                            <div class="stat-label">월 청구 규모</div>
+                        </div>
+                    </div>
+
+                    <!-- 인증 배지 -->
+                    <div class="trust-badge-area" data-aos="fade-up" data-aos-delay="150">
+                        <div class="trust-badge">
+                            <span class="badge-icon"><i class="fal fa-certificate"></i></span>
+                            <span>CSAP 표준등급 획득</span>
+                        </div>
+                        <div class="trust-badge">
+                            <span class="badge-icon"><i class="fal fa-shield-check"></i></span>
+                            <span>클라우드 확인제 인증</span>
+                        </div>
+                        <div class="trust-badge">
+                            <span class="badge-icon"><i class="fal fa-award"></i></span>
+                            <span>클라우드 품질 성능 인증</span>
+                        </div>
+                        <div class="trust-badge">
+                            <span class="badge-icon"><i class="fal fa-history"></i></span>
+                            <span>20+ 년 부동산 관리 노하우</span>
+                        </div>
+                    </div>
+
+                    <!-- 고객사 로고 칩 -->
+
+                    <div style="text-align:center; margin-bottom:20px;" data-aos="fade-up" data-aos-delay="200">
+                        <span class="pre-label teal">주요 고객사</span>
+                    </div>
+
+                    <div class="trust-logos" data-aos="fade-up" data-aos-delay="250">
+                        <span class="trust-logo-chip">KT에스테이트</span>
+                        <span class="trust-logo-chip">신세계프라퍼티</span>
+                        <span class="trust-logo-chip">롯데건설</span>
+                        <span class="trust-logo-chip">롯데물산</span>
+                        <span class="trust-logo-chip">롯데AMC</span>
+                        <span class="trust-logo-chip">LG CNS</span>
+                        <span class="trust-logo-chip">삼성물산</span>
+                        <span class="trust-logo-chip">GS리테일</span>
+                        <span class="trust-logo-chip">KT리빙</span>
+                        <span class="trust-logo-chip">롯데이노베이트</span>
+                        <span class="trust-logo-chip">롯데호텔 시니어레지던스</span>
+                        <span class="trust-logo-chip">그 외 200+ 기업</span>
+                    </div>
+                </div>
+            </section>
+            <!-- } 신뢰 / 레퍼런스 -->
+
+
+            <!-- ===== 하단 CTA (공통) ===== -->
+            <section class="tm-final-cta">
+                <!-- 배경 글로우 오브 -->
+                <div class="cta-glow-orb orb-blue"></div>
+                <div class="cta-glow-orb orb-red"></div>
+
+                <div class="cta-inner respon">
+
+                    <!-- 신뢰 지표 뱃지 -->
+                    <div class="cta-trust-bar" data-aos="fade-up">
+                        <span class="cta-trust-chip">
+                            <i class="fal fa-building"></i>
+                            KT에스테이트·롯데건설 등 <strong>200+ 고객사</strong> 신뢰
+                        </span>
+                        <span class="cta-trust-chip">
+                            <span class="chip-stars">★★★★★</span>
+                            전국 <strong>5만 호</strong> 관리 중
+                        </span>
+                        <span class="cta-trust-chip chip-csap">
+                            <i class="fal fa-shield-check"></i>
+                            CSAP 클라우드 보안 인증
+                        </span>
+                    </div>
+
+                    <!-- 헤드라인 -->
+                    <p class="cta-headline-kicker" data-aos="fade-up" data-aos-delay="50">지금 바로 시작하세요</p>
+                    <h2 data-aos="fade-up" data-aos-delay="100">
+                        이제 임대 관리는<br />'사람'이 아닌 <em>'플랫폼'</em>의 영역입니다.
+                    </h2>
+                    <p class="cta-sub" data-aos="fade-up" data-aos-delay="150">
+                        이지램스 전문 컨설턴트가 귀사의 상황에 맞는 최적 도입 플랜을 안내해 드립니다.
+                    </p>
+
+                    <!-- CTA 버튼 -->
+                    <div data-aos="fade-up" data-aos-delay="200">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOO18akLULTgK-XD6x8gj6WgpFNXiW2z_m3AC2mVgXUVUDGA/viewform"
+                            target="_blank" class="cta-main-btn">
+                            <i class="fal fa-paper-plane"></i>
+                            도입 문의하기
+                        </a>
+                        <p class="cta-reassure">
+                            <i class="fal fa-clock"></i>
+                            전담 컨설턴트가 <strong>48시간 내</strong> 연락드립니다
+                        </p>
+                    </div>
+
+                    <!-- 연락처 -->
+                    <div class="contact-info" data-aos="fade-up" data-aos-delay="300">
+                        <a href="tel:07088008882">
+                            <i class="fal fa-phone-alt"></i>
+                            070-8800-8882
+                        </a>
+                        <a href="mailto:sales@zeons.co.kr">
+                            <i class="fal fa-envelope"></i>
+                            sales@zeons.co.kr
+                        </a>
+                    </div>
+
+                </div>
+            </section>
+            <!-- } 하단 CTA -->
+
+        </main>
+
+        <!-- 하단 푸터 { -->
+        <footer id="footer" class="smooth">
+            <div class="respon">
+                <h1>
+                    <a href="#;"><img src="./resources/images/common/logo_zeons_w.png" alt="제온스" /></a>
+                    <a href="#;"><img src="./resources/images/common/logo_rw.png" alt="이지램스" /></a>
+                </h1>
+                <div class="foot-mnu">
+                    <ul class="nopm floats">
+                        <li><a href="./info_1.html">개인정보처리방침</a></li>
+                        <li><a href="./info_2.html">이용약관</a></li>
+                        <li><a href="./info_3.html">이메일주소무단수집거부</a></li>
+                    </ul>
+                </div>
+                <div class="foot-info">
+                    <ul class="nopm floats">
+                        <li>대표이사 : 김인섭</li>
+                        <li>TEL : 070-8811-8881</li>
+                        <li>FAX : 070-4850-8848</li>
+                        <li>EMAIL : support@zeons.co.kr</li>
+                        <li>사업자등록번호 : 220-88-84510</li>
+                        <li>통신판매업신고번호 : 2016-서울강남-02252 <a href="https://ftc.go.kr/bizCommPop.do?wrkr_no=2208884510"
+                                target="_blank">[사업자정보확인]</a></li>
+                    </ul>
+                    <ul class="nopm">
+                        <li>본사 : 서울시 강남구 선릉로 93길 40 (역삼동, 스파크플러스 선릉3호점)</li>
+                    </ul>
+                    <p class="copyright">COPYRIGHT © 2018 ZEONS, Inc. All rights reserved.</p>
+                </div>
+                <div class="foot-certification">
+                    <div class="certification">
+                        <figure><img src="./resources/images/footer_mark_nipa.png" alt="클라우드 컴퓨팅 서비스 품질 성능 인증" />
+                        </figure>
+                        <div class="txt">클라우드 컴퓨팅 서비스 <br />품질 성능 인증</div>
+                    </div>
+                    <div class="certification">
+                        <figure><img src="./resources/images/footer_mark_kaci.png" alt="클라우드 확인제 인증" /></figure>
+                        <div class="txt">클라우드 확인제 인증</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- } 하단 푸터 -->
+
+        <!-- 플로팅 버튼 { -->
+        <ul class="floating_area">
+            <li>
+                <a href="https://pf.kakao.com/_yRjWj/chat" target="_blank" style="background:#FAE100;color:#333;">
+                    <span class="txt">카카오 상담</span>
+                    <span class="float-icon"><span class="iconImg"></span></span>
+                </a>
+            </li>
+        </ul>
+        <a href="javascript:;" id="backToTop" class="upScrollBtn" style="display:none;">
+            <i class="fal fa-arrow-up"></i>
+        </a>
+        <!-- } 플로팅 버튼 -->
+
+    </div><!-- #wrapper -->
+
+    <script>
+        AOS.init({
+            once: true,
+            duration: 900,
+            offset: 50
+        });
+
+        // Split 페르소나 패널 전환
+        (function () {
+            var panels = document.querySelectorAll('.tm-split-panel');
+            var tabContents = document.querySelectorAll('.tm-tab-content');
+
+            panels.forEach(function (panel) {
+                panel.addEventListener('click', function () {
+                    var target = this.getAttribute('data-target');
+                    var targetEl = document.getElementById(target);
+                    if (!targetEl) return;
+
+                    // 이미 선택된 패널이면 해당 콘텐츠로 스크롤만
+                    if (this.classList.contains('selected')) {
+                        targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        return;
+                    }
+
+                    // 패널 selected 상태 전환
+                    panels.forEach(function (p) { p.classList.remove('selected'); });
+                    this.classList.add('selected');
+
+                    // 콘텐츠 show/hide — reflow 트릭으로 fade-in 재실행
+                    tabContents.forEach(function (c) { c.classList.remove('active'); });
+                    void targetEl.offsetWidth;
+                    targetEl.classList.add('active');
+
+                    // AOS 재트리거
+                    AOS.refresh();
+
+                    // 해당 콘텐츠 섹션으로 부드럽게 스크롤
+                    targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                });
+            });
+        })();
+
+        // 위로 스크롤 버튼
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 400) {
+                $('#backToTop').fadeIn().css('display', 'flex');
+            } else {
+                $('#backToTop').fadeOut();
+            }
+        });
+
+        $('#backToTop').click(function () {
+            $('html, body').animate({ scrollTop: 0 }, 500, 'swing');
+        });
+
+        // 숫자 카운트업 (IntersectionObserver)
+        (function () {
+            var countEls = document.querySelectorAll('.impact-num[data-count], .stat-num[data-count]');
+            var staticEls = document.querySelectorAll('.impact-num[data-count-static], .stat-num[data-count-static]');
+
+            // 정적 텍스트: 초기 opacity 0 → 진입 시 fade-in
+            staticEls.forEach(function (el) {
+                el.style.opacity = '0';
+                el.style.transition = 'opacity 0.7s ease';
+            });
+
+            function animateCount(el) {
+                var target = parseInt(el.getAttribute('data-count'), 10);
+                var suffix = el.getAttribute('data-suffix') || '';
+                var duration = 1600;
+                var start = null;
+
+                function easeOutCubic(t) { return 1 - Math.pow(1 - t, 3); }
+
+                function step(ts) {
+                    if (!start) start = ts;
+                    var progress = Math.min((ts - start) / duration, 1);
+                    var current = Math.floor(easeOutCubic(progress) * target);
+                    el.textContent = current + suffix;
+                    if (progress < 1) {
+                        requestAnimationFrame(step);
+                    } else {
+                        el.textContent = target + suffix;
+                    }
+                }
+                requestAnimationFrame(step);
+            }
+
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (!entry.isIntersecting) return;
+                    var el = entry.target;
+                    if (el.hasAttribute('data-count')) {
+                        animateCount(el);
+                    } else {
+                        el.style.opacity = '1';
+                    }
+                    observer.unobserve(el);
+                });
+            }, { threshold: 0.5 });
+
+            countEls.forEach(function (el) { observer.observe(el); });
+            staticEls.forEach(function (el) { observer.observe(el); });
+        })();
+    </script>
+
+</body>
+
+</html>

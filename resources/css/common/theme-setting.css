@@ -1,0 +1,115 @@
+@charset "utf-8";
+/* 아이랩스 전현진 팀장 */
+
+@import url('https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy.css');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+/* 폰트 세팅 */
+:root {
+    --font-basic: 'Paperlogy', 'Pretendard', sans-serif;
+    --font-point: 'Paperlogy', 'GmarketSansMedium', sans-serif;
+    --font-point-bold: 'Paperlogy', 'GmarketSansBold', sans-serif;
+    --font-point-light: 'Paperlogy', 'GmarketSansLight', sans-serif;
+}
+
+
+/* 기본 컬러 */
+html {
+    --logo-img: url("../images/common/logo.png");
+    --logo-img_w: url("../images/common/logo_w.png");
+
+    --input-placeholder-color: #b5b5b5;
+    --color-background-rgb: 255,255,255;
+    --black-white-rgb: 0,0,0;
+
+    --color-basic: #000;
+    --color-basic-rgb: 0,0,0;
+    --color-basic-reverse: #fff;
+    --color-point: #EC2527;
+    --color-light: #73777C;
+    --color-light-deep: #999;
+
+    --color-white: #fff;
+    --color-white-rgb: 255,255,255;
+    --color-black: #000;
+    --color-black-rgb: 0,0,0;
+    --color-gray: #666;
+    --color-gray-rgb: 102,102,102;
+    --color-gray-deep: #999;
+    --color-gray-deep-rgb: 153,153,153;
+
+    --color-red: #EC2527;
+    --color-red-rgb: 236,37,39;
+    --color-blue: #0F649F;
+    --color-blue-rgb: 15,100,159;
+    --color-sky: #44c9e3;
+    --color-sky-rgb: 73,160,214;
+
+    --border-line: #dcdcdc;
+
+    --bg-basic: #fff;
+    --bg-footer: #1D2638;
+    --bg-white: #fff;
+    --bg-gray-light: #f8f8f8;
+    --bg-red: #EC2527;
+    --bg-red-rgb: 236,37,39;
+    --bg-blue: #0F649F;
+    --bg-blue-rgb: 15,100,159;
+    --bg-sky: #49A0D6;
+    --bg-sky-rgb: 73,160,214;
+}
+
+
+/* 다크 모드 */
+html.theme-dark {
+}

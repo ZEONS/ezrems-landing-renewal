@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset 
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+    xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <url>
+    <loc>https://www.ezrems.com/index.html</loc>
+    <image:image>
+      <image:loc>https://www.ezrems.com/images/ezrems-고지서1.png</image:loc>
+      <image:title>이지램스 고지서 1</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ezrems.com/images/ezrems-고지서2.png</image:loc>
+      <image:title>이지램스 고지서 2</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ezrems.com/images/ezrems-고지서3.png</image:loc>
+      <image:title>이지램스 고지서 3</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ezrems.com/images/ezrems-고지서4.png</image:loc>
+      <image:title>이지램스 고지서 4</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ezrems.com/images/ezrems-bill-1.png</image:loc>
+      <image:title>이지램스 고지서 1페이지</image:title>
+      <image:caption>이지램스 고지서 1페이지 샘플 이미지</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ezrems.com/images/ezrems-bill-2.png</image:loc>
+      <image:title>이지램스 고지서 2페이지</image:title>
+      <image:caption>이지램스 고지서 2페이지 샘플 이미지</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ezrems.com/images/ezrems-bill-3.png</image:loc>
+      <image:title>이지램스 고지서 3페이지</image:title>
+      <image:caption>이지램스 고지서 3페이지 샘플 이미지</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ezrems.com/images/ezrems-bill-4.png</image:loc>
+      <image:title>이지램스 고지서 4페이지</image:title>
+      <image:caption>이지램스 고지서 4페이지 샘플 이미지</image:caption>
+    </image:image>
+  </url>
+
+</urlset>

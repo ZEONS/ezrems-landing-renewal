@@ -1,0 +1,15 @@
+# Backup & Local AI / IDE files
+.backup/
+.claude/
+.gemini/
+.idea/
+.vscode/
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Temporary files
+*.tmp
+*.log
