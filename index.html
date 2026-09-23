@@ -88,7 +88,7 @@
             <div class="modal-dialog modal-lg">
                 <div class="modal-content" style="background:#111C30; border:1px solid rgba(255,255,255,0.2); border-radius:16px;">
                     <div class="modal-header" style="border-bottom:1px solid rgba(255,255,255,0.1); padding:14px 20px;">
-                        <h5 class="modal-title" style="color:#fff; font-size:1rem; font-weight:700;">이지램스 공지사항</h5>
+                        <h5 class="modal-title" style="color:#fff; font-size:1rem; font-weight:700;" data-i18n="modal_notice_title">이지램스 공지사항</h5>
                         <button type="button" id="myModal4_close" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
                     </div>
                     <div class="modal-body" style="padding:20px; text-align:center;">
@@ -97,7 +97,7 @@
                         </a>
                     </div>
                     <div class="modal-footer" style="border-top:1px solid rgba(255,255,255,0.1); padding:10px 20px;">
-                        <button type="button" id="myModal4_close_1day" class="btn btn-sm btn-link" style="color:#94A3B8; text-decoration:none; font-size:12px;">오늘 하루 열지 않기</button>
+                        <button type="button" id="myModal4_close_1day" class="btn btn-sm btn-link" style="color:#94A3B8; text-decoration:none; font-size:12px;" data-i18n="modal_notice_today">오늘 하루 열지 않기</button>
                     </div>
                 </div>
             </div>
@@ -231,34 +231,34 @@
                         <div class="dashboard-screen">
                             <!-- Sidebar -->
                             <div class="dash-sidebar">
-                                <div class="dash-menu-item active"><i class="fal fa-chart-pie"></i> 통합 관제 대시보드</div>
-                                <div class="dash-menu-item"><i class="fal fa-building"></i> 포트폴리오 자산관리</div>
-                                <div class="dash-menu-item"><i class="fal fa-file-invoice-dollar"></i> 가상계좌·CMS·PG 수납 자동화</div>
-                                <div class="dash-menu-item"><i class="fal fa-file-signature"></i> 전자계약·전자문서 지원</div>
-                                <div class="dash-menu-item"><i class="fal fa-calculator"></i> 세금계산서 일괄발행</div>
-                                <div class="dash-menu-item"><i class="fal fa-plug"></i> API 제공 (공실,계약,청구 등)</div>
-                                <div class="dash-menu-item"><i class="fal fa-users-cog"></i> 다중 권한 보안감사</div>
+                                <div class="dash-menu-item active"><i class="fal fa-chart-pie"></i> <span data-i18n="dash_nav_dashboard">통합 관제 대시보드</span></div>
+                                <div class="dash-menu-item"><i class="fal fa-building"></i> <span data-i18n="dash_nav_portfolio">포트폴리오 자산관리</span></div>
+                                <div class="dash-menu-item"><i class="fal fa-file-invoice-dollar"></i> <span data-i18n="dash_nav_billing">가상계좌·CMS·PG 수납 자동화</span></div>
+                                <div class="dash-menu-item"><i class="fal fa-file-signature"></i> <span data-i18n="dash_nav_econtract">전자계약·전자문서 지원</span></div>
+                                <div class="dash-menu-item"><i class="fal fa-calculator"></i> <span data-i18n="dash_nav_tax">세금계산서 일괄발행</span></div>
+                                <div class="dash-menu-item"><i class="fal fa-plug"></i> <span data-i18n="dash_nav_api">API 제공 (공실,계약,청구 등)</span></div>
+                                <div class="dash-menu-item"><i class="fal fa-users-cog"></i> <span data-i18n="dash_nav_security">다중 권한 보안감사</span></div>
                             </div>
 
                             <!-- Center KPI & Chart -->
                             <div class="dash-main-center">
                                 <div class="kpi-row">
                                     <div class="kpi-card">
-                                        <div class="kpi-title">월간 총 청구/수납 규모</div>
+                                        <div class="kpi-title" data-i18n="dash_kpi_billing_title">월간 총 청구/수납 규모</div>
                                         <div class="kpi-value">₩ 65,420,800,000</div>
-                                        <div class="kpi-trend"><i class="fal fa-arrow-up"></i> 전월 대비 +14.8% 정상 수납</div>
+                                        <div class="kpi-trend" data-i18n="dash_kpi_billing_trend"><i class="fal fa-arrow-up"></i> 전월 대비 +14.8% 정상 수납</div>
                                     </div>
                                     <div class="kpi-card">
-                                        <div class="kpi-title">전국 관리 세대 및 호수</div>
-                                        <div class="kpi-value">51,280 <span style="font-size:1rem; font-weight:500;">세대</span></div>
-                                        <div class="kpi-trend"><i class="fal fa-check-circle"></i> 평균 공실률 2.1% (초안정)</div>
+                                        <div class="kpi-title" data-i18n="dash_kpi_units_title">전국 관리 세대 및 호수</div>
+                                        <div class="kpi-value">51,280 <span style="font-size:1rem; font-weight:500;" data-i18n="dash_kpi_units_unit">세대</span></div>
+                                        <div class="kpi-trend" data-i18n="dash_kpi_units_trend"><i class="fal fa-check-circle"></i> 평균 공실률 2.1% (초안정)</div>
                                     </div>
                                 </div>
 
                                 <div class="dash-chart-mock">
                                     <div class="chart-header">
-                                        <span>실시간 월별 수납 및 연체 회수 추이</span>
-                                        <span style="color:#0EA5E9; font-size:0.8rem;">● 정상 수납  ● 자동 회수</span>
+                                        <span data-i18n="dash_chart_title">실시간 월별 수납 및 연체 회수 추이</span>
+                                        <span style="color:#0EA5E9; font-size:0.8rem;" data-i18n="dash_chart_legend">● 정상 수납  ● 자동 회수</span>
                                     </div>
                                     <div class="chart-bars">
                                         <div class="bar-col" style="height: 45%;"></div>
@@ -280,9 +280,9 @@
                                 <div class="alert-widget">
                                     <div class="alert-widget-header">
                                         <i class="fal fa-exclamation-triangle"></i>
-                                        <span>이상 징후 및 연체 통제</span>
+                                        <span data-i18n="dash_alert_title">이상 징후 및 연체 통제</span>
                                     </div>
-                                    <div class="alert-widget-body" data-i18n="hero_stat_overdue">
+                                    <div class="alert-widget-body" data-i18n="dash_alert_desc">
                                         연체 자동 감지 및 회수 연동: 1건 발생 즉시 최고장 전자고지 발송 처리 완료 (회수율 98.4%)
                                     </div>
                                 </div>
@@ -290,9 +290,9 @@
                                 <div class="security-status-widget">
                                     <div class="security-status-widget-header">
                                         <i class="fal fa-shield-check"></i>
-                                        <span>CSAP 보안 상태: 무결</span>
+                                        <span data-i18n="dash_sec_title">CSAP 보안 상태: 무결</span>
                                     </div>
-                                    <div style="font-size:0.8rem; color:#94A3B8;">
+                                    <div style="font-size:0.8rem; color:#94A3B8;" data-i18n="dash_sec_desc">
                                         이중화 클라우드 서버 무중단 가동 99.99% 달성. 금융 전산 암호화 전송 프로토콜 작동 중.
                                     </div>
                                 </div>
@@ -361,7 +361,7 @@
                 <span class="client-chip">KT넥스트커넥트PFV</span>
                 <span class="client-chip">RBDK</span>
                 <span class="client-chip">젠스타메이트</span>
-                <span class="client-chip client-chip-more">+ 50개 이상 기업</span>
+                <span class="client-chip client-chip-more" data-i18n="client_more">+ 50개 이상 기업</span>
             </div>
 
             <!-- 이지램스 지원 4대 핵심 부동산 자산 유형 -->
@@ -389,30 +389,30 @@
 
             <div class="landmarks-grid" data-aos="fade-up" data-aos-delay="100">
                 <!-- 리테일 (Retail: 앰버 골드 색상) -->
-                <div class="landmark-chip type-retail"><i class="fal fa-store"></i> <span>스타필드</span></div>
-                <div class="landmark-chip type-retail"><i class="fal fa-city"></i> <span>타임스퀘어</span></div>
-                <div class="landmark-chip type-retail"><i class="fal fa-shopping-bag"></i> <span>파미어스몰</span></div>
-                <div class="landmark-chip type-retail"><i class="fal fa-store"></i> <span>안녕인사동</span></div>
-                <div class="landmark-chip type-retail"><i class="fal fa-street-view"></i> <span>엘리웨이</span></div>
-                <div class="landmark-chip type-retail"><i class="fal fa-water"></i> <span>레이크꼬모</span></div>
-                <div class="landmark-chip type-retail"><i class="fal fa-sparkles"></i> <span>라끄몽</span></div>
-                <div class="landmark-chip type-retail"><i class="fal fa-tv"></i> <span>전자랜드</span></div>
+                <div class="landmark-chip type-retail"><i class="fal fa-store"></i> <span data-i18n="lm_starfield">스타필드</span></div>
+                <div class="landmark-chip type-retail"><i class="fal fa-city"></i> <span data-i18n="lm_times_square">타임스퀘어</span></div>
+                <div class="landmark-chip type-retail"><i class="fal fa-shopping-bag"></i> <span data-i18n="lm_pamiers_mall">파미어스몰</span></div>
+                <div class="landmark-chip type-retail"><i class="fal fa-store"></i> <span data-i18n="lm_anyoung_insadong">안녕인사동</span></div>
+                <div class="landmark-chip type-retail"><i class="fal fa-street-view"></i> <span data-i18n="lm_alleyway">엘리웨이</span></div>
+                <div class="landmark-chip type-retail"><i class="fal fa-water"></i> <span data-i18n="lm_lake_como">레이크꼬모</span></div>
+                <div class="landmark-chip type-retail"><i class="fal fa-sparkles"></i> <span data-i18n="lm_lacmon">라끄몽</span></div>
+                <div class="landmark-chip type-retail"><i class="fal fa-tv"></i> <span data-i18n="lm_etland">전자랜드</span></div>
 
                 <!-- 오피스 (Office: 사이버 블루 색상) -->
-                <div class="landmark-chip type-office"><i class="fal fa-monument"></i> <span>롯데타워</span></div>
-                <div class="landmark-chip type-office"><i class="fal fa-building"></i> <span>파르나스타워·몰</span></div>
-                <div class="landmark-chip type-office"><i class="fal fa-landmark"></i> <span>파크원</span></div>
-                <div class="landmark-chip type-office"><i class="fal fa-building"></i> <span>원그로브</span></div>
-                <div class="landmark-chip type-office"><i class="fal fa-hotel"></i> <span>조선호텔</span></div>
-                <div class="landmark-chip type-office"><i class="fal fa-hospital"></i> <span>서울대병원</span></div>
-                <div class="landmark-chip type-office"><i class="fal fa-building"></i> <span>디캠프·FRONT1</span></div>
+                <div class="landmark-chip type-office"><i class="fal fa-monument"></i> <span data-i18n="lm_lotte_tower">롯데타워</span></div>
+                <div class="landmark-chip type-office"><i class="fal fa-building"></i> <span data-i18n="lm_parnas">파르나스타워·몰</span></div>
+                <div class="landmark-chip type-office"><i class="fal fa-landmark"></i> <span data-i18n="lm_parc1">파크원</span></div>
+                <div class="landmark-chip type-office"><i class="fal fa-building"></i> <span data-i18n="lm_one_grove">원그로브</span></div>
+                <div class="landmark-chip type-office"><i class="fal fa-hotel"></i> <span data-i18n="lm_josun_hotel">조선호텔</span></div>
+                <div class="landmark-chip type-office"><i class="fal fa-hospital"></i> <span data-i18n="lm_snuh">서울대병원</span></div>
+                <div class="landmark-chip type-office"><i class="fal fa-building"></i> <span data-i18n="lm_dcamp">디캠프·FRONT1</span></div>
 
                 <!-- 임대주택 (Residential: 에메랄드 그린 색상) -->
-                <div class="landmark-chip type-residential"><i class="fal fa-home-alt"></i> <span>리마크빌</span></div>
-                <div class="landmark-chip type-residential"><i class="fal fa-seedling"></i> <span>맹그로브</span></div>
+                <div class="landmark-chip type-residential"><i class="fal fa-home-alt"></i> <span data-i18n="lm_remarkville">리마크빌</span></div>
+                <div class="landmark-chip type-residential"><i class="fal fa-seedling"></i> <span data-i18n="lm_mangrove">맹그로브</span></div>
 
                 <!-- 시니어 레지던스 (Senior: 바이올렛 퍼플 색상) -->
-                <div class="landmark-chip type-senior"><i class="fal fa-hands-heart"></i> <span>VL르웨스트</span></div>
+                <div class="landmark-chip type-senior"><i class="fal fa-hands-heart"></i> <span data-i18n="lm_vl_lewest">VL르웨스트</span></div>
             </div>
         </section>
 
@@ -438,8 +438,8 @@
                     </div>
                     <div style="background: rgba(14, 165, 233, 0.08); border: 1px solid rgba(14, 165, 233, 0.2); border-radius: 12px; padding: 18px; display: flex; align-items: center; justify-content: space-between;">
                         <div>
-                            <span style="font-size:0.85rem; color:#94A3B8;">수납 대사 소요 시간</span>
-                            <div style="font-size:1.4rem; font-weight:800; color:#38BDF8;">3일 소요 → 즉시(1초) 완결</div>
+                            <span style="font-size:0.85rem; color:#94A3B8;" data-i18n="b1_metric_label">수납 대사 소요 시간</span>
+                            <div style="font-size:1.4rem; font-weight:800; color:#38BDF8;" data-i18n="b1_metric_val">3일 소요 → 즉시(1초) 완결</div>
                         </div>
                         <i class="fal fa-money-check-edit-alt" style="font-size: 2.2rem; color: #38BDF8;"></i>
                     </div>
@@ -504,7 +504,7 @@
                             </p>
                         </div>
                         <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOO18akLULTgK-XD6x8gj6WgpFNXiW2z_m3AC2mVgXUVUDGA/viewform" target="_blank" class="btn-crimson-cta">
-                            <i class="fal fa-file-alt"></i> 보안 백서 및 도입 안내서 신청
+                            <i class="fal fa-file-alt"></i> <span data-i18n="b6_cta_btn">보안 백서 및 도입 안내서 신청</span>
                         </a>
                     </div>
                 </div>
@@ -542,9 +542,9 @@
                         </ul>
                     </div>
                     <div class="persona-right">
-                        <div style="font-size:0.9rem; color:#0EA5E9; font-weight:700; margin-bottom:12px;">AMC 핵심 성과 지표</div>
-                        <div style="font-size:2.2rem; font-weight:900; color:#fff; margin-bottom:8px;">98% <span style="font-size:1.2rem; font-weight:500;">미수금 회수율</span></div>
-                        <div style="font-size:0.95rem; color:#94A3B8; line-height:1.6;">
+                        <div style="font-size:0.9rem; color:#0EA5E9; font-weight:700; margin-bottom:12px;" data-i18n="amc_kpi_title">AMC 핵심 성과 지표</div>
+                        <div style="font-size:2.2rem; font-weight:900; color:#fff; margin-bottom:8px;">98% <span style="font-size:1.2rem; font-weight:500;" data-i18n="amc_kpi_label">미수금 회수율</span></div>
+                        <div style="font-size:0.95rem; color:#94A3B8; line-height:1.6;" data-i18n="amc_quote">
                             "사람이 직접 독촉할 필요 없이, 시스템이 공신력 있는 절차에 따라 채권을 관리하여 감정 소모 없이 회수율을 극대화합니다."
                         </div>
                     </div>
@@ -564,9 +564,9 @@
                         </ul>
                     </div>
                     <div class="persona-right">
-                        <div style="font-size:0.9rem; color:#0EA5E9; font-weight:700; margin-bottom:12px;">PM 핵심 성과 지표</div>
-                        <div style="font-size:2.2rem; font-weight:900; color:#fff; margin-bottom:8px;">-80% <span style="font-size:1.2rem; font-weight:500;">단순 반복 업무 시간</span></div>
-                        <div style="font-size:0.95rem; color:#94A3B8; line-height:1.6;">
+                        <div style="font-size:0.9rem; color:#0EA5E9; font-weight:700; margin-bottom:12px;" data-i18n="pm_kpi_title">PM 핵심 성과 지표</div>
+                        <div style="font-size:2.2rem; font-weight:900; color:#fff; margin-bottom:8px;">-80% <span style="font-size:1.2rem; font-weight:500;" data-i18n="pm_kpi_label">단순 반복 업무 시간</span></div>
+                        <div style="font-size:0.95rem; color:#94A3B8; line-height:1.6;" data-i18n="pm_quote">
                             "매달 말일과 10일 야근을 유발하던 엑셀 입금 확인 및 영수증 발행 업무를 1클릭으로 끝내고 가치 있는 자산 분석에 집중합니다."
                         </div>
                     </div>
@@ -586,9 +586,9 @@
                         </ul>
                     </div>
                     <div class="persona-right">
-                        <div style="font-size:0.9rem; color:#0EA5E9; font-weight:700; margin-bottom:12px;">FM 핵심 성과 지표</div>
-                        <div style="font-size:2.2rem; font-weight:900; color:#fff; margin-bottom:8px;">100% <span style="font-size:1.2rem; font-weight:500;">점검 이력 전산화</span></div>
-                        <div style="font-size:0.95rem; color:#94A3B8; line-height:1.6;">
+                        <div style="font-size:0.9rem; color:#0EA5E9; font-weight:700; margin-bottom:12px;" data-i18n="fm_kpi_title">FM 핵심 성과 지표</div>
+                        <div style="font-size:2.2rem; font-weight:900; color:#fff; margin-bottom:8px;">100% <span style="font-size:1.2rem; font-weight:500;" data-i18n="fm_kpi_label">점검 이력 전산화</span></div>
+                        <div style="font-size:0.95rem; color:#94A3B8; line-height:1.6;" data-i18n="fm_quote">
                             "현장에서 스마트폰으로 사진을 찍어 등록하면 본사와 임차인에게 즉시 상태가 공유되며, 법적 보관 서류가 안전하게 클라우드에 영구 저장됩니다."
                         </div>
                     </div>
@@ -610,7 +610,7 @@
                     <div class="metric-label" data-i18n="metric_units">전국 관리 세대수</div>
                 </div>
                 <div class="metric-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="metric-number">₩ <span class="counter">650</span>억+</div>
+                    <div class="metric-number">₩ <span class="counter">650</span><span data-i18n="metric_billing_unit">억+</span></div>
                     <div class="metric-label" data-i18n="metric_billing">월 관리 청구 규모</div>
                 </div>
                 <div class="metric-card" data-aos="fade-up" data-aos-delay="300">
@@ -637,12 +637,12 @@
                     </div>
                     <div class="col-lg-5 mt-4 mt-lg-0 ps-lg-4">
                         <div style="color:var(--color-cyber-cyan); font-weight:700; font-size:0.9rem; margin-bottom:8px;">ALL-IN-ONE PLATFORM</div>
-                        <h3 style="font-size:1.8rem; font-weight:800; color:#fff; margin-bottom:16px;">한눈에 통제하는 자산 관리 허브</h3>
-                        <p style="color:var(--text-secondary-dark); line-height:1.7; margin-bottom:24px;">
+                        <h3 style="font-size:1.8rem; font-weight:800; color:#fff; margin-bottom:16px;" data-i18n="preview_card_title">한눈에 통제하는 자산 관리 허브</h3>
+                        <p style="color:var(--text-secondary-dark); line-height:1.7; margin-bottom:24px;" data-i18n="preview_card_desc">
                             입주 현황, 청구/수납 대사, 계약 만기 예고, 민원 및 시설 점검까지 분산되어 있던 전산 업무를 단일 통합 화면에서 마우스 몇 번으로 모두 완결할 수 있습니다.
                         </p>
                         <a href="https://pms.ezrems.com/" target="_blank" class="btn-outline-tech">
-                            <i class="fal fa-external-link-alt"></i> 기업형 데모 화면 둘러보기
+                            <i class="fal fa-external-link-alt"></i> <span data-i18n="preview_demo_btn">기업형 데모 화면 둘러보기</span>
                         </a>
                     </div>
                 </div>
@@ -803,11 +803,11 @@
             <div style="display:flex; flex-direction:column; gap:16px; justify-content:center;">
                 <div style="display:flex; align-items:center; gap:12px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.06); padding:10px 16px; border-radius:10px;">
                     <img src="./resources/images/footer_mark_nipa.png" alt="NIPA 인증" style="height:36px;" />
-                    <div style="font-size:0.8rem; color:#94A3B8;">클라우드 컴퓨팅 서비스<br/>품질·성능 검증 획득</div>
+                    <div style="font-size:0.8rem; color:#94A3B8;" data-i18n="foot_cert_nipa">클라우드 컴퓨팅 서비스<br/>품질·성능 검증 획득</div>
                 </div>
                 <div style="display:flex; align-items:center; gap:12px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.06); padding:10px 16px; border-radius:10px;">
                     <img src="./resources/images/footer_mark_kaci.png" alt="KACI 인증" style="height:36px;" />
-                    <div style="font-size:0.8rem; color:#94A3B8;">클라우드 서비스 확인제 인증<br/>한국클라우드산업협회</div>
+                    <div style="font-size:0.8rem; color:#94A3B8;" data-i18n="foot_cert_kaci">클라우드 서비스 확인제 인증<br/>한국클라우드산업협회</div>
                 </div>
             </div>
         </div>
@@ -818,21 +818,21 @@
         <!-- 1. 고객별 맞춤 솔루션 -->
         <li class="float-solution">
             <a href="./target_marketing.html" class="float-btn-solution" title="고객별 맞춤 솔루션">
-                <span class="txt">고객별 맞춤 솔루션</span>
+                <span class="txt" data-i18n="float_solution">고객별 맞춤 솔루션</span>
                 <span class="float-icon"><i class="fal fa-user-check"></i></span>
             </a>
         </li>
         <!-- 2. 카카오 상담 -->
         <li class="float-kakao">
             <a href="https://pf.kakao.com/_yRjWj/chat" target="_blank" class="float-btn-kakao" title="카카오 상담">
-                <span class="txt">카카오 상담</span>
+                <span class="txt" data-i18n="float_kakao">카카오 상담</span>
                 <span class="float-icon"><span class="iconImg"></span></span>
             </a>
         </li>
         <!-- 3. 맨 위로 가기 (Top) -->
         <li class="float-top" id="backToTopItem" style="display: none;">
             <a href="javascript:;" id="backToTop" class="float-btn-top" title="맨 위로 가기">
-                <span class="txt">맨 위로</span>
+                <span class="txt" data-i18n="float_top">맨 위로</span>
                 <span class="float-icon"><i class="fal fa-arrow-up"></i></span>
             </a>
         </li>

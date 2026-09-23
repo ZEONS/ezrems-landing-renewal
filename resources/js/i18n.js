@@ -139,7 +139,85 @@
             foot_email: "EMAIL : support@zeons.co.kr",
             foot_biz: "사업자등록번호 : 220-88-84510",
             foot_addr: "본사 : 서울시 강남구 선릉로 93길 40 (스파크플러스 선릉3호점)",
-            foot_copy: "COPYRIGHT © 2018 ZEONS, Inc. All rights reserved."
+            foot_copy: "COPYRIGHT © 2018 ZEONS, Inc. All rights reserved.",
+
+            // Modal Notice
+            modal_notice_title: "이지램스 공지사항",
+            modal_notice_today: "오늘 하루 열지 않기",
+
+            // 3D Dashboard Mockup Elements
+            dash_nav_dashboard: "통합 관제 대시보드",
+            dash_nav_portfolio: "포트폴리오 자산관리",
+            dash_nav_billing: "가상계좌·CMS·PG 수납 자동화",
+            dash_nav_econtract: "전자계약·전자문서 지원",
+            dash_nav_tax: "세금계산서 일괄발행",
+            dash_nav_api: "API 제공 (공실,계약,청구 등)",
+            dash_nav_security: "다중 권한 보안감사",
+            dash_kpi_billing_title: "월간 총 청구/수납 규모",
+            dash_kpi_billing_trend: "<i class=\"fal fa-arrow-up\"></i> 전월 대비 +14.8% 정상 수납",
+            dash_kpi_units_title: "전국 관리 세대 및 호수",
+            dash_kpi_units_unit: "세대",
+            dash_kpi_units_trend: "<i class=\"fal fa-check-circle\"></i> 평균 공실률 2.1% (초안정)",
+            dash_chart_title: "실시간 월별 수납 및 연체 회수 추이",
+            dash_chart_legend: "● 정상 수납  ● 자동 회수",
+            dash_alert_title: "이상 징후 및 연체 통제",
+            dash_alert_desc: "연체 자동 감지 및 회수 연동: 1건 발생 즉시 최고장 전자고지 발송 처리 완료 (회수율 98.4%)",
+            dash_sec_title: "CSAP 보안 상태: 무결",
+            dash_sec_desc: "이중화 클라우드 서버 무중단 가동 99.99% 달성. 금융 전산 암호화 전송 프로토콜 작동 중.",
+
+            // Clients
+            client_more: "+ 50개 이상 기업",
+
+            // Landmarks (18 Managed Landmarks)
+            lm_starfield: "스타필드",
+            lm_times_square: "타임스퀘어",
+            lm_pamiers_mall: "파미어스몰",
+            lm_anyoung_insadong: "안녕인사동",
+            lm_alleyway: "엘리웨이",
+            lm_lake_como: "레이크꼬모",
+            lm_lacmon: "라끄몽",
+            lm_etland: "전자랜드",
+            lm_lotte_tower: "롯데타워",
+            lm_parnas: "파르나스타워·몰",
+            lm_parc1: "파크원",
+            lm_one_grove: "원그로브",
+            lm_josun_hotel: "조선호텔",
+            lm_snuh: "서울대병원",
+            lm_dcamp: "디캠프·FRONT1",
+            lm_remarkville: "리마크빌",
+            lm_mangrove: "맹그로브",
+            lm_vl_lewest: "VL르웨스트",
+
+            // Bento Grid Details
+            b1_metric_label: "수납 대사 소요 시간",
+            b1_metric_val: "3일 소요 → 즉시(1초) 완결",
+            b6_cta_btn: "보안 백서 및 도입 안내서 신청",
+
+            // Solutions KPI & Quotes
+            amc_kpi_title: "AMC 핵심 성과 지표",
+            amc_kpi_label: "미수금 회수율",
+            amc_quote: "\"사람이 직접 독촉할 필요 없이, 시스템이 공신력 있는 절차에 따라 채권을 관리하여 감정 소모 없이 회수율을 극대화합니다.\"",
+            pm_kpi_title: "PM 핵심 성과 지표",
+            pm_kpi_label: "단순 반복 업무 시간",
+            pm_quote: "\"매달 말일과 10일 야근을 유발하던 엑셀 입금 확인 및 영수증 발행 업무를 1클릭으로 끝내고 가치 있는 자산 분석에 집중합니다.\"",
+            fm_kpi_title: "FM 핵심 성과 지표",
+            fm_kpi_label: "점검 이력 전산화",
+            fm_quote: "\"현장에서 스마트폰으로 사진을 찍어 등록하면 본사와 임차인에게 즉시 상태가 공유되며, 법적 보관 서류가 안전하게 클라우드에 영구 저장됩니다.\"",
+
+            // Metrics unit
+            metric_billing_unit: "억+",
+
+            // System Preview Card
+            preview_card_title: "한눈에 통제하는 자산 관리 허브",
+            preview_card_desc: "입주 현황, 청구/수납 대사, 계약 만기 예고, 민원 및 시설 점검까지 분산되어 있던 전산 업무를 단일 통합 화면에서 마우스 몇 번으로 모두 완결할 수 있습니다.",
+            preview_demo_btn: "기업형 데모 화면 둘러보기",
+
+            // Footer Certifications & Floating
+            foot_cert_nipa: "클라우드 컴퓨팅 서비스<br/>품질·성능 검증 획득",
+            foot_cert_kaci: "클라우드 서비스 확인제 인증<br/>한국클라우드산업협회",
+            float_solution: "고객별 맞춤 솔루션",
+            float_kakao: "카카오 상담",
+            float_top: "맨 위로"
         },
         en: {
             lang_label: "English",
@@ -275,7 +353,85 @@
             foot_email: "EMAIL: support@zeons.co.kr",
             foot_biz: "Biz Reg No: 220-88-84510",
             foot_addr: "HQ: 40, Seolleung-ro 93-gil, Gangnam-gu, Seoul, Korea",
-            foot_copy: "COPYRIGHT © 2018 ZEONS, Inc. All rights reserved."
+            foot_copy: "COPYRIGHT © 2018 ZEONS, Inc. All rights reserved.",
+
+            // Modal Notice
+            modal_notice_title: "ezREMS Announcement",
+            modal_notice_today: "Do not show again today",
+
+            // 3D Dashboard Mockup Elements
+            dash_nav_dashboard: "Command Dashboard",
+            dash_nav_portfolio: "Portfolio Assets",
+            dash_nav_billing: "Virtual Account & CMS Billing",
+            dash_nav_econtract: "E-Contracts & Digital Docs",
+            dash_nav_tax: "Bulk Tax Invoices",
+            dash_nav_api: "Open APIs (Vacancy, Billing)",
+            dash_nav_security: "Multi-Tier Security Audit",
+            dash_kpi_billing_title: "Monthly Billing & Collection",
+            dash_kpi_billing_trend: "<i class=\"fal fa-arrow-up\"></i> +14.8% MoM Normal Collection",
+            dash_kpi_units_title: "Nationwide Managed Units",
+            dash_kpi_units_unit: "Units",
+            dash_kpi_units_trend: "<i class=\"fal fa-check-circle\"></i> Avg. Vacancy 2.1% (Ultra-stable)",
+            dash_chart_title: "Monthly Collection & Recovery Trend",
+            dash_chart_legend: "● Normal Collection  ● Auto-Recovery",
+            dash_alert_title: "Anomaly & Delinquency Control",
+            dash_alert_desc: "Auto-delinquency tracking: immediate e-notice dispatched upon occurrence (Recovery rate: 98.4%)",
+            dash_sec_title: "CSAP Security Status: Flawless",
+            dash_sec_desc: "Redundant cloud architecture achieving 99.99% uptime. Financial encryption protocols active.",
+
+            // Clients
+            client_more: "+ 50+ Enterprises",
+
+            // Landmarks (18 Managed Landmarks)
+            lm_starfield: "Starfield",
+            lm_times_square: "Times Square",
+            lm_pamiers_mall: "Pamiers Mall",
+            lm_anyoung_insadong: "Anyoung Insadong",
+            lm_alleyway: "Alleyway",
+            lm_lake_como: "Lake Como",
+            lm_lacmon: "Lacmon",
+            lm_etland: "ETLAND",
+            lm_lotte_tower: "Lotte World Tower",
+            lm_parnas: "Parnas Tower & Mall",
+            lm_parc1: "Parc.1",
+            lm_one_grove: "One Grove",
+            lm_josun_hotel: "Josun Hotel",
+            lm_snuh: "Seoul Nat'l Univ. Hospital",
+            lm_dcamp: "D.CAMP · FRONT1",
+            lm_remarkville: "Remarkville",
+            lm_mangrove: "Mangrove",
+            lm_vl_lewest: "VL LE WEST",
+
+            // Bento Grid Details
+            b1_metric_label: "Reconciliation Time",
+            b1_metric_val: "3 Days → Instant (1 Sec)",
+            b6_cta_btn: "Request Security Whitepaper & Guide",
+
+            // Solutions KPI & Quotes
+            amc_kpi_title: "AMC Core KPI",
+            amc_kpi_label: "Overdue Recovery",
+            amc_quote: "\"Without manual confrontation, the system manages receivables with official authority to maximize recovery without emotional burden.\"",
+            pm_kpi_title: "PM Core KPI",
+            pm_kpi_label: "Repetitive Task Time",
+            pm_quote: "\"Eliminate repetitive overtime for monthly billing and tax receipts in 1-click, focusing on strategic portfolio analysis.\"",
+            fm_kpi_title: "FM Core KPI",
+            fm_kpi_label: "Inspection Log Cloud Sync",
+            fm_quote: "\"Take photos on-site via mobile to instantly share status with HQ and tenants, securely archiving statutory records in the cloud.\"",
+
+            // Metrics unit
+            metric_billing_unit: "00M+ (KRW)",
+
+            // System Preview Card
+            preview_card_title: "All-in-One Asset Command Hub",
+            preview_card_desc: "From occupancy and billing reconciliation to lease renewals, complaints, and facility inspections—unify all scattered tasks on a single screen with just a few clicks.",
+            preview_demo_btn: "Explore Enterprise Demo",
+
+            // Footer Certifications & Floating
+            foot_cert_nipa: "Cloud Computing Service<br/>Quality & Performance Verified",
+            foot_cert_kaci: "Cloud Service Verification<br/>Korea Cloud Industry Association",
+            float_solution: "Tailored Solutions",
+            float_kakao: "Kakao Talk",
+            float_top: "Top"
         },
         ja: {
             lang_label: "日本語",
@@ -411,7 +567,85 @@
             foot_email: "EMAIL : support@zeons.co.kr",
             foot_biz: "事業者登録番号 : 220-88-84510",
             foot_addr: "本社 : ソウル特別市江南区宣陵路93キル40",
-            foot_copy: "COPYRIGHT © 2018 ZEONS, Inc. All rights reserved."
+            foot_copy: "COPYRIGHT © 2018 ZEONS, Inc. All rights reserved.",
+
+            // Modal Notice
+            modal_notice_title: "ezREMS お知らせ",
+            modal_notice_today: "本日中は表示しない",
+
+            // 3D Dashboard Mockup Elements
+            dash_nav_dashboard: "統合管制ダッシュボード",
+            dash_nav_portfolio: "ポートフォリオ資産管理",
+            dash_nav_billing: "口座振替・仮想口座自動消込",
+            dash_nav_econtract: "電子契約・電子文書サポート",
+            dash_nav_tax: "税金計算書一括発行",
+            dash_nav_api: "API連携（空室・契約・請求等）",
+            dash_nav_security: "多層権限セキュリティ監査",
+            dash_kpi_billing_title: "月間請求・入金規模",
+            dash_kpi_billing_trend: "<i class=\"fal fa-arrow-up\"></i> 前月比 +14.8% 正常入金",
+            dash_kpi_units_title: "全国管理戸数",
+            dash_kpi_units_unit: "戸",
+            dash_kpi_units_trend: "<i class=\"fal fa-check-circle\"></i> 平均空室率 2.1%（超安定）",
+            dash_chart_title: "月別入金および回収推移",
+            dash_chart_legend: "● 正常入金  ● 自動回収",
+            dash_alert_title: "異常兆候および滞納統制",
+            dash_alert_desc: "滞納自動検知：発生直後に電子催告書を自動送付完了（回収率 98.4%）",
+            dash_sec_title: "CSAPセキュリティ状態：無欠",
+            dash_sec_desc: "冗長化クラウドで稼働率99.99％達成。金融暗号化プロトコル常時稼働中。",
+
+            // Clients
+            client_more: "+ 50社以上の企業",
+
+            // Landmarks (18 Managed Landmarks)
+            lm_starfield: "スターフィールド",
+            lm_times_square: "タイムズスクエア",
+            lm_pamiers_mall: "パミアスモール",
+            lm_anyoung_insadong: "アンニョン仁寺洞",
+            lm_alleyway: "アレイウェイ",
+            lm_lake_como: "レイクコモ",
+            lm_lacmon: "ラクモン",
+            lm_etland: "電子ランド",
+            lm_lotte_tower: "ロッテワールドタワー",
+            lm_parnas: "パルナスタワー・モール",
+            lm_parc1: "パークワン",
+            lm_one_grove: "ワングローブ",
+            lm_josun_hotel: "朝鮮ホテル",
+            lm_snuh: "ソウル大学病院",
+            lm_dcamp: "디캠프·FRONT1",
+            lm_remarkville: "リマークビル",
+            lm_mangrove: "マングローブ",
+            lm_vl_lewest: "VLル・ウェスト",
+
+            // Bento Grid Details
+            b1_metric_label: "消込所要時間",
+            b1_metric_val: "3日所要 → 即時(1秒)完了",
+            b6_cta_btn: "セキュリティ白書・導入資料請求",
+
+            // Solutions KPI & Quotes
+            amc_kpi_title: "AMC主要成果指標",
+            amc_kpi_label: "未収金回収率",
+            amc_quote: "「人手による督促を不要にし、公的プロセスで債権を管理することで感情的負担なく回収率を最大化します」",
+            pm_kpi_title: "PM主要成果指標",
+            pm_kpi_label: "単純反復業務時間",
+            pm_quote: "「月末月初に残業の原因となっていたエクセル確認や領収書発行をワンクリックで完了し、高付加価値な分析に集中できます」",
+            fm_kpi_title: "FM主要成果指標",
+            fm_kpi_label: "点検履歴電子化",
+            fm_quote: "「スマホで現場写真を撮影・登録するだけで本部とテナントに即座に共有され、法定書類もクラウドへ安全に永久保存されます」",
+
+            // Metrics unit
+            metric_billing_unit: "億ウォン+",
+
+            // System Preview Card
+            preview_card_title: "一目で統制する資産管理ハブ",
+            preview_card_desc: "入居現況、請求・入金消込、契約満期予告、苦情・施設点検まで、分散していた業務を単一の統合画面でマウス操作だけで完結できます。",
+            preview_demo_btn: "エンタープライズデモ画面を見る",
+
+            // Footer Certifications & Floating
+            foot_cert_nipa: "クラウドコンピューティングサービス<br/>品質・性能検証獲得",
+            foot_cert_kaci: "クラウドサービス確認制認証<br/>韓国クラウド産業協会",
+            float_solution: "顧客別カスタムソリューション",
+            float_kakao: "Kakao相談",
+            float_top: "トップへ"
         },
         zh: {
             lang_label: "简体中文",
@@ -547,7 +781,85 @@
             foot_email: "EMAIL : support@zeons.co.kr",
             foot_biz: "企业登记号 : 220-88-84510",
             foot_addr: "总部 : 首尔特别市江南区宣陵路93街40",
-            foot_copy: "COPYRIGHT © 2018 ZEONS, Inc. All rights reserved."
+            foot_copy: "COPYRIGHT © 2018 ZEONS, Inc. All rights reserved.",
+
+            // Modal Notice
+            modal_notice_title: "ezREMS 官方公告",
+            modal_notice_today: "今天不再显示",
+
+            // 3D Dashboard Mockup Elements
+            dash_nav_dashboard: "综合管控看板",
+            dash_nav_portfolio: "资产组合管理",
+            dash_nav_billing: "虚拟账户·CMS·在线收款",
+            dash_nav_econtract: "电子合同·电子文档",
+            dash_nav_tax: "批量开具税务发票",
+            dash_nav_api: "开放API（房源·合同·账单）",
+            dash_nav_security: "多级权限安全审计",
+            dash_kpi_billing_title: "月度账单经办规模",
+            dash_kpi_billing_trend: "<i class=\"fal fa-arrow-up\"></i> 较上月 +14.8% 正常清缴",
+            dash_kpi_units_title: "全国在管物业套数",
+            dash_kpi_units_unit: "套",
+            dash_kpi_units_trend: "<i class=\"fal fa-check-circle\"></i> 平均空置率 2.1%（极稳定）",
+            dash_chart_title: "月度出纳与催收趋势",
+            dash_chart_legend: "● 正常清缴  ● 自动清欠",
+            dash_alert_title: "异常预警与欠费管控",
+            dash_alert_desc: "欠款自动追踪：一旦发生即时发送电子催缴通知（回款率 98.4%）",
+            dash_sec_title: "CSAP安全状态：无瑕疵",
+            dash_sec_desc: "双重冗余云服务器实现99.99%高可用。金融级加密传输协议全时运行。",
+
+            // Clients
+            client_more: "+ 50多家领军企业",
+
+            // Landmarks (18 Managed Landmarks)
+            lm_starfield: "星空购物中心 (Starfield)",
+            lm_times_square: "时代广场 (Times Square)",
+            lm_pamiers_mall: "帕米尔斯广场",
+            lm_anyoung_insadong: "安宁仁寺洞",
+            lm_alleyway: "巷里 (Alleyway)",
+            lm_lake_como: "科莫湖购物中心",
+            lm_lacmon: "Lacmon商业街",
+            lm_etland: "电子乐园 (ETLAND)",
+            lm_lotte_tower: "乐天世界塔",
+            lm_parnas: "帕纳斯大厦·购物中心",
+            lm_parc1: "Parc.1综合体",
+            lm_one_grove: "One Grove大厦",
+            lm_josun_hotel: "朝鲜酒店",
+            lm_snuh: "首尔大学医院",
+            lm_dcamp: "디캠프·FRONT1",
+            lm_remarkville: "Remarkville",
+            lm_mangrove: "Mangrove",
+            lm_vl_lewest: "VL LE WEST",
+
+            // Bento Grid Details
+            b1_metric_label: "对账耗时",
+            b1_metric_val: "3天耗时 → 1秒即时对账",
+            b6_cta_btn: "申请安全白皮书与方案资料",
+
+            // Solutions KPI & Quotes
+            amc_kpi_title: "AMC核心运营指标",
+            amc_kpi_label: "欠款催缴回收率",
+            amc_quote: "“无需人工上门催收，系统依托合规流程精准催缴，零摩擦实现清缴率最大化。”",
+            pm_kpi_title: "PM核心运营指标",
+            pm_kpi_label: "重复性事务时间",
+            pm_quote: "“一键终结每月繁琐的Excel手工对账与开票加班，将精力全力聚焦于高价值资产分析。”",
+            fm_kpi_title: "FM核心运营指标",
+            fm_kpi_label: "巡检记录云端化",
+            fm_quote: "“现场移动端拍照报修，总部与租户即时同步，法定档案云端永久合规留存。”",
+
+            // Metrics unit
+            metric_billing_unit: "亿韩元+",
+
+            // System Preview Card
+            preview_card_title: "一屏掌控的智能资产管理枢纽",
+            preview_card_desc: "从入住现状、账单对账，到租约到期预警、工单与设施巡检，分散的各项业务只需在统一控制台上鼠标轻点即可轻松搞定。",
+            preview_demo_btn: "体验企业版演示界面",
+
+            // Footer Certifications & Floating
+            foot_cert_nipa: "云计算服务<br/>质量与性能官方认证",
+            foot_cert_kaci: "云服务确认制认证<br/>韩国云计算产业协会",
+            float_solution: "量身定制方案",
+            float_kakao: "Kakao在线咨询",
+            float_top: "回到顶部"
         }
     };
 
@@ -557,6 +869,7 @@
         if (!translations[lang]) lang = 'ko';
         currentLang = lang;
         localStorage.setItem('ezrems_lang', lang);
+        document.documentElement.lang = lang;
 
         // Update active class on dropdown items
         document.querySelectorAll('.lang-select-btn').forEach(btn => {
