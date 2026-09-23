@@ -187,6 +187,7 @@
             lm_remarkville: "리마크빌",
             lm_mangrove: "맹그로브",
             lm_vl_lewest: "VL르웨스트",
+            lm_baekun_morning: "백운호수·숲속의아침",
 
             // Bento Grid Details
             b1_metric_label: "수납 대사 소요 시간",
@@ -401,6 +402,7 @@
             lm_remarkville: "Remarkville",
             lm_mangrove: "Mangrove",
             lm_vl_lewest: "VL LE WEST",
+            lm_baekun_morning: "Baekun Lake Forest Morning",
 
             // Bento Grid Details
             b1_metric_label: "Reconciliation Time",
@@ -615,6 +617,7 @@
             lm_remarkville: "リマークビル",
             lm_mangrove: "マングローブ",
             lm_vl_lewest: "VLル・ウェスト",
+            lm_baekun_morning: "白雲湖・森の朝",
 
             // Bento Grid Details
             b1_metric_label: "消込所要時間",
@@ -829,6 +832,7 @@
             lm_remarkville: "Remarkville",
             lm_mangrove: "Mangrove",
             lm_vl_lewest: "VL LE WEST",
+            lm_baekun_morning: "白云湖·森林之晨",
 
             // Bento Grid Details
             b1_metric_label: "对账耗时",
