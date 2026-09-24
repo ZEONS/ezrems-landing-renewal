@@ -47,15 +47,15 @@ try {
             newSliderHtml += '            ';
             htmlContent = htmlContent.replace(sliderRegex, `$1${newSliderHtml}$3`);
             fs.writeFileSync(indexPath, htmlContent, 'utf-8');
-            console.log('📄 index.html 정적 슬라이더 마크업 갱신 완료');
+            console.log('[HTML] index.html 정적 슬라이더 마크업 갱신 완료');
         }
     }
 
-    console.log('✅ [ezREMS] 랜드마크 이미지 목록이 완벽하게 동기화되었습니다!');
-    console.log('📁 등록된 이미지 (' + imageFiles.length + '개):', imageFiles.join(', '));
-    console.log('📄 landmarks.json 갱신 완료: ' + jsonPath);
-    console.log('📄 landmarks-data.js 갱신 완료: ' + jsDataPath);
+    console.log('[OK] ezREMS 랜드마크 이미지 목록 동기화 완료!');
+    console.log('[목록] 등록된 이미지 (' + imageFiles.length + '개): ' + imageFiles.join(', '));
+    console.log('[파일] landmarks.json 갱신 완료');
+    console.log('[파일] landmarks-data.js 갱신 완료');
 } catch (err) {
-    console.error('❌ 동기화 중 오류 발생:', err.message);
+    console.error('[오류] 동기화 중 문제 발생:', err.message);
     process.exit(1);
 }
