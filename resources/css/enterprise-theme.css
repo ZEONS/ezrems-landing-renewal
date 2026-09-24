@@ -1311,11 +1311,59 @@ body.enterprise-body {
    4-1. Managed Landmarks Section
    ========================================================================== */
 .section-landmarks {
-    padding: 70px 20px 85px;
-    background: linear-gradient(180deg, var(--bg-midnight-deep) 0%, #0B1120 100%);
+    padding: 75px 20px 90px;
+    background-color: var(--bg-midnight-deep);
     border-bottom: 1px solid var(--border-dark);
     text-align: center;
     position: relative;
+    overflow: hidden;
+}
+
+/* Landmark Ambient Background Slider Container */
+.landmark-bg-slider {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Individual Background Slide with Blur & Tone Control for High Contrast */
+.landmark-bg-slide {
+    position: absolute;
+    inset: -20px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    filter: blur(10px) brightness(0.32) saturate(1.25);
+    transform: scale(1.06);
+    transition: opacity 1.8s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 8s ease-out;
+    will-change: opacity, transform;
+}
+
+.landmark-bg-slide.active {
+    opacity: 0.35;
+    transform: scale(1.0);
+}
+
+/* Dark Gradient & Vignette Overlay (글자 가독성 극대화) */
+.landmark-bg-overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 50%, rgba(11, 17, 32, 0.72) 0%, rgba(7, 11, 20, 0.94) 100%);
+    pointer-events: none;
+    z-index: 2;
+}
+
+/* Ensure Landmark Content Stacks on Top of Background */
+.section-landmarks .section-header,
+.section-landmarks .landmarks-grid {
+    position: relative;
+    z-index: 3;
 }
 
 .landmarks-grid {

@@ -745,6 +745,15 @@
            3-1. Managed Landmarks Section
            ========================================================================== -->
         <section class="section-landmarks" id="sectionLandmarks">
+            <!-- Landmark Ambient Background Slider (자동 크로스페이드 순환) -->
+            <div class="landmark-bg-slider" id="landmarkBgSlider" aria-hidden="true">
+                <div class="landmark-bg-slide active" style="background-image: url('./resources/images/landmark/starfield.jpg');"></div>
+                <div class="landmark-bg-slide" style="background-image: url('./resources/images/landmark/lotte-tower.jpg');"></div>
+                <div class="landmark-bg-slide" style="background-image: url('./resources/images/landmark/one-grove.png');"></div>
+            </div>
+            <!-- Vignette & Dark Contrast Overlay (글자 가독성 유지 레이어) -->
+            <div class="landmark-bg-overlay" aria-hidden="true"></div>
+
             <div class="section-header" data-aos="fade-up">
                 <span class="section-tag" data-i18n="landmark_tag">MANAGED LANDMARKS</span>
                 <h2 class="section-heading tech-gradient-text" data-i18n="landmark_title">
@@ -1488,6 +1497,51 @@
                     targetPane.addClass('active');
                 }
             });
+
+            // ==========================================================
+            // Landmark Background Auto Slider Controller (자동 크로스페이드)
+            // ==========================================================
+            (function initLandmarkBgSlider() {
+                var slider = document.getElementById('landmarkBgSlider');
+                if (!slider) return;
+
+                var slides = slider.querySelectorAll('.landmark-bg-slide');
+                if (slides.length <= 1) return;
+
+                var currentSlide = 0;
+                var slideInterval = 5000; // 5초마다 자동 크로스페이드 순환
+                var timer = null;
+
+                function nextSlide() {
+                    slides[currentSlide].classList.remove('active');
+                    currentSlide = (currentSlide + 1) % slides.length;
+                    slides[currentSlide].classList.add('active');
+                }
+
+                function startTimer() {
+                    if (!timer) {
+                        timer = setInterval(nextSlide, slideInterval);
+                    }
+                }
+
+                function stopTimer() {
+                    if (timer) {
+                        clearInterval(timer);
+                        timer = null;
+                    }
+                }
+
+                // 브라우저 탭 비활성화 시 배터리 및 리소스 절약
+                document.addEventListener('visibilitychange', function () {
+                    if (document.hidden) {
+                        stopTimer();
+                    } else {
+                        startTimer();
+                    }
+                });
+
+                startTimer();
+            })();
         });
     </script>
 </body>
