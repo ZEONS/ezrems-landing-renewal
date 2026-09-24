@@ -127,6 +127,48 @@ body.enterprise-body {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    position: relative;
+}
+
+/* Center Brand Slogan */
+.header-top-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    white-space: nowrap;
+    text-align: center;
+    z-index: 1;
+}
+
+.top-slogan {
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: #94A3B8;
+    letter-spacing: -0.01em;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.top-slogan strong {
+    color: #F8FAFC;
+    font-weight: 700;
+}
+
+.top-slogan-tag {
+    display: inline-flex;
+    align-items: center;
+    color: #38BDF8;
+    font-weight: 700;
+    font-size: 0.72rem;
+    background: rgba(14, 165, 233, 0.12);
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    padding: 1px 7px;
+    border-radius: 4px;
+    letter-spacing: 0.02em;
+    box-shadow: 0 0 10px rgba(14, 165, 233, 0.15);
 }
 
 .header-top-right {
@@ -3090,6 +3132,9 @@ body.enterprise-body {
 
 /* Tablet Window (Under 992px) */
 @media screen and (max-width: 992px) {
+    .header-top-center {
+        display: none;
+    }
     /* Mobile drawer for navigation */
     .header-inner nav {
         margin-left: 0;
