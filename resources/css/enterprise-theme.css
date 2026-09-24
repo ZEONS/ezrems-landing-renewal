@@ -342,10 +342,15 @@ body.enterprise-body {
     letter-spacing: 0.06em;
 }
 
+.header-inner nav {
+    margin-left: auto;
+}
+
 .header-nav {
     display: flex;
     align-items: center;
-    gap: 24px;
+    justify-content: flex-end;
+    gap: 28px;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -3086,11 +3091,15 @@ body.enterprise-body {
 /* Tablet Window (Under 992px) */
 @media screen and (max-width: 992px) {
     /* Mobile drawer for navigation */
+    .header-inner nav {
+        margin-left: 0;
+    }
     .mobile-nav-toggle {
         display: block;
     }
     .header-nav {
         position: fixed;
+        justify-content: flex-start;
         top: 106px;
         left: 0;
         width: 100%;
