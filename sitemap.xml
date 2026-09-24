@@ -1,46 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset 
-    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
-    xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- 1. 메인 엔터프라이즈 자산관리 랜딩 페이지 (4개국어 지원) -->
+  <url>
+    <loc>https://www.ezrems.com/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.ezrems.com/?lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ezrems.com/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.ezrems.com/?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.ezrems.com/?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ezrems.com/"/>
+    <image:image>
+      <image:loc>https://www.ezrems.com/resources/images/common/ezrems_logo_rw.png</image:loc>
+      <image:title>이지램스(ezREMS) 엔터프라이즈 로고</image:title>
+      <image:caption>차세대 프롭-핀테크 부동산 자산관리 솔루션 ezREMS</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ezrems.com/resources/images/preview_img08.gif</image:loc>
+      <image:title>이지램스 통합 관제 시스템 대시보드 화면</image:title>
+      <image:caption>부동산 자산관리 통합 관제 센터 대시보드</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ezrems.com/resources/images/landmark/lotte-tower.png</image:loc>
+      <image:title>이지램스 관리 랜드마크 - 롯데월드타워</image:title>
+      <image:caption>이지램스로 운영되는 초대형 복합 상업자산</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ezrems.com/resources/images/landmark/parc1.png</image:loc>
+      <image:title>이지램스 관리 랜드마크 - 파크원</image:title>
+      <image:caption>여의도 파크원 프라임 오피스 관리</image:caption>
+    </image:image>
+  </url>
 
   <url>
     <loc>https://www.ezrems.com/index.html</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.ezrems.com/index.html?lang=ko"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ezrems.com/index.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.ezrems.com/index.html?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.ezrems.com/index.html?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ezrems.com/index.html"/>
+  </url>
+
+  <!-- 2. K-비대면 서비스 바우처 및 도입 비용 안내 -->
+  <url>
+    <loc>https://www.ezrems.com/price_info.html</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
     <image:image>
-      <image:loc>https://www.ezrems.com/images/ezrems-고지서1.png</image:loc>
-      <image:title>이지램스 고지서 1</image:title>
+      <image:loc>https://www.ezrems.com/resources/images/price_info_01.png</image:loc>
+      <image:title>이지램스 K-비대면 서비스 바우처 및 가격 정보</image:title>
+      <image:caption>정부지원 비대면 바우처 수요기업 신청 및 도입 안내</image:caption>
     </image:image>
-    <image:image>
-      <image:loc>https://www.ezrems.com/images/ezrems-고지서2.png</image:loc>
-      <image:title>이지램스 고지서 2</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.ezrems.com/images/ezrems-고지서3.png</image:loc>
-      <image:title>이지램스 고지서 3</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.ezrems.com/images/ezrems-고지서4.png</image:loc>
-      <image:title>이지램스 고지서 4</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.ezrems.com/images/ezrems-bill-1.png</image:loc>
-      <image:title>이지램스 고지서 1페이지</image:title>
-      <image:caption>이지램스 고지서 1페이지 샘플 이미지</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.ezrems.com/images/ezrems-bill-2.png</image:loc>
-      <image:title>이지램스 고지서 2페이지</image:title>
-      <image:caption>이지램스 고지서 2페이지 샘플 이미지</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.ezrems.com/images/ezrems-bill-3.png</image:loc>
-      <image:title>이지램스 고지서 3페이지</image:title>
-      <image:caption>이지램스 고지서 3페이지 샘플 이미지</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.ezrems.com/images/ezrems-bill-4.png</image:loc>
-      <image:title>이지램스 고지서 4페이지</image:title>
-      <image:caption>이지램스 고지서 4페이지 샘플 이미지</image:caption>
-    </image:image>
+  </url>
+
+  <!-- 3. 고객사별 맞춤 솔루션 안내 -->
+  <url>
+    <loc>https://www.ezrems.com/target_marketing.html</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 4. 솔루션 상세 안내 1 -->
+  <url>
+    <loc>https://www.ezrems.com/info_1.html</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- 5. 솔루션 상세 안내 2 -->
+  <url>
+    <loc>https://www.ezrems.com/info_2.html</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- 6. 솔루션 상세 안내 3 -->
+  <url>
+    <loc>https://www.ezrems.com/info_3.html</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 
 </urlset>
