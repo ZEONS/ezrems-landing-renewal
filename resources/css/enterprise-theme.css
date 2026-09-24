@@ -1237,13 +1237,17 @@ body.enterprise-body {
     gap: 6px;
     color: #F8FAFC;
     font-size: 0.78rem;
-    font-weight: 400;
+    font-weight: 300 !important;
     padding: 4px 13px;
     border-radius: 100px;
     white-space: nowrap;
     backdrop-filter: blur(8px);
     transition: all 0.25s ease;
     cursor: default;
+}
+
+.asset-type-item span {
+    font-weight: 300 !important;
 }
 
 .asset-type-item i {
