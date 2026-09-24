@@ -314,6 +314,8 @@
             // Bento Grid Details
             b1_metric_label: "수납 대사 소요 시간",
             b1_metric_val: "3일 소요 → 즉시(1초) 완결",
+            b5_metric_label: "표준 Open API & 시스템 연계",
+            b5_metric_val: "SAP · 더존 ERP 실시간 양방향 연동",
             b6_cta_btn: "보안 백서 및 도입 안내서 신청",
 
             // Solutions KPI & Quotes
@@ -651,6 +653,8 @@
             // Bento Grid Details
             b1_metric_label: "Reconciliation Time",
             b1_metric_val: "3 Days → Instant (1 Sec)",
+            b5_metric_label: "Standard Open API & Integration",
+            b5_metric_val: "Real-time Bi-directional ERP Sync",
             b6_cta_btn: "Request Security Whitepaper & Guide",
 
             // Solutions KPI & Quotes
@@ -988,6 +992,8 @@
             // Bento Grid Details
             b1_metric_label: "消込所要時間",
             b1_metric_val: "3日所要 → 即時(1秒)完了",
+            b5_metric_label: "標準Open API & システム連携",
+            b5_metric_val: "SAP·企業ERPリアルタイム双方向同期",
             b6_cta_btn: "セキュリティ白書・導入資料請求",
 
             // Solutions KPI & Quotes
@@ -1325,6 +1331,8 @@
             // Bento Grid Details
             b1_metric_label: "对账耗时",
             b1_metric_val: "3天耗时 → 1秒即时对账",
+            b5_metric_label: "标准Open API与系统集成",
+            b5_metric_val: "SAP等企业级ERP实时双向同步",
             b6_cta_btn: "申请安全白皮书与方案资料",
 
             // Solutions KPI & Quotes
