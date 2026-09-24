@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="./resources/css/common/swiper.min.css">
 
     <!-- Enterprise High-Tech Theme (v2.1) -->
-    <link rel="stylesheet" type="text/css" href="./resources/css/enterprise-theme.css?v=20260924_2138">
+    <link rel="stylesheet" type="text/css" href="./resources/css/enterprise-theme.css?v=20260924_2235">
 
     <!-- Critical Inline Styles for Landmark Slider (캐시 방지 및 시인성 보장) -->
     <style>
@@ -152,7 +152,7 @@
     <script src="./resources/js/jquery.counterup.min.js"></script>
 
     <!-- ezREMS Multilingual (i18n) Engine -->
-    <script src="./resources/js/i18n.js?v=20260924_2135"></script>
+    <script src="./resources/js/i18n.js?v=20260924_2235"></script>
 
     <!-- ezREMS Landmarks Registry (로컬 file:/// 및 오프라인 즉시 로딩용) -->
     <script src="./resources/images/landmark/landmarks-data.js?v=20260924_1158"></script>
@@ -251,14 +251,49 @@
                 </a>
             </div>
 
-            <!-- Main Navigation Links (본문 섹션 순서와 완벽 일치) -->
+            <!-- Main Navigation Links -->
             <nav>
                 <ul class="header-nav" id="headerNav">
                     <li class="nav-item-ax"><a href="#sectionAx" data-i18n="nav_ax"><span class="ax-nav-badge">NEW</span>AX 혁신 기능</a></li>
+                    
+                    <!-- 솔루션·기능 풀다운 메뉴 -->
+                    <li class="nav-item-dropdown" id="navSolutionsDropdown">
+                        <a href="javascript:void(0);" class="nav-dropdown-toggle" id="navSolutionsToggle" role="button" aria-expanded="false">
+                            <span data-i18n="nav_solutions_features">솔루션·기능</span>
+                            <i class="fal fa-chevron-down nav-dropdown-arrow"></i>
+                        </a>
+                        <ul class="nav-dropdown-menu">
+                            <li>
+                                <a href="#sectionCapabilities" class="nav-dropdown-link">
+                                    <div class="nav-dropdown-icon icon-cyan"><i class="fal fa-bolt"></i></div>
+                                    <div class="nav-dropdown-text">
+                                        <div class="nav-dropdown-title" data-i18n="nav_features">핵심기능</div>
+                                        <div class="nav-dropdown-sub" data-i18n="nav_features_sub">금융 연동·전자계약 등 6대 핵심 기술</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#sectionSolutions" class="nav-dropdown-link">
+                                    <div class="nav-dropdown-icon icon-emerald"><i class="fal fa-building"></i></div>
+                                    <div class="nav-dropdown-text">
+                                        <div class="nav-dropdown-title" data-i18n="nav_solution">엔터프라이즈 솔루션</div>
+                                        <div class="nav-dropdown-sub" data-i18n="nav_solution_sub">AMC · PM · FM 역할별 맞춤 솔루션</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#sectionPreview" class="nav-dropdown-link">
+                                    <div class="nav-dropdown-icon icon-purple"><i class="fal fa-desktop"></i></div>
+                                    <div class="nav-dropdown-text">
+                                        <div class="nav-dropdown-title" data-i18n="nav_preview">시스템화면</div>
+                                        <div class="nav-dropdown-sub" data-i18n="nav_preview_sub">직관적인 대형 통합 관제 대시보드</div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
                     <li><a href="#sectionClients" data-i18n="nav_clients">고객사</a></li>
-                    <li><a href="#sectionCapabilities" data-i18n="nav_features">핵심 기능</a></li>
-                    <li><a href="#sectionSolutions" data-i18n="nav_solution">엔터프라이즈 솔루션</a></li>
-                    <li><a href="#sectionPreview" data-i18n="nav_preview">시스템 화면</a></li>
                     <li><a href="#sectionFaq" data-i18n="nav_faq">자주 묻는 질문</a></li>
                     <li><a href="#sectionContact" data-i18n="nav_contact">도입 문의</a></li>
                 </ul>
@@ -1247,7 +1282,7 @@
                     <img src="./resources/images/landmark/remarkvill.png" alt="remarkvill" class="landmark-slide-img">
                 </div>
                 <div class="landmark-bg-slide">
-                    <img src="./resources/images/landmark/starfield.jpg" alt="starfield" class="landmark-slide-img">
+                    <img src="./resources/images/landmark/starfield.png" alt="starfield" class="landmark-slide-img">
                 </div>
                 <div class="landmark-bg-slide">
                     <img src="./resources/images/landmark/vl-lewest.jpg" alt="vl-lewest" class="landmark-slide-img">
@@ -2247,13 +2282,25 @@
                 $('#headerNav').toggleClass('mobile-active');
             });
 
-            $('#headerNav a').click(function () {
+            // Mobile Solutions Dropdown Toggle
+            $('#navSolutionsToggle').click(function (e) {
+                if ($(window).width() <= 992) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    $('#navSolutionsDropdown').toggleClass('mobile-open');
+                }
+            });
+
+            // GNB Navigation Link Click (Close Mobile Drawer)
+            $('#headerNav a:not(#navSolutionsToggle)').click(function () {
                 $('#headerNav').removeClass('mobile-active');
+                $('#navSolutionsDropdown').removeClass('mobile-open');
             });
 
             $(document).click(function (e) {
                 if (!$(e.target).closest('#enterpriseHeader').length) {
                     $('#headerNav').removeClass('mobile-active');
+                    $('#navSolutionsDropdown').removeClass('mobile-open');
                 }
             });
 
