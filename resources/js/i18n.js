@@ -1363,9 +1363,21 @@
         }
     };
 
+    // =========================================================================
+    // [설정] 다국어 자동 치환 일시 정지 스위치
+    // 사용자가 index.html을 직접 수정하는 동안 브라우저에서 원래 텍스트가 덮어씌워지지 않도록 정지합니다.
+    // 최종 컨텐츠 수정 완료 후 다국어를 다시 켜려면 아래 값을 false로 변경하십시오.
+    // =========================================================================
+    const IS_I18N_PAUSED = true;
+
     let currentLang = 'ko';
 
     function setLanguage(lang) {
+        if (IS_I18N_PAUSED) {
+            console.log('[i18n] 다국어 엔진이 일시 정지(PAUSED) 상태입니다. (HTML 직접 수정 모드)');
+            return;
+        }
+
         if (!translations[lang]) lang = 'ko';
         currentLang = lang;
         localStorage.setItem('ezrems_lang', lang);
@@ -1400,6 +1412,9 @@
 
     // Initialize on DOMContentLoaded
     document.addEventListener('DOMContentLoaded', function () {
+        if (IS_I18N_PAUSED) {
+            return;
+        }
         // Check URL parameter first (?lang=en)
         const urlParams = new URLSearchParams(window.location.search);
         const urlLang = urlParams.get('lang');
