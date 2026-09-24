@@ -848,6 +848,12 @@
                 <div class="landmark-bg-slide">
                     <img src="./resources/images/landmark/vl-lewest.jpg" alt="VL르웨스트" class="landmark-slide-img">
                 </div>
+                <div class="landmark-bg-slide">
+                    <img src="./resources/images/landmark/remarkvill.png" alt="리마크빌" class="landmark-slide-img">
+                </div>
+                <div class="landmark-bg-slide">
+                    <img src="./resources/images/landmark/mangrove.png" alt="맹그로브" class="landmark-slide-img">
+                </div>
             </div>
             <!-- Vignette & Dark Contrast Overlay (글자 가독성 유지 레이어) -->
             <div class="landmark-bg-overlay" aria-hidden="true"></div>
@@ -1597,20 +1603,21 @@
             });
 
             // ==========================================================
-            // Landmark Background Auto Slider Controller (자동 크로스페이드)
+            // ==========================================================
+            // Landmark Background Auto Slider Controller (완전 자동 감지 & 순환)
             // ==========================================================
             (function initLandmarkBgSlider() {
                 var slider = document.getElementById('landmarkBgSlider');
                 if (!slider) return;
 
                 var slides = slider.querySelectorAll('.landmark-bg-slide');
-                if (slides.length <= 1) return;
-
                 var currentSlide = 0;
                 var slideInterval = 5000; // 5초마다 자동 크로스페이드 순환
                 var timer = null;
 
                 function nextSlide() {
+                    slides = slider.querySelectorAll('.landmark-bg-slide');
+                    if (slides.length <= 1) return;
                     slides[currentSlide].classList.remove('active');
                     currentSlide = (currentSlide + 1) % slides.length;
                     slides[currentSlide].classList.add('active');
@@ -1639,6 +1646,101 @@
                 });
 
                 startTimer();
+
+                // ----------------------------------------------------------
+                // [Zero-Build 자동화 엔진] 폴더 내 신규 이미지 자동 감지 및 실시간 등록
+                // ----------------------------------------------------------
+                function registerNewImages(imgList) {
+                    if (!Array.isArray(imgList) || imgList.length === 0) return;
+
+                    var existingSrcs = Array.from(slider.querySelectorAll('.landmark-slide-img')).map(function(img) {
+                        var parts = (img.getAttribute('src') || '').split('/');
+                        return parts[parts.length - 1].toLowerCase();
+                    });
+
+                    var addedCount = 0;
+                    imgList.forEach(function(item) {
+                        var fileName = typeof item === 'string' ? item : (item.name || '');
+                        if (!fileName) return;
+
+                        // 지원 이미지 확장자 검증
+                        if (!/\.(jpe?g|png|webp|avif|gif)$/i.test(fileName)) return;
+
+                        var cleanName = fileName.toLowerCase();
+                        if (existingSrcs.indexOf(cleanName) === -1) {
+                            // 신규 이미지 발견 시 슬라이드 요소 동적 생성
+                            var slideDiv = document.createElement('div');
+                            slideDiv.className = 'landmark-bg-slide';
+
+                            var imgEl = document.createElement('img');
+                            imgEl.src = './resources/images/landmark/' + fileName;
+                            imgEl.alt = fileName.replace(/\.[^/.]+$/, '');
+                            imgEl.className = 'landmark-slide-img';
+                            imgEl.loading = 'lazy';
+
+                            slideDiv.appendChild(imgEl);
+                            slider.appendChild(slideDiv);
+                            existingSrcs.push(cleanName);
+                            addedCount++;
+                        }
+                    });
+
+                    if (addedCount > 0) {
+                        slides = slider.querySelectorAll('.landmark-bg-slide');
+                        console.log('[ezREMS Landmark] 새로운 이미지 ' + addedCount + '개가 자동으로 슬라이더에 추가되었습니다. (총 ' + slides.length + '개)');
+                    }
+                }
+
+                // 1단계: landmarks.json 정적 매니페스트 확인 (로컬 및 오프라인 즉시 로딩)
+                fetch('./resources/images/landmark/landmarks.json')
+                    .then(function(res) {
+                        if (res.ok) return res.json();
+                        throw new Error('No local json');
+                    })
+                    .then(function(list) {
+                        registerNewImages(list);
+                    })
+                    .catch(function() {
+                        // landmarks.json 부재 시 GitHub API로 폴백
+                    });
+
+                // 2단계: GitHub Pages 환경 시 GitHub API로 폴더 실시간 자동 스캔 (완전 자동 감지)
+                var isGitHubPages = window.location.hostname.indexOf('github.io') !== -1;
+                var ghApiUrl = 'https://api.github.com/repos/ZEONS/ezrems-landing-renewal/contents/resources/images/landmark';
+
+                var CACHE_KEY = 'ezrems_landmark_imgs_cache';
+                var cachedData = null;
+                try {
+                    var rawCache = sessionStorage.getItem(CACHE_KEY);
+                    if (rawCache) {
+                        var parsed = JSON.parse(rawCache);
+                        if (Date.now() - parsed.timestamp < 10 * 60 * 1000) {
+                            cachedData = parsed.data;
+                        }
+                    }
+                } catch(e) {}
+
+                if (cachedData) {
+                    registerNewImages(cachedData);
+                } else if (isGitHubPages) {
+                    fetch(ghApiUrl)
+                        .then(function(res) {
+                            if (res.ok) return res.json();
+                            throw new Error('GitHub API Error: ' + res.status);
+                        })
+                        .then(function(files) {
+                            if (Array.isArray(files)) {
+                                var names = files.filter(function(f) { return f.type === 'file'; }).map(function(f) { return f.name; });
+                                registerNewImages(names);
+                                try {
+                                    sessionStorage.setItem(CACHE_KEY, JSON.stringify({ timestamp: Date.now(), data: names }));
+                                } catch(e) {}
+                            }
+                        })
+                        .catch(function(err) {
+                            // API 제한 등의 경우에도 기본 슬라이드로 안정 동작
+                        });
+                }
             })();
         });
     </script>
