@@ -1387,6 +1387,13 @@ body.enterprise-body {
     border-radius: 20px;
 }
 
+.section-landmarks .asset-types-row {
+    position: relative;
+    z-index: 3;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
 .section-landmarks .landmarks-grid {
     position: relative;
     z-index: 3;
