@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="./resources/css/common/swiper.min.css">
 
     <!-- Enterprise High-Tech Theme (v2.1) -->
-    <link rel="stylesheet" type="text/css" href="./resources/css/enterprise-theme.css?v=20260924_1726">
+    <link rel="stylesheet" type="text/css" href="./resources/css/enterprise-theme.css?v=20260924_1755">
 
     <!-- Critical Inline Styles for Landmark Slider (캐시 방지 및 시인성 보장) -->
     <style>
@@ -152,7 +152,7 @@
     <script src="./resources/js/jquery.counterup.min.js"></script>
 
     <!-- ezREMS Multilingual (i18n) Engine -->
-    <script src="./resources/js/i18n.js?v=20260924_1745"></script>
+    <script src="./resources/js/i18n.js?v=20260924_1755"></script>
 
     <!-- ezREMS Landmarks Registry (로컬 file:/// 및 오프라인 즉시 로딩용) -->
     <script src="./resources/images/landmark/landmarks-data.js?v=20260924_1158"></script>
@@ -734,14 +734,14 @@
                                             </div>
                                             <div class="dash-gauge-item">
                                                 <div class="dash-gauge-top"><span data-i18n="dash_tax_bar1_label">임대료
-                                                        세금계산서 (8,420건)</span><span>100% 완료</span></div>
+                                                        세금계산서 (8,420건)</span><span data-i18n="dash_tax_completed">100% 완료</span></div>
                                                 <div class="dash-gauge-bar">
                                                     <div class="dash-gauge-fill" style="width: 100%;"></div>
                                                 </div>
                                             </div>
                                             <div class="dash-gauge-item">
                                                 <div class="dash-gauge-top"><span data-i18n="dash_tax_bar2_label">공용 관리비
-                                                        세금계산서 (4,430건)</span><span>100% 완료</span></div>
+                                                        세금계산서 (4,430건)</span><span data-i18n="dash_tax_completed">100% 완료</span></div>
                                                 <div class="dash-gauge-bar">
                                                     <div class="dash-gauge-fill" style="width: 100%;"></div>
                                                 </div>
@@ -963,11 +963,11 @@
                         <i class="fal fa-sparkles"></i>
                         <span>AI TRANSFORMATION</span>
                     </div>
-                    <h2 class="ax-title">
+                    <h2 class="ax-title" data-i18n="ax_header_title">
                         자산관리의 새로운 패러다임,<br/>
                         <span class="tech-gradient-text">AX 혁신 솔루션</span>
                     </h2>
-                    <p class="ax-subtitle">
+                    <p class="ax-subtitle" data-i18n="ax_header_subtitle">
                         반복적인 서류 입력부터 세금계산서 발행 후의 정정까지, 복잡했던 계약·수납 프로세스를 인공지능(AI) 자동화로 완벽하게 해결합니다.
                     </p>
                 </div>
@@ -982,11 +982,11 @@
                             <span class="ax-card-num">01 / AUTOMATION</span>
                         </div>
 
-                        <h3 class="ax-card-heading">
+                        <h3 class="ax-card-heading" data-i18n="ax_c1_heading">
                             서류 입력은 AI에게 맡기세요,<br/>
                             <span class="accent-cyan">날인 계약서 자동 등록</span>
                         </h3>
-                        <p class="ax-card-lead">
+                        <p class="ax-card-lead" data-i18n="ax_c1_lead">
                             수작업으로 계약서 내용을 옮겨 적던 번거로운 시대는 지났습니다. AI 기술을 활용해 계약서 등록 프로세스를 완전히 자동화했습니다.
                         </p>
 
@@ -995,28 +995,28 @@
                             <div class="ax-flow-diagram">
                                 <div class="ax-flow-step">
                                     <div class="ax-flow-icon"><i class="fal fa-file-upload"></i></div>
-                                    <div class="ax-flow-name">날인 계약서 업로드</div>
-                                    <div class="ax-flow-sub">스캔 PDF / 이미지</div>
+                                    <div class="ax-flow-name" data-i18n="ax_c1_step1_name">날인 계약서 업로드</div>
+                                    <div class="ax-flow-sub" data-i18n="ax_c1_step1_sub">스캔 PDF / 이미지</div>
                                 </div>
                                 <div class="ax-flow-arrow"><i class="fal fa-arrow-right"></i></div>
                                 <div class="ax-flow-step active-step">
                                     <div class="ax-flow-icon"><i class="fal fa-brain-circuit"></i></div>
-                                    <div class="ax-flow-name">AI 자동 인식</div>
-                                    <div class="ax-flow-sub">도장 날인 & 계약 정보 추출</div>
+                                    <div class="ax-flow-name" data-i18n="ax_c1_step2_name">AI 자동 인식</div>
+                                    <div class="ax-flow-sub" data-i18n="ax_c1_step2_sub">도장 날인 & 계약 정보 추출</div>
                                 </div>
                                 <div class="ax-flow-arrow"><i class="fal fa-arrow-right"></i></div>
                                 <div class="ax-flow-step">
                                     <div class="ax-flow-icon"><i class="fal fa-database"></i></div>
-                                    <div class="ax-flow-name">시스템 자동 등록</div>
-                                    <div class="ax-flow-sub">ezREMS 즉시 매핑</div>
+                                    <div class="ax-flow-name" data-i18n="ax_c1_step3_name">시스템 자동 등록</div>
+                                    <div class="ax-flow-sub" data-i18n="ax_c1_step3_sub">ezREMS 즉시 매핑</div>
                                 </div>
                             </div>
                             <div class="ax-status-ticker">
                                 <div class="ax-status-left">
                                     <span class="ax-status-indicator"></span>
-                                    <span>AI OCR 엔진 실시간 가동 중</span>
+                                    <span data-i18n="ax_c1_status_left">AI OCR 엔진 실시간 가동 중</span>
                                 </div>
-                                <div class="ax-status-right">오타율 0% · 등록시간 90% 단축</div>
+                                <div class="ax-status-right" data-i18n="ax_c1_status_right">오타율 0% · 등록시간 90% 단축</div>
                             </div>
                         </div>
 
@@ -1025,15 +1025,15 @@
                             <div class="ax-point-item">
                                 <div class="ax-point-icon"><i class="fal fa-bolt"></i></div>
                                 <div class="ax-point-content">
-                                    <div class="ax-point-title">파일 업로드만으로 즉시 등록</div>
-                                    <p class="ax-point-desc">도장이 찍힌 날인 계약서를 스캔하여 업로드하면, AI가 계약 정보를 스스로 인식해 자동으로 시스템에 등록합니다.</p>
+                                    <div class="ax-point-title" data-i18n="ax_c1_p1_title">파일 업로드만으로 즉시 등록</div>
+                                    <p class="ax-point-desc" data-i18n="ax_c1_p1_desc">도장이 찍힌 날인 계약서를 스캔하여 업로드하면, AI가 계약 정보를 스스로 인식해 자동으로 시스템에 등록합니다.</p>
                                 </div>
                             </div>
                             <div class="ax-point-item">
                                 <div class="ax-point-icon"><i class="fal fa-shield-check"></i></div>
                                 <div class="ax-point-content">
-                                    <div class="ax-point-title">수기 입력 오타 방지</div>
-                                    <p class="ax-point-desc">수기 입력 과정에서 발생할 수 있는 데이터 오류를 줄이고 등록 시간을 획기적으로 단축합니다.</p>
+                                    <div class="ax-point-title" data-i18n="ax_c1_p2_title">수기 입력 오타 방지</div>
+                                    <p class="ax-point-desc" data-i18n="ax_c1_p2_desc">수기 입력 과정에서 발생할 수 있는 데이터 오류를 줄이고 등록 시간을 획기적으로 단축합니다.</p>
                                 </div>
                             </div>
                         </div>
@@ -1048,11 +1048,11 @@
                             <span class="ax-card-num">02 / FLEXIBILITY</span>
                         </div>
 
-                        <h3 class="ax-card-heading">
+                        <h3 class="ax-card-heading" data-i18n="ax_c2_heading">
                             세금계산서 발행 후에도 당황 없이!<br/>
                             <span class="accent-indigo">AI 계약완료 간편 취소</span>
                         </h3>
-                        <p class="ax-card-lead">
+                        <p class="ax-card-lead" data-i18n="ax_c2_lead">
                             기존에는 계약이 완료되고 세금계산서 발행까지 진행된 건을 수정하거나 취소하려면 복잡한 절차를 거쳐야 했습니다. 이제는 실수나 데이터 수정이 필요한 상황에서도 부담 없이 처리하실 수 있습니다.
                         </p>
 
@@ -1062,29 +1062,29 @@
                                 <div class="ax-cancel-row">
                                     <div class="ax-cancel-label">
                                         <i class="fal fa-file-invoice-dollar" style="color:#FBBF24;"></i>
-                                        <span>계약서 #2026-B802</span>
+                                        <span data-i18n="ax_c2_label1">계약서 #2026-B802</span>
                                     </div>
-                                    <span class="ax-cancel-state state-issued">계약완료 (세금계산서 발행됨)</span>
+                                    <span class="ax-cancel-state state-issued" data-i18n="ax_c2_state1">계약완료 (세금계산서 발행됨)</span>
                                 </div>
                                 <div class="ax-action-btn-demo">
                                     <i class="fal fa-sparkles"></i>
-                                    <span>AI 기반 스마트 간편 취소 프로세스 가동</span>
+                                    <span data-i18n="ax_c2_btn_demo">AI 기반 스마트 간편 취소 프로세스 가동</span>
                                     <i class="fal fa-arrow-down" style="font-size:0.75rem;"></i>
                                 </div>
                                 <div class="ax-cancel-row">
                                     <div class="ax-cancel-label">
                                         <i class="fal fa-check-circle" style="color:#34D399;"></i>
-                                        <span>정합성 검증 & 안전 롤백 완료</span>
+                                        <span data-i18n="ax_c2_label2">정합성 검증 & 안전 롤백 완료</span>
                                     </div>
-                                    <span class="ax-cancel-state state-restored">수정 및 재계약 가능</span>
+                                    <span class="ax-cancel-state state-restored" data-i18n="ax_c2_state2">수정 및 재계약 가능</span>
                                 </div>
                             </div>
                             <div class="ax-status-ticker">
                                 <div class="ax-status-left">
                                     <span class="ax-status-indicator"></span>
-                                    <span>복잡한 회계 롤백 자동화 지원</span>
+                                    <span data-i18n="ax_c2_status_left">복잡한 회계 롤백 자동화 지원</span>
                                 </div>
-                                <div class="ax-status-right" style="color:#A5B4FC;">클릭 몇 번으로 즉시 원상복구</div>
+                                <div class="ax-status-right" style="color:#A5B4FC;" data-i18n="ax_c2_status_right">클릭 몇 번으로 즉시 원상복구</div>
                             </div>
                         </div>
 
@@ -1093,15 +1093,15 @@
                             <div class="ax-point-item">
                                 <div class="ax-point-icon icon-indigo"><i class="fal fa-history"></i></div>
                                 <div class="ax-point-content">
-                                    <div class="ax-point-title">손쉬운 원상복구</div>
-                                    <p class="ax-point-desc">복잡한 롤백 과정 없이, AI 기반 프로세스로 '계약완료' 상태의 건도 사용자가 직접 손쉽게 취소 처리할 수 있습니다.</p>
+                                    <div class="ax-point-title" data-i18n="ax_c2_p1_title">손쉬운 원상복구</div>
+                                    <p class="ax-point-desc" data-i18n="ax_c2_p1_desc">복잡한 롤백 과정 없이, AI 기반 프로세스로 '계약완료' 상태의 건도 사용자가 직접 손쉽게 취소 처리할 수 있습니다.</p>
                                 </div>
                             </div>
                             <div class="ax-point-item">
                                 <div class="ax-point-icon icon-indigo"><i class="fal fa-heart-rate"></i></div>
                                 <div class="ax-point-content">
-                                    <div class="ax-point-title">유연한 업무 대응</div>
-                                    <p class="ax-point-desc">복잡한 정정 절차를 클릭 몇 번으로 단축하여 업무 스트레스를 줄이고 더 유연한 계약 관리가 가능해집니다.</p>
+                                    <div class="ax-point-title" data-i18n="ax_c2_p2_title">유연한 업무 대응</div>
+                                    <p class="ax-point-desc" data-i18n="ax_c2_p2_desc">복잡한 정정 절차를 클릭 몇 번으로 단축하여 업무 스트레스를 줄이고 더 유연한 계약 관리가 가능해집니다.</p>
                                 </div>
                             </div>
                         </div>
@@ -1116,11 +1116,11 @@
                             <span class="ax-card-num">03 / 24·7 SUPPORT</span>
                         </div>
 
-                        <h3 class="ax-card-heading">
+                        <h3 class="ax-card-heading" data-i18n="ax_c3_heading">
                             매뉴얼 문서 검색은 이제 그만!<br/>
                             <span class="accent-emerald">AI 챗봇 기반 사용자 매뉴얼 지원</span>
                         </h3>
-                        <p class="ax-card-lead">
+                        <p class="ax-card-lead" data-i18n="ax_c3_lead">
                             복잡한 사용자 매뉴얼 문서 찾아보지 마시고 챗봇에게 바로 물어보세요. AI가 시스템 사용 방법에 대해서 자세히 설명해 드립니다.
                         </p>
 
@@ -1128,20 +1128,20 @@
                         <div class="ax-visual-box">
                             <div class="ax-chat-box">
                                 <div class="ax-chat-bubble ax-chat-user">
-                                    <span class="ax-chat-text">"세금계산서 발행 완료된 계약건 취소는 어떻게 하나요?"</span>
+                                    <span class="ax-chat-text" data-i18n="ax_c3_chat_user">"세금계산서 발행 완료된 계약건 취소는 어떻게 하나요?"</span>
                                     <div class="ax-chat-user-avatar"><i class="fal fa-user"></i></div>
                                 </div>
                                 <div class="ax-chat-bubble ax-chat-ai">
                                     <div class="ax-chat-ai-avatar"><i class="fal fa-robot"></i></div>
-                                    <span class="ax-chat-text">"<strong>‘AI 계약완료 간편 취소’</strong>를 통해 역발행 및 롤백이 가능합니다. [간편 취소 가이드 확인]"</span>
+                                    <span class="ax-chat-text" data-i18n="ax_c3_chat_ai">"<strong>‘AI 계약완료 간편 취소’</strong>를 통해 역발행 및 롤백이 가능합니다. [간편 취소 가이드 확인]"</span>
                                 </div>
                             </div>
                             <div class="ax-status-ticker">
                                 <div class="ax-status-left">
                                     <span class="ax-status-indicator"></span>
-                                    <span>AI 매뉴얼 에이전트 24/7 실시간 응답</span>
+                                    <span data-i18n="ax_c3_status_left">AI 매뉴얼 에이전트 24/7 실시간 응답</span>
                                 </div>
-                                <div class="ax-status-right" style="color:#34D399;">대화형 즉시 안내</div>
+                                <div class="ax-status-right" style="color:#34D399;" data-i18n="ax_c3_status_right">대화형 즉시 안내</div>
                             </div>
                         </div>
 
@@ -1150,15 +1150,15 @@
                             <div class="ax-point-item">
                                 <div class="ax-point-icon icon-emerald"><i class="fal fa-comments-alt"></i></div>
                                 <div class="ax-point-content">
-                                    <div class="ax-point-title">대화형 실시간 질의응답</div>
-                                    <p class="ax-point-desc">방대한 매뉴얼이나 PDF를 일일이 찾지 않아도, 질문 한 문장으로 필요한 기능 위치와 처리 순서를 즉시 안내합니다.</p>
+                                    <div class="ax-point-title" data-i18n="ax_c3_p1_title">대화형 실시간 질의응답</div>
+                                    <p class="ax-point-desc" data-i18n="ax_c3_p1_desc">방대한 매뉴얼이나 PDF를 일일이 찾지 않아도, 질문 한 문장으로 필요한 기능 위치와 처리 순서를 즉시 안내합니다.</p>
                                 </div>
                             </div>
                             <div class="ax-point-item">
                                 <div class="ax-point-icon icon-emerald"><i class="fal fa-user-graduate"></i></div>
                                 <div class="ax-point-content">
-                                    <div class="ax-point-title">신규 담당자 빠른 업무 숙달</div>
-                                    <p class="ax-point-desc">PMS 시스템 조작이 낯선 신규 직원도 AI 챗봇의 친절한 가이드로 교육 비용 없이 빠르게 실무에 적응할 수 있습니다.</p>
+                                    <div class="ax-point-title" data-i18n="ax_c3_p2_title">신규 담당자 빠른 업무 숙달</div>
+                                    <p class="ax-point-desc" data-i18n="ax_c3_p2_desc">PMS 시스템 조작이 낯선 신규 직원도 AI 챗봇의 친절한 가이드로 교육 비용 없이 빠르게 실무에 적응할 수 있습니다.</p>
                                 </div>
                             </div>
                         </div>
@@ -1491,7 +1491,7 @@
                 <div class="deck-top-bar">
                     <div class="deck-badge-group">
                         <span class="deck-main-tag"><i class="fas fa-layer-group me-1"></i> ASSET HIERARCHY ARCHITECTURE</span>
-                        <span class="deck-sub-tag">부동산자산관리 통합 계층 체계 (AM · PM · FM)</span>
+                        <span class="deck-sub-tag" data-i18n="pyr_sub_tag">부동산자산관리 통합 계층 체계 (AM · PM · FM)</span>
                     </div>
                 </div>
 
@@ -1504,8 +1504,8 @@
                         <div class="tier-entity-card">
                             <div class="tier-icon-wrap am-glow"><i class="fal fa-chart-line"></i></div>
                             <div class="tier-entity-info">
-                                <span class="tier-level-tag">TOP TIER · 상위 운용</span>
-                                <h4 class="tier-title">부동산 자산운용 <span class="en-code">(AM)</span></h4>
+                                <span class="tier-level-tag" data-i18n="pyr_am_level">TOP TIER · 상위 운용</span>
+                                <h4 class="tier-title" data-i18n="pyr_am_title">부동산 자산운용 <span class="en-code">(AM)</span></h4>
                                 <span class="tier-subtitle">ASSET MANAGEMENT</span>
                             </div>
                             <div class="tier-connector-arrow"><i class="fal fa-chevron-right"></i></div>
@@ -1514,22 +1514,22 @@
                         <!-- 중앙 피라미드 블록 (상층부) -->
                         <div class="tier-core-pyramid am-width">
                             <div class="pyramid-banner am-bg">
-                                <span class="pyramid-tier-pill">AM 핵심 운용 체계</span>
-                                <span class="pyramid-slogan">자산 가치 평가 & 포트폴리오 투자 최적화</span>
+                                <span class="pyramid-tier-pill" data-i18n="pyr_am_pill">AM 핵심 운용 체계</span>
+                                <span class="pyramid-slogan" data-i18n="pyr_am_slogan">자산 가치 평가 & 포트폴리오 투자 최적화</span>
                             </div>
                             <div class="pyramid-grid grid-2">
                                 <div class="pyramid-cell">
                                     <div class="cell-icon"><i class="fal fa-hand-holding-usd"></i></div>
                                     <div class="cell-text">
-                                        <strong>매입 / 매각</strong>
-                                        <span>자금 조달 및 구조화</span>
+                                        <strong data-i18n="pyr_am_c1_t">매입 / 매각</strong>
+                                        <span data-i18n="pyr_am_c1_d">자금 조달 및 구조화</span>
                                     </div>
                                 </div>
                                 <div class="pyramid-cell">
                                     <div class="cell-icon"><i class="fal fa-analytics"></i></div>
                                     <div class="cell-text">
-                                        <strong>자산 평가</strong>
-                                        <span>투자 수익성 및 리스크 분석</span>
+                                        <strong data-i18n="pyr_am_c2_t">자산 평가</strong>
+                                        <span data-i18n="pyr_am_c2_d">투자 수익성 및 리스크 분석</span>
                                     </div>
                                 </div>
                             </div>
@@ -1539,13 +1539,13 @@
                         <div class="tier-scope-card">
                             <div class="scope-header">
                                 <i class="fal fa-tasks"></i>
-                                <span>주요 실행 태스크 & 관리 범위</span>
+                                <span data-i18n="pyr_scope_hdr">주요 실행 태스크 & 관리 범위</span>
                             </div>
                             <ul class="scope-list">
-                                <li><i class="fal fa-check"></i> <span>투자 포트폴리오 구성 및 전략 수립</span></li>
-                                <li><i class="fal fa-check"></i> <span>투자 대상 선정 및 투자 리스크 통제</span></li>
-                                <li><i class="fal fa-check"></i> <span>포트폴리오 성과 분석 및 모니터링</span></li>
-                                <li><i class="fal fa-check"></i> <span>부동산 의사결정 전략 컨설팅</span></li>
+                                <li><i class="fal fa-check"></i> <span data-i18n="pyr_am_s1">투자 포트폴리오 구성 및 전략 수립</span></li>
+                                <li><i class="fal fa-check"></i> <span data-i18n="pyr_am_s2">투자 대상 선정 및 투자 리스크 통제</span></li>
+                                <li><i class="fal fa-check"></i> <span data-i18n="pyr_am_s3">포트폴리오 성과 분석 및 모니터링</span></li>
+                                <li><i class="fal fa-check"></i> <span data-i18n="pyr_am_s4">부동산 의사결정 전략 컨설팅</span></li>
                             </ul>
                         </div>
                     </div>
@@ -1563,8 +1563,8 @@
                         <div class="tier-entity-card">
                             <div class="tier-icon-wrap pm-glow"><i class="fal fa-building"></i></div>
                             <div class="tier-entity-info">
-                                <span class="tier-level-tag">CORE TIER · 핵심 관리</span>
-                                <h4 class="tier-title">부동산 자산관리 <span class="en-code">(PM)</span></h4>
+                                <span class="tier-level-tag" data-i18n="pyr_pm_level">CORE TIER · 핵심 관리</span>
+                                <h4 class="tier-title" data-i18n="pyr_pm_title">부동산 자산관리 <span class="en-code">(PM)</span></h4>
                                 <span class="tier-subtitle">PROPERTY MANAGEMENT</span>
                             </div>
                             <div class="tier-connector-arrow"><i class="fal fa-chevron-right"></i></div>
@@ -1573,36 +1573,36 @@
                         <!-- 중앙 피라미드 블록 (중층부) -->
                         <div class="tier-core-pyramid pm-width">
                             <div class="pyramid-banner pm-bg">
-                                <span class="pyramid-tier-pill">PM 핵심 관리 체계</span>
-                                <span class="pyramid-slogan">예산 · 결산 · 재무관리 이행 / 경영효율화 실현</span>
+                                <span class="pyramid-tier-pill" data-i18n="pyr_pm_pill">PM 핵심 관리 체계</span>
+                                <span class="pyramid-slogan" data-i18n="pyr_pm_slogan">예산 · 결산 · 재무관리 이행 / 경영효율화 실현</span>
                             </div>
                             <div class="pyramid-grid grid-4">
                                 <div class="pyramid-cell">
                                     <span class="cell-num">01</span>
                                     <div class="cell-text">
-                                        <strong>임대전략 수립</strong>
-                                        <span>계약체결 및 임대차</span>
+                                        <strong data-i18n="pyr_pm_c1_t">임대전략 수립</strong>
+                                        <span data-i18n="pyr_pm_c1_d">계약체결 및 임대차</span>
                                     </div>
                                 </div>
                                 <div class="pyramid-cell">
                                     <span class="cell-num">02</span>
                                     <div class="cell-text">
-                                        <strong>수익목표 수립</strong>
-                                        <span>공실률 최소화 관리</span>
+                                        <strong data-i18n="pyr_pm_c2_t">수익목표 수립</strong>
+                                        <span data-i18n="pyr_pm_c2_d">공실률 최소화 관리</span>
                                     </div>
                                 </div>
                                 <div class="pyramid-cell">
                                     <span class="cell-num">03</span>
                                     <div class="cell-text">
-                                        <strong>입주사 유치</strong>
-                                        <span>임대스케줄 종합관리</span>
+                                        <strong data-i18n="pyr_pm_c3_t">입주사 유치</strong>
+                                        <span data-i18n="pyr_pm_c3_d">임대스케줄 종합관리</span>
                                     </div>
                                 </div>
                                 <div class="pyramid-cell">
                                     <span class="cell-num">04</span>
                                     <div class="cell-text">
-                                        <strong>예산 수립</strong>
-                                        <span>중장기 수익 예측</span>
+                                        <strong data-i18n="pyr_pm_c4_t">예산 수립</strong>
+                                        <span data-i18n="pyr_pm_c4_d">중장기 수익 예측</span>
                                     </div>
                                 </div>
                             </div>
@@ -1612,13 +1612,13 @@
                         <div class="tier-scope-card">
                             <div class="scope-header">
                                 <i class="fal fa-tasks"></i>
-                                <span>주요 실행 태스크 & 관리 범위</span>
+                                <span data-i18n="pyr_scope_hdr">주요 실행 태스크 & 관리 범위</span>
                             </div>
                             <ul class="scope-list">
-                                <li><i class="fal fa-check"></i> <span>공간배치 계획 및 상권·시장 분석</span></li>
-                                <li><i class="fal fa-check"></i> <span>수지분석 · 렌트프리 · 세무 관리</span></li>
-                                <li><i class="fal fa-check"></i> <span>임대차 계약 관리 및 테넌트 마케팅</span></li>
-                                <li><i class="fal fa-check"></i> <span>회계·재무 결산 및 월간 운영보고(MR)</span></li>
+                                <li><i class="fal fa-check"></i> <span data-i18n="pyr_pm_s1">공간배치 계획 및 상권·시장 분석</span></li>
+                                <li><i class="fal fa-check"></i> <span data-i18n="pyr_pm_s2">수지분석 · 렌트프리 · 세무 관리</span></li>
+                                <li><i class="fal fa-check"></i> <span data-i18n="pyr_pm_s3">임대차 계약 관리 및 테넌트 마케팅</span></li>
+                                <li><i class="fal fa-check"></i> <span data-i18n="pyr_pm_s4">회계·재무 결산 및 월간 운영보고(MR)</span></li>
                             </ul>
                         </div>
                     </div>
@@ -1636,8 +1636,8 @@
                         <div class="tier-entity-card">
                             <div class="tier-icon-wrap fm-glow"><i class="fal fa-tools"></i></div>
                             <div class="tier-entity-info">
-                                <span class="tier-level-tag">BASE TIER · 현장 기반</span>
-                                <h4 class="tier-title">시설물관리 <span class="en-code">(FM)</span></h4>
+                                <span class="tier-level-tag" data-i18n="pyr_fm_level">BASE TIER · 현장 기반</span>
+                                <h4 class="tier-title" data-i18n="pyr_fm_title">시설물관리 <span class="en-code">(FM)</span></h4>
                                 <span class="tier-subtitle">FACILITIES MANAGEMENT</span>
                             </div>
                             <div class="tier-connector-arrow"><i class="fal fa-chevron-right"></i></div>
@@ -1646,47 +1646,47 @@
                         <!-- 중앙 피라미드 블록 (기반층) -->
                         <div class="tier-core-pyramid fm-width">
                             <div class="pyramid-banner fm-bg">
-                                <span class="pyramid-tier-pill">FM 현장 운영 체계</span>
+                                <span class="pyramid-tier-pill" data-i18n="pyr_fm_pill">FM 현장 운영 체계</span>
                                 <div class="pyramid-slogan-dual">
-                                    <span>시설물 가치보존 증대 및 이용 만족도 극대화</span>
+                                    <span data-i18n="pyr_fm_slogan1">시설물 가치보존 증대 및 이용 만족도 극대화</span>
                                     <span class="divider">|</span>
-                                    <span>영업자산 안전운영 및 관리비·유지비 최적화</span>
+                                    <span data-i18n="pyr_fm_slogan2">영업자산 안전운영 및 관리비·유지비 최적화</span>
                                 </div>
                             </div>
                             <div class="pyramid-grid grid-5">
                                 <div class="pyramid-cell">
                                     <span class="cell-num">01</span>
                                     <div class="cell-text">
-                                        <strong>시설물 유지·보수</strong>
-                                        <span>안전 점검 및 통제</span>
+                                        <strong data-i18n="pyr_fm_c1_t">시설물 유지·보수</strong>
+                                        <span data-i18n="pyr_fm_c1_d">안전 점검 및 통제</span>
                                     </div>
                                 </div>
                                 <div class="pyramid-cell">
                                     <span class="cell-num">02</span>
                                     <div class="cell-text">
-                                        <strong>에너지 효율관리</strong>
-                                        <span>외주 협력업체 관리</span>
+                                        <strong data-i18n="pyr_fm_c2_t">에너지 효율관리</strong>
+                                        <span data-i18n="pyr_fm_c2_d">외주 협력업체 관리</span>
                                     </div>
                                 </div>
                                 <div class="pyramid-cell">
                                     <span class="cell-num">03</span>
                                     <div class="cell-text">
-                                        <strong>현장 경영관리</strong>
-                                        <span>상주 인력·노무 관리</span>
+                                        <strong data-i18n="pyr_fm_c3_t">현장 경영관리</strong>
+                                        <span data-i18n="pyr_fm_c3_d">상주 인력·노무 관리</span>
                                     </div>
                                 </div>
                                 <div class="pyramid-cell">
                                     <span class="cell-num">04</span>
                                     <div class="cell-text">
-                                        <strong>경비·보안·주차</strong>
-                                        <span>청소·소독·환경위생</span>
+                                        <strong data-i18n="pyr_fm_c4_t">경비·보안·주차</strong>
+                                        <span data-i18n="pyr_fm_c4_d">청소·소독·환경위생</span>
                                     </div>
                                 </div>
                                 <div class="pyramid-cell">
                                     <span class="cell-num">05</span>
                                     <div class="cell-text">
-                                        <strong>입주사 VOC 응대</strong>
-                                        <span>만족도 조사 및 개선</span>
+                                        <strong data-i18n="pyr_fm_c5_t">입주사 VOC 응대</strong>
+                                        <span data-i18n="pyr_fm_c5_d">만족도 조사 및 개선</span>
                                     </div>
                                 </div>
                             </div>
@@ -1696,13 +1696,13 @@
                         <div class="tier-scope-card">
                             <div class="scope-header">
                                 <i class="fal fa-tasks"></i>
-                                <span>주요 실행 태스크 & 관리 범위</span>
+                                <span data-i18n="pyr_scope_hdr">주요 실행 태스크 & 관리 범위</span>
                             </div>
                             <ul class="scope-list">
-                                <li><i class="fal fa-check"></i> <span>빌딩 운영 및 물리적 현장 관리 범위</span></li>
-                                <li><i class="fal fa-check"></i> <span>기계·전기·소방 설비 법정 점검·방재</span></li>
-                                <li><i class="fal fa-check"></i> <span>예방 보전 활동을 통한 건물 수명 연장</span></li>
-                                <li><i class="fal fa-check"></i> <span>에너지 소비 절감 및 친환경 ESG 운영</span></li>
+                                <li><i class="fal fa-check"></i> <span data-i18n="pyr_fm_s1">빌딩 운영 및 물리적 현장 관리 범위</span></li>
+                                <li><i class="fal fa-check"></i> <span data-i18n="pyr_fm_s2">기계·전기·소방 설비 법정 점검·방재</span></li>
+                                <li><i class="fal fa-check"></i> <span data-i18n="pyr_fm_s3">예방 보전 활동을 통한 건물 수명 연장</span></li>
+                                <li><i class="fal fa-check"></i> <span data-i18n="pyr_fm_s4">에너지 소비 절감 및 친환경 ESG 운영</span></li>
                             </ul>
                         </div>
                     </div>
@@ -1711,7 +1711,7 @@
 
                 <!-- 하단 인터랙션 힌트 바 -->
                 <div class="deck-bottom-footer">
-                    <span class="footer-tip"><i class="fas fa-mouse-pointer me-1"></i> 각 계층 카드를 클릭하면 아래 직무별 맞춤 솔루션 상세 설명으로 즉시 연결됩니다.</span>
+                    <span class="footer-tip" data-i18n="pyr_footer_tip"><i class="fas fa-mouse-pointer me-1"></i> 각 계층 카드를 클릭하면 아래 직무별 맞춤 솔루션 상세 설명으로 즉시 연결됩니다.</span>
                 </div>
             </div>
 
@@ -1728,7 +1728,7 @@
                 <!-- Tab 1: AMC -->
                 <div class="persona-content-card active" id="tabAmc">
                     <div class="persona-left">
-                        <div class="persona-tag-pill amc-pill"><i class="fal fa-chart-line me-1"></i> 리츠사 · AMC · 오너 전용</div>
+                        <div class="persona-tag-pill amc-pill"><i class="fal fa-chart-line me-1"></i> <span data-i18n="amc_badge">리츠사 · AMC · 오너 전용</span></div>
                         <h3 data-i18n="amc_h3">돈을 벌어주는 솔루션 — 자산 가치를 극대화하는 3가지 원칙</h3>
                         <p data-i18n="amc_p">
                             감정 말고 시스템으로. 공실률을 하루라도 줄여 임대 수익을 늘리고, 복잡한 회계 결산과 전표 처리를 원클릭으로 해결하여 자산 가치를 9% 이상 극대화합니다.
@@ -1759,21 +1759,21 @@
                     </div>
                     <div class="persona-right">
                         <div class="kpi-header">
-                            <span class="kpi-tag"><i class="fas fa-chart-pie me-1"></i> AMC 핵심 성과 지표 (Impact)</span>
+                            <span class="kpi-tag"><i class="fas fa-chart-pie me-1"></i> <span data-i18n="amc_kpi_header">AMC 핵심 성과 지표 (Impact)</span></span>
                         </div>
                         <div class="kpi-stat-grid">
                             <div class="kpi-stat-item">
                                 <span class="kpi-stat-num">+9%</span>
-                                <span class="kpi-stat-lbl">자산가치 상승 (Value-Up)</span>
+                                <span class="kpi-stat-lbl" data-i18n="amc_kpi1_label">자산가치 상승 (Value-Up)</span>
                             </div>
                             <div class="kpi-stat-item">
-                                <span class="kpi-stat-num">0건</span>
-                                <span class="kpi-stat-lbl">미수금 누락 & 자동 회수율</span>
+                                <span class="kpi-stat-num" data-i18n="amc_kpi2_num">0건</span>
+                                <span class="kpi-stat-lbl" data-i18n="amc_kpi2_label">미수금 누락 & 자동 회수율</span>
                             </div>
                         </div>
                         <div class="persona-quote-box">
                             <i class="fas fa-quote-left quote-icon"></i>
-                            <p class="quote-text">"받아야 할 연체료, 미안해서 못 받으셨나요? 악역은 이지램스가 하겠습니다. 대표님은 품격만 유지하세요."</p>
+                            <p class="quote-text" data-i18n="amc_quote">"받아야 할 연체료, 미안해서 못 받으셨나요? 악역은 이지램스가 하겠습니다. 대표님은 품격만 유지하세요."</p>
                         </div>
                     </div>
                 </div>
@@ -1781,7 +1781,7 @@
                 <!-- Tab 2: PM -->
                 <div class="persona-content-card" id="tabPm">
                     <div class="persona-left">
-                        <div class="persona-tag-pill pm-pill"><i class="fal fa-building me-1"></i> 자산관리사 · PM 전용</div>
+                        <div class="persona-tag-pill pm-pill"><i class="fal fa-building me-1"></i> <span data-i18n="pm_badge">자산관리사 · PM 전용</span></div>
                         <h3 data-i18n="pm_h3">스마트한 업무 혁신 — 야근과 실수의 반복을 끊어내는 무결점 관리</h3>
                         <p data-i18n="pm_p">
                             매달 수작업으로 대조하던 수백 행의 엑셀 정산과 세금계산서 발행을 시스템이 대신 처리합니다. 국토부 공식 전자계약 연동으로 도장과 방문 없이 업무 효율을 3배 높입니다.
@@ -1812,21 +1812,21 @@
                     </div>
                     <div class="persona-right">
                         <div class="kpi-header">
-                            <span class="kpi-tag"><i class="fas fa-bolt me-1"></i> PM 핵심 성과 지표 (Impact)</span>
+                            <span class="kpi-tag"><i class="fas fa-bolt me-1"></i> <span data-i18n="pm_kpi_header">PM 핵심 성과 지표 (Impact)</span></span>
                         </div>
                         <div class="kpi-stat-grid">
                             <div class="kpi-stat-item">
                                 <span class="kpi-stat-num">100%</span>
-                                <span class="kpi-stat-lbl">수납 자동 처리율</span>
+                                <span class="kpi-stat-lbl" data-i18n="pm_kpi1_label">수납 자동 처리율</span>
                             </div>
                             <div class="kpi-stat-item">
-                                <span class="kpi-stat-num">3배</span>
-                                <span class="kpi-stat-lbl">전자계약 및 행정 효율</span>
+                                <span class="kpi-stat-num" data-i18n="pm_kpi2_num">3배</span>
+                                <span class="kpi-stat-lbl" data-i18n="pm_kpi2_label">전자계약 및 행정 효율</span>
                             </div>
                         </div>
                         <div class="persona-quote-box">
                             <i class="fas fa-quote-left quote-icon"></i>
-                            <p class="quote-text">"엑셀은 밤새 일하지만, 이지램스는 당신을 정시 퇴근시킵니다. 사람은 실수해도 시스템은 실수하지 않습니다."</p>
+                            <p class="quote-text" data-i18n="pm_quote">"엑셀은 밤새 일하지만, 이지램스는 당신을 정시 퇴근시킵니다. 사람은 실수해도 시스템은 실수하지 않습니다."</p>
                         </div>
                     </div>
                 </div>
@@ -1834,7 +1834,7 @@
                 <!-- Tab 3: FM -->
                 <div class="persona-content-card" id="tabFm">
                     <div class="persona-left">
-                        <div class="persona-tag-pill fm-pill"><i class="fal fa-tools me-1"></i> 시설관리 · FM 전용</div>
+                        <div class="persona-tag-pill fm-pill"><i class="fal fa-tools me-1"></i> <span data-i18n="fm_badge">시설관리 · FM 전용</span></div>
                         <h3 data-i18n="fm_h3">디지털 시설관리 — 중대재해처벌법 대비부터 모바일 현장 기록까지</h3>
                         <p data-i18n="fm_p">
                             종이 점검표와 수기 장부, 전화 민원의 누락을 없애고 스마트폰 하나로 현장 안전과 입주사 만족도를 완벽하게 통제합니다.
@@ -1865,21 +1865,21 @@
                     </div>
                     <div class="persona-right">
                         <div class="kpi-header">
-                            <span class="kpi-tag"><i class="fas fa-shield-alt me-1"></i> FM 핵심 성과 지표 (Impact)</span>
+                            <span class="kpi-tag"><i class="fas fa-shield-alt me-1"></i> <span data-i18n="fm_kpi_header">FM 핵심 성과 지표 (Impact)</span></span>
                         </div>
                         <div class="kpi-stat-grid">
                             <div class="kpi-stat-item">
                                 <span class="kpi-stat-num">100%</span>
-                                <span class="kpi-stat-lbl">중대재해·산업안전 준수</span>
+                                <span class="kpi-stat-lbl" data-i18n="fm_kpi1_label">중대재해·산업안전 준수</span>
                             </div>
                             <div class="kpi-stat-item">
-                                <span class="kpi-stat-num">0건</span>
-                                <span class="kpi-stat-lbl">누락 민원 (자동 접수)</span>
+                                <span class="kpi-stat-num" data-i18n="fm_kpi2_num">0건</span>
+                                <span class="kpi-stat-lbl" data-i18n="fm_kpi2_label">누락 민원 (자동 접수)</span>
                             </div>
                         </div>
                         <div class="persona-quote-box">
                             <i class="fas fa-quote-left quote-icon"></i>
-                            <p class="quote-text">"종이 점검표는 이제 그만. 민원 전화 놓쳐 곤란했던 경험, 다시는 없게 해드립니다. 스마트폰 하나로 현장을 기록하세요."</p>
+                            <p class="quote-text" data-i18n="fm_quote">"종이 점검표는 이제 그만. 민원 전화 놓쳐 곤란했던 경험, 다시는 없게 해드립니다. 스마트폰 하나로 현장을 기록하세요."</p>
                         </div>
                     </div>
                 </div>
