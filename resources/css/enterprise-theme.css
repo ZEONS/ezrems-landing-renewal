@@ -1000,6 +1000,14 @@ body.enterprise-body {
     color: #FFFFFF;
 }
 
+.kpi-currency {
+    font-size: 0.5em;
+    vertical-align: 0.12em;
+    font-weight: 700;
+    display: inline-block;
+    margin-right: 2px;
+}
+
 .kpi-trend {
     font-size: 0.75rem;
     color: var(--color-growth-green);
