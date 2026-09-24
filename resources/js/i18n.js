@@ -7,7 +7,7 @@
     const translations = {
         ko: {
             lang_label: "한국어",
-            top_slogan: "No.1 Real Estate Management Service Platform, <strong>ezREMS</strong> <span class=\"top-slogan-tag\">#Prop-Tech</span>",
+            top_slogan: "No.1 Real Estate Management Service Platform, ezREMS",
             top_login: "로그인",
             top_inquiry: "도입 문의",
             login_basic: "간편형 로그인",
@@ -515,7 +515,7 @@
         },
         en: {
             lang_label: "English",
-            top_slogan: "No.1 Real Estate Management Service Platform, <strong>ezREMS</strong> <span class=\"top-slogan-tag\">#Prop-Tech</span>",
+            top_slogan: "No.1 Real Estate Management Service Platform, ezREMS",
             top_login: "Login",
             top_inquiry: "Contact Sales",
             login_basic: "Basic Edition Login",
@@ -1023,7 +1023,7 @@
         },
         ja: {
             lang_label: "日本語",
-            top_slogan: "No.1 Real Estate Management Service Platform, <strong>ezREMS</strong> <span class=\"top-slogan-tag\">#Prop-Tech</span>",
+            top_slogan: "No.1 Real Estate Management Service Platform, ezREMS",
             top_login: "ログイン",
             top_inquiry: "導入お問い合わせ",
             login_basic: "スタンダード ログイン",
@@ -1531,7 +1531,7 @@
         },
         zh: {
             lang_label: "简体中文",
-            top_slogan: "No.1 Real Estate Management Service Platform, <strong>ezREMS</strong> <span class=\"top-slogan-tag\">#Prop-Tech</span>",
+            top_slogan: "No.1 Real Estate Management Service Platform, ezREMS",
             top_login: "登录",
             top_inquiry: "合作咨询",
             login_basic: "简易版 登录",
