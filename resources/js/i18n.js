@@ -104,7 +104,7 @@
             fm_feat2: "법정 안전점검 일지 클라우드 아카이빙",
             fm_feat3: "임차인 모바일 전용 앱(ezREMS Connect) 연동",
 
-            metric_clients: "엔터프라이즈 고객사",
+            metric_clients: "관리 자산",
             metric_units: "전국 관리 세대수",
             metric_billing: "월 관리 청구 규모",
             metric_recovery: "미수금 자동 회수율",
@@ -444,7 +444,7 @@
             fm_feat2: "Cloud archiving of statutory safety inspection logs",
             fm_feat3: "Integrated tenant mobile app (ezREMS Connect)",
 
-            metric_clients: "Enterprise Clients",
+            metric_clients: "Managed Assets",
             metric_units: "Units Managed Nationwide",
             metric_billing: "Monthly Billing Volume",
             metric_recovery: "Auto-Recovery Rate",
@@ -784,7 +784,7 @@
             fm_feat2: "法定安全点検日誌のクラウド自動保管",
             fm_feat3: "テナント専用モバイルアプリ（ezREMS Connect）連携",
 
-            metric_clients: "導入エンタープライズ企業",
+            metric_clients: "管理資産",
             metric_units: "全国管理戸数",
             metric_billing: "月間請求規模",
             metric_recovery: "自動回収率",
@@ -1124,7 +1124,7 @@
             fm_feat2: "法定安全生产点检日记云端永久归档",
             fm_feat3: "租户专属移动端APP(ezREMS Connect)联动",
 
-            metric_clients: "合作企业客户",
+            metric_clients: "管理资产",
             metric_units: "全国在管物业套数",
             metric_billing: "月度账单经办规模",
             metric_recovery: "欠款自动清缴率",
