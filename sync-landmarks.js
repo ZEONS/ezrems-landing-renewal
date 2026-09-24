@@ -4,6 +4,7 @@ const path = require('path');
 const landmarkDir = path.join(__dirname, 'resources', 'images', 'landmark');
 const jsonPath = path.join(landmarkDir, 'landmarks.json');
 const jsDataPath = path.join(landmarkDir, 'landmarks-data.js');
+const indexPath = path.join(__dirname, 'index.html');
 
 const IMAGE_EXTENSIONS = new Set(['.jpg', '.jpeg', '.png', '.webp', '.avif', '.gif']);
 
@@ -29,7 +30,28 @@ try {
                       'window.EZREMS_LANDMARK_IMAGES = ' + JSON.stringify(imageFiles, null, 2) + ';\n';
     fs.writeFileSync(jsDataPath, jsContent, 'utf-8');
 
-    console.log('✅ [ezREMS] 랜드마크 이미지 목록이 성공적으로 동기화되었습니다!');
+    // 3. index.html 정적 슬라이더 마크업 자동 갱신
+    if (fs.existsSync(indexPath)) {
+        let htmlContent = fs.readFileSync(indexPath, 'utf-8');
+        const sliderRegex = /(<div class="landmark-bg-slider" id="landmarkBgSlider"[^>]*>)([\s\S]*?)(<\/div>\s*<!-- Vignette)/i;
+
+        if (sliderRegex.test(htmlContent)) {
+            let newSliderHtml = '\n';
+            imageFiles.forEach((fileName, idx) => {
+                const altName = fileName.replace(/\.[^/.]+$/, '');
+                const activeClass = idx === 0 ? ' active' : '';
+                newSliderHtml += `                <div class="landmark-bg-slide${activeClass}">\n` +
+                                 `                    <img src="./resources/images/landmark/${fileName}" alt="${altName}" class="landmark-slide-img">\n` +
+                                 `                </div>\n`;
+            });
+            newSliderHtml += '            ';
+            htmlContent = htmlContent.replace(sliderRegex, `$1${newSliderHtml}$3`);
+            fs.writeFileSync(indexPath, htmlContent, 'utf-8');
+            console.log('📄 index.html 정적 슬라이더 마크업 갱신 완료');
+        }
+    }
+
+    console.log('✅ [ezREMS] 랜드마크 이미지 목록이 완벽하게 동기화되었습니다!');
     console.log('📁 등록된 이미지 (' + imageFiles.length + '개):', imageFiles.join(', '));
     console.log('📄 landmarks.json 갱신 완료: ' + jsonPath);
     console.log('📄 landmarks-data.js 갱신 완료: ' + jsDataPath);

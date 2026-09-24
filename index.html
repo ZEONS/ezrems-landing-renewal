@@ -5,11 +5,14 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="imagetoolbar" content="no">
     <meta http-equiv="X-UA-Compatible" content="IE=10,chrome=1">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=1.0,user-scalable=no">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=1.0,user-scalable=no">
     <meta name="format-detection" content="telephone=no, address=no, email=no">
 
-    <meta name="keywords" content="이지램스, ezREMS, PMS, ERP, 부동산자산관리, 빌딩관리, 임대관리, 프롭테크, 핀테크, 리츠, AMC, PM, FM, 전자계약, 세금계산서, SaaS" />
-    <meta name="description" content="이지램스(ezREMS)™ - 대한민국 대표 금융 연동형 부동산 자산관리(PMS/Prop-FinTech) 플랫폼. CSAP 클라우드 표준등급 보안 인증, 수납 자동화, AI 자산가치 극대화." />
+    <meta name="keywords"
+        content="이지램스, ezREMS, PMS, ERP, 부동산자산관리, 빌딩관리, 임대관리, 프롭테크, 핀테크, 리츠, AMC, PM, FM, 전자계약, 세금계산서, SaaS" />
+    <meta name="description"
+        content="이지램스(ezREMS)™ - 대한민국 대표 금융 연동형 부동산 자산관리(PMS/Prop-FinTech) 플랫폼. CSAP 클라우드 표준등급 보안 인증, 수납 자동화, AI 자산가치 극대화." />
 
     <meta property="og:type" content="website">
     <meta property="og:title" content="이지램스 (ezREMS) - 엔터프라이즈 부동산 자산관리 플랫폼">
@@ -32,7 +35,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./resources/css/common/aos.css">
     <link rel="stylesheet" type="text/css" href="./resources/css/common/swiper.min.css">
-    
+
     <!-- Enterprise High-Tech Theme (v2.1) -->
     <link rel="stylesheet" type="text/css" href="./resources/css/enterprise-theme.css?v=20260924_1145">
 
@@ -43,6 +46,7 @@
             overflow: hidden !important;
             background-color: #060913 !important;
         }
+
         .landmark-bg-slider {
             position: absolute !important;
             top: 0 !important;
@@ -53,6 +57,7 @@
             pointer-events: none !important;
             z-index: 1 !important;
         }
+
         .landmark-bg-slide {
             position: absolute !important;
             top: 0 !important;
@@ -64,10 +69,12 @@
             transition: opacity 1.8s cubic-bezier(0.4, 0, 0.2, 1), transform 8s ease-out !important;
             will-change: opacity, transform;
         }
+
         .landmark-bg-slide.active {
             opacity: 0.70 !important;
             transform: scale(1.0) !important;
         }
+
         .landmark-slide-img {
             width: 100% !important;
             height: 100% !important;
@@ -76,21 +83,22 @@
             display: block !important;
             filter: blur(1px) brightness(0.95) !important;
         }
+
         .landmark-bg-overlay {
             position: absolute !important;
             top: 0 !important;
             left: 0 !important;
             width: 100% !important;
             height: 100% !important;
-            background: linear-gradient(180deg, 
-                rgba(6, 9, 19, 0.82) 0%, 
-                rgba(6, 9, 19, 0.35) 25%, 
-                rgba(6, 9, 19, 0.40) 75%, 
-                rgba(6, 9, 19, 0.88) 100%
-            ) !important;
+            background: linear-gradient(180deg,
+                    rgba(6, 9, 19, 0.82) 0%,
+                    rgba(6, 9, 19, 0.35) 25%,
+                    rgba(6, 9, 19, 0.40) 75%,
+                    rgba(6, 9, 19, 0.88) 100%) !important;
             pointer-events: none !important;
             z-index: 2 !important;
         }
+
         .section-landmarks .section-header {
             position: relative !important;
             z-index: 3 !important;
@@ -100,10 +108,12 @@
             background: radial-gradient(ellipse at center, rgba(6, 9, 19, 0.70) 0%, rgba(6, 9, 19, 0) 75%) !important;
             border-radius: 20px !important;
         }
+
         .section-landmarks .landmarks-grid {
             position: relative !important;
             z-index: 3 !important;
         }
+
         .section-landmarks .section-heading {
             color: #FFFFFF !important;
             background: none !important;
@@ -112,11 +122,13 @@
             letter-spacing: -0.02em !important;
             text-shadow: 0 4px 20px rgba(0, 0, 0, 0.95), 0 2px 6px rgba(0, 0, 0, 0.85) !important;
         }
+
         .section-landmarks .section-subheading {
             color: #F8FAFC !important;
             font-weight: 500 !important;
             text-shadow: 0 2px 12px rgba(0, 0, 0, 0.95) !important;
         }
+
         .landmark-chip {
             background-color: rgba(11, 17, 32, 0.82) !important;
             backdrop-filter: blur(12px) !important;
@@ -166,9 +178,27 @@
 
     <style>
         /* Notice Modal */
-        .modal { display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; background: none; }
-        .modal-dialog { position: absolute; top: 50px; right: 50px; margin: 0; }
-        html { scroll-behavior: smooth; }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: none;
+        }
+
+        .modal-dialog {
+            position: absolute;
+            top: 50px;
+            right: 50px;
+            margin: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
     </style>
 </head>
 
@@ -178,18 +208,25 @@
     <div class="container" style="position: absolute;">
         <div class="modal" id="myModal4" style="right: 100%; background: none; display: none;">
             <div class="modal-dialog modal-lg">
-                <div class="modal-content" style="background:#111C30; border:1px solid rgba(255,255,255,0.2); border-radius:16px;">
+                <div class="modal-content"
+                    style="background:#111C30; border:1px solid rgba(255,255,255,0.2); border-radius:16px;">
                     <div class="modal-header" style="border-bottom:1px solid rgba(255,255,255,0.1); padding:14px 20px;">
-                        <h5 class="modal-title" style="color:#fff; font-size:1rem; font-weight:700;" data-i18n="modal_notice_title">이지램스 공지사항</h5>
-                        <button type="button" id="myModal4_close" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                        <h5 class="modal-title" style="color:#fff; font-size:1rem; font-weight:700;"
+                            data-i18n="modal_notice_title">이지램스 공지사항</h5>
+                        <button type="button" id="myModal4_close" class="btn-close btn-close-white"
+                            data-bs-dismiss="modal"></button>
                     </div>
                     <div class="modal-body" style="padding:20px; text-align:center;">
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdjOJcptUph-aCZrBVNrv5hMsnJV3FsCnHiy_KGisNgObt0pQ/viewform?pli=1" target="_blank">
-                            <img src="./resources/images/notice_popup.png" alt="공지사항" style="max-width:100%; height:auto; border-radius:10px;">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdjOJcptUph-aCZrBVNrv5hMsnJV3FsCnHiy_KGisNgObt0pQ/viewform?pli=1"
+                            target="_blank">
+                            <img src="./resources/images/notice_popup.png" alt="공지사항"
+                                style="max-width:100%; height:auto; border-radius:10px;">
                         </a>
                     </div>
                     <div class="modal-footer" style="border-top:1px solid rgba(255,255,255,0.1); padding:10px 20px;">
-                        <button type="button" id="myModal4_close_1day" class="btn btn-sm btn-link" style="color:#94A3B8; text-decoration:none; font-size:12px;" data-i18n="modal_notice_today">오늘 하루 열지 않기</button>
+                        <button type="button" id="myModal4_close_1day" class="btn btn-sm btn-link"
+                            style="color:#94A3B8; text-decoration:none; font-size:12px;"
+                            data-i18n="modal_notice_today">오늘 하루 열지 않기</button>
                     </div>
                 </div>
             </div>
@@ -223,7 +260,8 @@
             <div class="header-actions">
                 <!-- Multilingual Language Selector -->
                 <div class="lang-dropdown-wrapper">
-                    <button type="button" class="lang-dropdown-btn" id="langDropdownToggle" aria-label="Language Selector">
+                    <button type="button" class="lang-dropdown-btn" id="langDropdownToggle"
+                        aria-label="Language Selector">
                         <i class="fal fa-globe"></i>
                         <span id="currentLangLabel">한국어</span>
                         <i class="fal fa-chevron-down" style="font-size:0.75rem;"></i>
@@ -236,9 +274,12 @@
                     </div>
                 </div>
 
-                <a href="https://basic.ezrems.com/" target="_blank" class="btn-ghost-nav d-none d-sm-inline-block" data-i18n="btn_basic">간편형</a>
-                <a href="https://pms.ezrems.com/" target="_blank" class="btn-outline-tech d-none d-md-inline-block" data-i18n="btn_pms">기업형</a>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOO18akLULTgK-XD6x8gj6WgpFNXiW2z_m3AC2mVgXUVUDGA/viewform" target="_blank" class="btn-crimson-cta">
+                <a href="https://basic.ezrems.com/" target="_blank" class="btn-ghost-nav d-none d-sm-inline-block"
+                    data-i18n="btn_basic">간편형</a>
+                <a href="https://pms.ezrems.com/" target="_blank" class="btn-outline-tech d-none d-md-inline-block"
+                    data-i18n="btn_pms">기업형</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOO18akLULTgK-XD6x8gj6WgpFNXiW2z_m3AC2mVgXUVUDGA/viewform"
+                    target="_blank" class="btn-crimson-cta">
                     <i class="fal fa-paper-plane"></i>
                     <span data-i18n="btn_counsel">도입 문의</span>
                 </a>
@@ -272,27 +313,28 @@
                         <!-- Slide 1: AX 자산관리 -->
                         <div class="hero-slide-item active" data-slide="0">
                             <h1 class="hero-title tech-gradient-text" data-i18n="hero_title_1">
-                                수천억 대 부동산 자산,<br/>DX를 넘어 <span class="tech-gradient-text">AX 기반</span>으로 관리하십시오
+                                수천억 대 부동산 자산,<br />DX를 넘어 <span class="tech-gradient-text">AX 기반</span>으로 관리하십시오
                             </h1>
                             <p class="hero-description" data-i18n="hero_desc_1">
-                                엑셀과 수기 관리의 한계를 벗어나십시오. 대한민국 유일의 금융 연동형 프롭-핀테크(Prop-FinTech) 플랫폼 이지램스가 자산운용사, 리츠사, 전문 PM사를 위한 무결점 자산관리를 제공합니다.
+                                엑셀과 수기 관리의 한계를 벗어나십시오. 대한민국 유일의 금융 연동형 프롭-핀테크(Prop-FinTech) 플랫폼 이지램스가 자산운용사, 리츠사, 전문
+                                PM사를 위한 무결점 자산관리를 제공합니다.
                             </p>
                         </div>
 
                         <!-- Slide 2: 금융 수납 자동화 -->
                         <div class="hero-slide-item" data-slide="1">
                             <h1 class="hero-title tech-gradient-text" data-i18n="hero_title_2">
-                                수백억 원의 임대료와 관리비,<br/><span class="tech-gradient-text">1초 실시간 자동 수납 대사</span>로 완결하십시오
+                                수백억 원의 임대료와 관리비,<br /><span class="tech-gradient-text">1초 실시간 자동 수납처리</span>로 완결하십시오
                             </h1>
                             <p class="hero-description" data-i18n="hero_desc_2">
-                                은행 CMS(자동이체) 및 가상계좌 실시간 연동으로 월 수만 건의 입금을 1초 만에 자동 대사하고, 연체 발생 즉시 최고장을 자동 발송합니다.
+                                은행 CMS(자동이체) 및 가상계좌 실시간 연동으로 월 수만 건의 입금을 1초 만에 자동 대사하고, 연체 발생 즉시 독촉장을 자동 발송합니다.
                             </p>
                         </div>
 
                         <!-- Slide 3: 공인 클라우드 보안 -->
                         <div class="hero-slide-item" data-slide="2">
                             <h1 class="hero-title tech-gradient-text" data-i18n="hero_title_3">
-                                CSAP 클라우드 표준등급 획득,<br/><span class="tech-gradient-text">금융기관과 대기업이 신뢰</span>하는 무결점 PMS
+                                CSAP 클라우드 표준등급 획득,<br /><span class="tech-gradient-text">금융기관과 대기업이 신뢰</span>하는 무결점 PMS
                             </h1>
                             <p class="hero-description" data-i18n="hero_desc_3">
                                 국내 50+ 대표 금융지주 계열사, 대기업 자산관리사, 공공기관의 까다로운 보안 감사를 완벽하게 통과한 최고 수준의 인프라를 보장합니다.
@@ -302,15 +344,18 @@
 
                     <!-- Progress Bar Indicators -->
                     <div class="hero-slider-nav" role="tablist" aria-label="캐치프레이즈 슬라이더 네비게이션">
-                        <button type="button" class="slider-progress-pill active" data-index="0" role="tab" aria-selected="true" aria-label="슬라이드 1: AX 자산관리">
+                        <button type="button" class="slider-progress-pill active" data-index="0" role="tab"
+                            aria-selected="true" aria-label="슬라이드 1: AX 자산관리">
                             <span class="pill-track"><span class="pill-fill"></span></span>
                             <span class="pill-label" data-i18n="hero_pill_1">01 AX 자산관리</span>
                         </button>
-                        <button type="button" class="slider-progress-pill" data-index="1" role="tab" aria-selected="false" aria-label="슬라이드 2: 금융 수납 자동화">
+                        <button type="button" class="slider-progress-pill" data-index="1" role="tab"
+                            aria-selected="false" aria-label="슬라이드 2: 금융 수납 자동화">
                             <span class="pill-track"><span class="pill-fill"></span></span>
                             <span class="pill-label" data-i18n="hero_pill_2">02 금융 수납 자동화</span>
                         </button>
-                        <button type="button" class="slider-progress-pill" data-index="2" role="tab" aria-selected="false" aria-label="슬라이드 3: 공인 클라우드 보안">
+                        <button type="button" class="slider-progress-pill" data-index="2" role="tab"
+                            aria-selected="false" aria-label="슬라이드 3: 공인 클라우드 보안">
                             <span class="pill-track"><span class="pill-fill"></span></span>
                             <span class="pill-label" data-i18n="hero_pill_3">03 공인 클라우드 보안</span>
                         </button>
@@ -318,7 +363,8 @@
                 </div>
 
                 <div class="hero-cta-group" data-aos="fade-up" data-aos-delay="200">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOO18akLULTgK-XD6x8gj6WgpFNXiW2z_m3AC2mVgXUVUDGA/viewform" target="_blank" class="btn-hero-primary">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOO18akLULTgK-XD6x8gj6WgpFNXiW2z_m3AC2mVgXUVUDGA/viewform"
+                        target="_blank" class="btn-hero-primary">
                         <i class="fal fa-rocket"></i>
                         <span data-i18n="hero_btn_inquire">엔터프라이즈 도입 문의</span>
                     </a>
@@ -330,9 +376,12 @@
 
                 <!-- 3대 공인 클라우드 보안 및 성능 인증 -->
                 <div class="hero-cert-badges" data-aos="fade-up" data-aos-delay="220">
-                    <span class="cert-badge-item"><i class="fal fa-shield-check"></i> <span data-i18n="trust_csap">CSAP 클라우드 표준등급</span></span>
-                    <span class="cert-badge-item"><i class="fal fa-check-circle"></i> <span data-i18n="trust_kaci">클라우드 확인제 인증</span></span>
-                    <span class="cert-badge-item"><i class="fal fa-award"></i> <span data-i18n="trust_nipa">품질·성능 검증 획득</span></span>
+                    <span class="cert-badge-item"><i class="fal fa-shield-check"></i> <span data-i18n="trust_csap">CSAP
+                            클라우드 표준등급</span></span>
+                    <span class="cert-badge-item"><i class="fal fa-check-circle"></i> <span data-i18n="trust_kaci">클라우드
+                            확인제 인증</span></span>
+                    <span class="cert-badge-item"><i class="fal fa-award"></i> <span data-i18n="trust_nipa">품질·성능 검증
+                            획득</span></span>
                 </div>
 
                 <!-- 3D Tilt Enterprise Live Dashboard Preview -->
@@ -367,14 +416,30 @@
                         <div class="dashboard-screen">
                             <!-- Sidebar -->
                             <div class="dash-sidebar" role="tablist" aria-label="대시보드 모듈 메뉴">
-                                <button type="button" class="dash-menu-item active" data-tab="dashboard" role="tab" aria-selected="true"><i class="fal fa-chart-pie"></i> <span data-i18n="dash_nav_dashboard">통합 관제 대시보드</span></button>
-                                <button type="button" class="dash-menu-item" data-tab="portfolio" role="tab" aria-selected="false"><i class="fal fa-building"></i> <span data-i18n="dash_nav_portfolio">포트폴리오 자산관리</span></button>
-                                <button type="button" class="dash-menu-item" data-tab="billing" role="tab" aria-selected="false"><i class="fal fa-file-invoice-dollar"></i> <span data-i18n="dash_nav_billing">가상계좌·CMS·PG 수납 자동화</span></button>
-                                <button type="button" class="dash-menu-item" data-tab="econtract" role="tab" aria-selected="false"><i class="fal fa-file-signature"></i> <span data-i18n="dash_nav_econtract">전자계약·전자문서 지원</span></button>
-                                <button type="button" class="dash-menu-item" data-tab="tax" role="tab" aria-selected="false"><i class="fal fa-calculator"></i> <span data-i18n="dash_nav_tax">세금계산서 일괄발행</span></button>
-                                <button type="button" class="dash-menu-item" data-tab="erp" role="tab" aria-selected="false"><i class="fal fa-file-chart-pie"></i> <span data-i18n="dash_nav_erp">회계ERP 연동·결산자료 지원</span></button>
-                                <button type="button" class="dash-menu-item" data-tab="api" role="tab" aria-selected="false"><i class="fal fa-plug"></i> <span data-i18n="dash_nav_api">API 제공 (공실,계약,청구 등)</span></button>
-                                <button type="button" class="dash-menu-item" data-tab="security" role="tab" aria-selected="false"><i class="fal fa-users-cog"></i> <span data-i18n="dash_nav_security">다중 권한 보안감사</span></button>
+                                <button type="button" class="dash-menu-item active" data-tab="dashboard" role="tab"
+                                    aria-selected="true"><i class="fal fa-chart-pie"></i> <span
+                                        data-i18n="dash_nav_dashboard">통합 관제 대시보드</span></button>
+                                <button type="button" class="dash-menu-item" data-tab="portfolio" role="tab"
+                                    aria-selected="false"><i class="fal fa-building"></i> <span
+                                        data-i18n="dash_nav_portfolio">포트폴리오 자산관리</span></button>
+                                <button type="button" class="dash-menu-item" data-tab="billing" role="tab"
+                                    aria-selected="false"><i class="fal fa-file-invoice-dollar"></i> <span
+                                        data-i18n="dash_nav_billing">가상계좌·CMS·PG 수납 자동화</span></button>
+                                <button type="button" class="dash-menu-item" data-tab="econtract" role="tab"
+                                    aria-selected="false"><i class="fal fa-file-signature"></i> <span
+                                        data-i18n="dash_nav_econtract">전자계약·전자문서 지원</span></button>
+                                <button type="button" class="dash-menu-item" data-tab="tax" role="tab"
+                                    aria-selected="false"><i class="fal fa-calculator"></i> <span
+                                        data-i18n="dash_nav_tax">세금계산서 일괄발행</span></button>
+                                <button type="button" class="dash-menu-item" data-tab="erp" role="tab"
+                                    aria-selected="false"><i class="fal fa-file-chart-pie"></i> <span
+                                        data-i18n="dash_nav_erp">회계ERP 연동·결산자료 지원</span></button>
+                                <button type="button" class="dash-menu-item" data-tab="api" role="tab"
+                                    aria-selected="false"><i class="fal fa-plug"></i> <span data-i18n="dash_nav_api">API
+                                        제공 (공실,계약,청구 등)</span></button>
+                                <button type="button" class="dash-menu-item" data-tab="security" role="tab"
+                                    aria-selected="false"><i class="fal fa-users-cog"></i> <span
+                                        data-i18n="dash_nav_security">다중 권한 보안감사</span></button>
                             </div>
 
                             <!-- Right Dynamic Viewport -->
@@ -384,20 +449,27 @@
                                     <div class="dash-main-center">
                                         <div class="kpi-row">
                                             <div class="kpi-card">
-                                                <div class="kpi-title" data-i18n="dash_kpi_billing_title">월간 총 청구/수납 규모</div>
+                                                <div class="kpi-title" data-i18n="dash_kpi_billing_title">월간 총 청구/수납 규모
+                                                </div>
                                                 <div class="kpi-value">₩ 65,420,800,000</div>
-                                                <div class="kpi-trend" data-i18n="dash_kpi_billing_trend"><i class="fal fa-arrow-up"></i> 전월 대비 +14.8% 정상 수납</div>
+                                                <div class="kpi-trend" data-i18n="dash_kpi_billing_trend"><i
+                                                        class="fal fa-arrow-up"></i> 전월 대비 +14.8% 정상 수납</div>
                                             </div>
                                             <div class="kpi-card">
-                                                <div class="kpi-title" data-i18n="dash_kpi_units_title">전국 관리 세대 및 호수</div>
-                                                <div class="kpi-value">51,280 <span style="font-size:1rem; font-weight:500;" data-i18n="dash_kpi_units_unit">세대</span></div>
-                                                <div class="kpi-trend" data-i18n="dash_kpi_units_trend"><i class="fal fa-check-circle"></i> 평균 공실률 2.1% (초안정)</div>
+                                                <div class="kpi-title" data-i18n="dash_kpi_units_title">전국 관리 세대 및 호수
+                                                </div>
+                                                <div class="kpi-value">51,280 <span
+                                                        style="font-size:1rem; font-weight:500;"
+                                                        data-i18n="dash_kpi_units_unit">세대</span></div>
+                                                <div class="kpi-trend" data-i18n="dash_kpi_units_trend"><i
+                                                        class="fal fa-check-circle"></i> 평균 공실률 2.1% (초안정)</div>
                                             </div>
                                         </div>
                                         <div class="dash-chart-mock">
                                             <div class="chart-header">
                                                 <span data-i18n="dash_chart_title">실시간 월별 수납 및 연체 회수 추이</span>
-                                                <span style="color:#0EA5E9; font-size:0.8rem;" data-i18n="dash_chart_legend">● 정상 수납  ● 자동 회수</span>
+                                                <span style="color:#0EA5E9; font-size:0.8rem;"
+                                                    data-i18n="dash_chart_legend">● 정상 수납 ● 자동 회수</span>
                                             </div>
                                             <div class="chart-bars">
                                                 <div class="bar-col" style="height: 45%;"></div>
@@ -415,12 +487,18 @@
                                     </div>
                                     <div class="dash-right-panel">
                                         <div class="alert-widget">
-                                            <div class="alert-widget-header"><i class="fal fa-exclamation-triangle"></i> <span data-i18n="dash_alert_title">이상 징후 및 연체 통제</span></div>
-                                            <div class="alert-widget-body" data-i18n="dash_alert_desc">연체 자동 감지 및 회수 연동: 1건 발생 즉시 최고장 전자고지 발송 처리 완료 (회수율 98.4%)</div>
+                                            <div class="alert-widget-header"><i class="fal fa-exclamation-triangle"></i>
+                                                <span data-i18n="dash_alert_title">이상 징후 및 연체 통제</span>
+                                            </div>
+                                            <div class="alert-widget-body" data-i18n="dash_alert_desc">연체 자동 감지 및 회수 연동:
+                                                1건 발생 즉시 최고장 전자고지 발송 처리 완료 (회수율 98.4%)</div>
                                         </div>
                                         <div class="security-status-widget">
-                                            <div class="security-status-widget-header"><i class="fal fa-shield-check"></i> <span data-i18n="dash_sec_title">CSAP 보안 상태: 무결</span></div>
-                                            <div style="font-size:0.8rem; color:#94A3B8;" data-i18n="dash_sec_desc">이중화 클라우드 서버 무중단 가동 99.99% 달성. 금융 전산 암호화 전송 프로토콜 작동 중.</div>
+                                            <div class="security-status-widget-header"><i
+                                                    class="fal fa-shield-check"></i> <span
+                                                    data-i18n="dash_sec_title">CSAP 보안 상태: 무결</span></div>
+                                            <div style="font-size:0.8rem; color:#94A3B8;" data-i18n="dash_sec_desc">이중화
+                                                클라우드 서버 무중단 가동 99.99% 달성. 금융 전산 암호화 전송 프로토콜 작동 중.</div>
                                         </div>
                                     </div>
                                 </div>
@@ -430,32 +508,47 @@
                                     <div class="dash-main-center">
                                         <div class="kpi-row">
                                             <div class="kpi-card">
-                                                <div class="kpi-title" data-i18n="dash_port_kpi1_title">운용 자산 규모 (AUM)</div>
+                                                <div class="kpi-title" data-i18n="dash_port_kpi1_title">운용 자산 규모 (AUM)
+                                                </div>
                                                 <div class="kpi-value">₩ 4,820,000,000,000</div>
-                                                <div class="kpi-trend" data-i18n="dash_port_kpi1_trend"><i class="fal fa-arrow-up"></i> 전년 대비 +8.4% 성장</div>
+                                                <div class="kpi-trend" data-i18n="dash_port_kpi1_trend"><i
+                                                        class="fal fa-arrow-up"></i> 전년 대비 +8.4% 성장</div>
                                             </div>
                                             <div class="kpi-card">
-                                                <div class="kpi-title" data-i18n="dash_port_kpi2_title">총 운용 복합 부동산</div>
+                                                <div class="kpi-title" data-i18n="dash_port_kpi2_title">총 운용 복합 부동산
+                                                </div>
                                                 <div class="kpi-value" data-i18n="dash_port_kpi2_val">84개 자산</div>
-                                                <div class="kpi-trend" data-i18n="dash_port_kpi2_trend"><i class="fal fa-check-circle"></i> 오피스·물류·리테일·주거</div>
+                                                <div class="kpi-trend" data-i18n="dash_port_kpi2_trend"><i
+                                                        class="fal fa-check-circle"></i> 오피스·물류·리테일·주거</div>
                                             </div>
                                         </div>
                                         <div class="dash-content-card">
                                             <div class="dash-card-header">
                                                 <span data-i18n="dash_port_list_title">주요 랜드마크 실시간 가동 현황</span>
-                                                <span class="dash-tag-status dash-tag-success" data-i18n="dash_status_active">정상 운영</span>
+                                                <span class="dash-tag-status dash-tag-success"
+                                                    data-i18n="dash_status_active">정상 운영</span>
                                             </div>
                                             <div class="dash-mini-table">
                                                 <div class="dash-mini-row">
-                                                    <div><strong data-i18n="dash_port_row1_name">백운호수 푸르지오 숲속의아침</strong><div style="font-size:0.72rem; color:#94A3B8;" data-i18n="dash_port_row1_sub">시니어 레지던스 | 점유율 99.4%</div></div>
+                                                    <div><strong data-i18n="dash_port_row1_name">백운호수 푸르지오
+                                                            숲속의아침</strong>
+                                                        <div style="font-size:0.72rem; color:#94A3B8;"
+                                                            data-i18n="dash_port_row1_sub">시니어 레지던스 | 점유율 99.4%</div>
+                                                    </div>
                                                     <span class="dash-tag-status dash-tag-blue">99.4%</span>
                                                 </div>
                                                 <div class="dash-mini-row">
-                                                    <div><strong data-i18n="dash_port_row2_name">센터포인트 광화문</strong><div style="font-size:0.72rem; color:#94A3B8;" data-i18n="dash_port_row2_sub">프라임 오피스 | 점유율 98.8%</div></div>
+                                                    <div><strong data-i18n="dash_port_row2_name">센터포인트 광화문</strong>
+                                                        <div style="font-size:0.72rem; color:#94A3B8;"
+                                                            data-i18n="dash_port_row2_sub">프라임 오피스 | 점유율 98.8%</div>
+                                                    </div>
                                                     <span class="dash-tag-status dash-tag-blue">98.8%</span>
                                                 </div>
                                                 <div class="dash-mini-row">
-                                                    <div><strong data-i18n="dash_port_row3_name">전자랜드 용산 본관</strong><div style="font-size:0.72rem; color:#94A3B8;" data-i18n="dash_port_row3_sub">복합 리테일 | 점유율 97.5%</div></div>
+                                                    <div><strong data-i18n="dash_port_row3_name">전자랜드 용산 본관</strong>
+                                                        <div style="font-size:0.72rem; color:#94A3B8;"
+                                                            data-i18n="dash_port_row3_sub">복합 리테일 | 점유율 97.5%</div>
+                                                    </div>
                                                     <span class="dash-tag-status dash-tag-blue">97.5%</span>
                                                 </div>
                                             </div>
@@ -463,12 +556,19 @@
                                     </div>
                                     <div class="dash-right-panel">
                                         <div class="security-status-widget">
-                                            <div class="security-status-widget-header"><i class="fal fa-chart-line"></i> <span data-i18n="dash_port_w1_title">자산 가치평가 및 배당 수익률</span></div>
-                                            <div style="font-size:0.8rem; color:#94A3B8;" data-i18n="dash_port_w1_desc">연간 환산 배당 수익률 6.8% 달성. 리츠 공시 기준 자산 재평가 완료.</div>
+                                            <div class="security-status-widget-header"><i class="fal fa-chart-line"></i>
+                                                <span data-i18n="dash_port_w1_title">자산 가치평가 및 배당 수익률</span>
+                                            </div>
+                                            <div style="font-size:0.8rem; color:#94A3B8;" data-i18n="dash_port_w1_desc">
+                                                연간 환산 배당 수익률 6.8% 달성. 리츠 공시 기준 자산 재평가 완료.</div>
                                         </div>
-                                        <div class="alert-widget" style="background:rgba(14,165,233,0.08); border-color:rgba(14,165,233,0.3);">
-                                            <div class="alert-widget-header" style="color:var(--color-cyber-cyan);"><i class="fal fa-calendar-check"></i> <span data-i18n="dash_port_w2_title">임대차 만기 사전 통제</span></div>
-                                            <div class="alert-widget-body" data-i18n="dash_port_w2_desc">D-60일 이내 만기 14건 사전 갱신 협의 진행 중 (공실 위험 사전 차단)</div>
+                                        <div class="alert-widget"
+                                            style="background:rgba(14,165,233,0.08); border-color:rgba(14,165,233,0.3);">
+                                            <div class="alert-widget-header" style="color:var(--color-cyber-cyan);"><i
+                                                    class="fal fa-calendar-check"></i> <span
+                                                    data-i18n="dash_port_w2_title">임대차 만기 사전 통제</span></div>
+                                            <div class="alert-widget-body" data-i18n="dash_port_w2_desc">D-60일 이내 만기 14건
+                                                사전 갱신 협의 진행 중 (공실 위험 사전 차단)</div>
                                         </div>
                                     </div>
                                 </div>
@@ -478,32 +578,40 @@
                                     <div class="dash-main-center">
                                         <div class="kpi-row">
                                             <div class="kpi-card">
-                                                <div class="kpi-title" data-i18n="dash_bill_kpi1_title">실시간 수납 대사 완료율</div>
+                                                <div class="kpi-title" data-i18n="dash_bill_kpi1_title">실시간 수납 대사 완료율
+                                                </div>
                                                 <div class="kpi-value">99.8%</div>
-                                                <div class="kpi-trend" data-i18n="dash_bill_kpi1_trend"><i class="fal fa-check-circle"></i> 당월 38,420건 중 38,340건 완료</div>
+                                                <div class="kpi-trend" data-i18n="dash_bill_kpi1_trend"><i
+                                                        class="fal fa-check-circle"></i> 당월 38,420건 중 38,340건 완료</div>
                                             </div>
                                             <div class="kpi-card">
-                                                <div class="kpi-title" data-i18n="dash_bill_kpi2_title">대사 처리 평균 속도</div>
+                                                <div class="kpi-title" data-i18n="dash_bill_kpi2_title">대사 처리 평균 속도
+                                                </div>
                                                 <div class="kpi-value" data-i18n="dash_bill_kpi2_val">0.8초</div>
-                                                <div class="kpi-trend" data-i18n="dash_bill_kpi2_trend"><i class="fal fa-bolt"></i> 금융결제원 펌뱅킹 직결</div>
+                                                <div class="kpi-trend" data-i18n="dash_bill_kpi2_trend"><i
+                                                        class="fal fa-bolt"></i> 금융결제원 펌뱅킹 직결</div>
                                             </div>
                                         </div>
                                         <div class="dash-content-card">
                                             <div class="dash-card-header">
                                                 <span data-i18n="dash_bill_log_title">실시간 가상계좌 / CMS 수납 스트림</span>
-                                                <span class="dash-tag-status dash-tag-success" data-i18n="dash_status_done">완결</span>
+                                                <span class="dash-tag-status dash-tag-success"
+                                                    data-i18n="dash_status_done">완결</span>
                                             </div>
                                             <div class="dash-mini-table">
                                                 <div class="dash-mini-row">
-                                                    <span data-i18n="dash_bill_log1">[가상계좌] 102동 1403호 임대료 ₩1,850,000 즉시 대사 완결 (국민은행)</span>
+                                                    <span data-i18n="dash_bill_log1">[가상계좌] 102동 1403호 임대료 ₩1,850,000 즉시
+                                                        대사 완결 (국민은행)</span>
                                                     <span class="dash-tag-status dash-tag-success">MATCH</span>
                                                 </div>
                                                 <div class="dash-mini-row">
-                                                    <span data-i18n="dash_bill_log2">[CMS 자동이체] 센트럴타워 8F 관리비 ₩4,200,000 출금 성공 (신한은행)</span>
+                                                    <span data-i18n="dash_bill_log2">[CMS 자동이체] 센트럴타워 8F 관리비 ₩4,200,000
+                                                        출금 성공 (신한은행)</span>
                                                     <span class="dash-tag-status dash-tag-success">CLEARED</span>
                                                 </div>
                                                 <div class="dash-mini-row">
-                                                    <span data-i18n="dash_bill_log3">[온라인 PG] 상가 A-102호 관리비 ₩890,000 카드 수납 완결</span>
+                                                    <span data-i18n="dash_bill_log3">[온라인 PG] 상가 A-102호 관리비 ₩890,000 카드
+                                                        수납 완결</span>
                                                     <span class="dash-tag-status dash-tag-blue">SETTLED</span>
                                                 </div>
                                             </div>
@@ -511,12 +619,18 @@
                                     </div>
                                     <div class="dash-right-panel">
                                         <div class="security-status-widget">
-                                            <div class="security-status-widget-header"><i class="fal fa-file-invoice-dollar"></i> <span data-i18n="dash_bill_w1_title">연체료 자동 산정 엔진</span></div>
-                                            <div style="font-size:0.8rem; color:#94A3B8;" data-i18n="dash_bill_w1_desc">미납 1건 발생 시 즉시 법정 연체 이율 자동 합산 청구 및 모바일 알림톡 발송</div>
+                                            <div class="security-status-widget-header"><i
+                                                    class="fal fa-file-invoice-dollar"></i> <span
+                                                    data-i18n="dash_bill_w1_title">연체료 자동 산정 엔진</span></div>
+                                            <div style="font-size:0.8rem; color:#94A3B8;" data-i18n="dash_bill_w1_desc">
+                                                미납 1건 발생 시 즉시 법정 연체 이율 자동 합산 청구 및 모바일 알림톡 발송</div>
                                         </div>
                                         <div class="security-status-widget">
-                                            <div class="security-status-widget-header"><i class="fal fa-university"></i> <span data-i18n="dash_bill_w2_title">다중 계좌 실시간 감시</span></div>
-                                            <div style="font-size:0.8rem; color:#94A3B8;" data-i18n="dash_bill_w2_desc">신한·국민·하나·우리 등 12개 시중은행 펌뱅킹 정상 가동 (오류율 0.00%)</div>
+                                            <div class="security-status-widget-header"><i class="fal fa-university"></i>
+                                                <span data-i18n="dash_bill_w2_title">다중 계좌 실시간 감시</span>
+                                            </div>
+                                            <div style="font-size:0.8rem; color:#94A3B8;" data-i18n="dash_bill_w2_desc">
+                                                신한·국민·하나·우리 등 12개 시중은행 펌뱅킹 정상 가동 (오류율 0.00%)</div>
                                         </div>
                                     </div>
                                 </div>
@@ -526,14 +640,18 @@
                                     <div class="dash-main-center">
                                         <div class="kpi-row">
                                             <div class="kpi-card">
-                                                <div class="kpi-title" data-i18n="dash_cntr_kpi1_title">비대면 전자계약 체결율</div>
+                                                <div class="kpi-title" data-i18n="dash_cntr_kpi1_title">비대면 전자계약 체결율
+                                                </div>
                                                 <div class="kpi-value">97.2%</div>
-                                                <div class="kpi-trend" data-i18n="dash_cntr_kpi1_trend"><i class="fal fa-arrow-up"></i> 평균 체결 소요시간 4.2시간</div>
+                                                <div class="kpi-trend" data-i18n="dash_cntr_kpi1_trend"><i
+                                                        class="fal fa-arrow-up"></i> 평균 체결 소요시간 4.2시간</div>
                                             </div>
                                             <div class="kpi-card">
-                                                <div class="kpi-title" data-i18n="dash_cntr_kpi2_title">누적 체결 전자계약 건수</div>
+                                                <div class="kpi-title" data-i18n="dash_cntr_kpi2_title">누적 체결 전자계약 건수
+                                                </div>
                                                 <div class="kpi-value" data-i18n="dash_cntr_kpi2_val">28,450건</div>
-                                                <div class="kpi-trend" data-i18n="dash_cntr_kpi2_trend"><i class="fal fa-leaf"></i> 종이·인쇄 비용 100% 절감</div>
+                                                <div class="kpi-trend" data-i18n="dash_cntr_kpi2_trend"><i
+                                                        class="fal fa-leaf"></i> 종이·인쇄 비용 100% 절감</div>
                                             </div>
                                         </div>
                                         <div class="dash-content-card">
@@ -544,31 +662,41 @@
                                             <div class="dash-pipeline-grid">
                                                 <div class="dash-pipe-step completed">
                                                     <div class="dash-pipe-num">42</div>
-                                                    <div class="dash-pipe-label" data-i18n="dash_cntr_s1_label">계약서 생성</div>
+                                                    <div class="dash-pipe-label" data-i18n="dash_cntr_s1_label">계약서 생성
+                                                    </div>
                                                 </div>
                                                 <div class="dash-pipe-step completed">
                                                     <div class="dash-pipe-num">18</div>
-                                                    <div class="dash-pipe-label" data-i18n="dash_cntr_s2_label">본인인증 완료</div>
+                                                    <div class="dash-pipe-label" data-i18n="dash_cntr_s2_label">본인인증 완료
+                                                    </div>
                                                 </div>
                                                 <div class="dash-pipe-step completed">
                                                     <div class="dash-pipe-num">95</div>
-                                                    <div class="dash-pipe-label" data-i18n="dash_cntr_s3_label">모바일 서명</div>
+                                                    <div class="dash-pipe-label" data-i18n="dash_cntr_s3_label">모바일 서명
+                                                    </div>
                                                 </div>
                                                 <div class="dash-pipe-step completed">
                                                     <div class="dash-pipe-num">95</div>
-                                                    <div class="dash-pipe-label" data-i18n="dash_cntr_s4_label">국토부 등록</div>
+                                                    <div class="dash-pipe-label" data-i18n="dash_cntr_s4_label">국토부 등록
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="dash-right-panel">
                                         <div class="security-status-widget">
-                                            <div class="security-status-widget-header"><i class="fal fa-certificate"></i> <span data-i18n="dash_cntr_w1_title">타임스탬프 TSA 위변조 방지</span></div>
-                                            <div style="font-size:0.8rem; color:#94A3B8;" data-i18n="dash_cntr_w1_desc">공인인증기관 타임스탬프 토큰 발급 및 법적 효력 100% 보장</div>
+                                            <div class="security-status-widget-header"><i
+                                                    class="fal fa-certificate"></i> <span
+                                                    data-i18n="dash_cntr_w1_title">타임스탬프 TSA 위변조 방지</span></div>
+                                            <div style="font-size:0.8rem; color:#94A3B8;" data-i18n="dash_cntr_w1_desc">
+                                                공인인증기관 타임스탬프 토큰 발급 및 법적 효력 100% 보장</div>
                                         </div>
                                         <div class="security-status-widget">
-                                            <div class="security-status-widget-header"><i class="fal fa-file-check"></i> <span data-i18n="dash_cntr_w2_title">증명서 및 고지서 발급</span></div>
-                                            <div style="font-size:0.8rem; color:#94A3B8;" data-i18n="dash_cntr_w2_desc">입주확인서, 납부영수증, 거주증명서 모바일 비대면 1초 즉시 발급</div>
+                                            <div class="security-status-widget-header"><i class="fal fa-file-check"></i>
+                                                <span data-i18n="dash_cntr_w2_title">증명서 및 고지서 발급</span>
+                                            </div>
+                                            <div style="font-size:0.8rem; color:#94A3B8;" data-i18n="dash_cntr_w2_desc">
+                                                입주확인서, 납부영수증, 거주증명서 모바일 비대면 1초 즉시 발급</div>
                                         </div>
                                     </div>
                                 </div>
@@ -578,14 +706,18 @@
                                     <div class="dash-main-center">
                                         <div class="kpi-row">
                                             <div class="kpi-card">
-                                                <div class="kpi-title" data-i18n="dash_tax_kpi1_title">당월 전자세금계산서 발행</div>
+                                                <div class="kpi-title" data-i18n="dash_tax_kpi1_title">당월 전자세금계산서 발행
+                                                </div>
                                                 <div class="kpi-value" data-i18n="dash_tax_kpi1_val">12,850건</div>
-                                                <div class="kpi-trend" data-i18n="dash_tax_kpi1_trend"><i class="fal fa-check-circle"></i> 단 1클릭 일괄 전송 완료</div>
+                                                <div class="kpi-trend" data-i18n="dash_tax_kpi1_trend"><i
+                                                        class="fal fa-check-circle"></i> 단 1클릭 일괄 전송 완료</div>
                                             </div>
                                             <div class="kpi-card">
-                                                <div class="kpi-title" data-i18n="dash_tax_kpi2_title">국세청 홈택스 전송 성공률</div>
+                                                <div class="kpi-title" data-i18n="dash_tax_kpi2_title">국세청 홈택스 전송 성공률
+                                                </div>
                                                 <div class="kpi-value">100.0%</div>
-                                                <div class="kpi-trend" data-i18n="dash_tax_kpi2_trend"><i class="fal fa-shield-check"></i> 전송 오류 제로 (0건)</div>
+                                                <div class="kpi-trend" data-i18n="dash_tax_kpi2_trend"><i
+                                                        class="fal fa-shield-check"></i> 전송 오류 제로 (0건)</div>
                                             </div>
                                         </div>
                                         <div class="dash-content-card">
@@ -594,23 +726,35 @@
                                                 <span class="dash-tag-status dash-tag-success">DIRECT API</span>
                                             </div>
                                             <div class="dash-gauge-item">
-                                                <div class="dash-gauge-top"><span data-i18n="dash_tax_bar1_label">임대료 세금계산서 (8,420건)</span><span>100% 완료</span></div>
-                                                <div class="dash-gauge-bar"><div class="dash-gauge-fill" style="width: 100%;"></div></div>
+                                                <div class="dash-gauge-top"><span data-i18n="dash_tax_bar1_label">임대료
+                                                        세금계산서 (8,420건)</span><span>100% 완료</span></div>
+                                                <div class="dash-gauge-bar">
+                                                    <div class="dash-gauge-fill" style="width: 100%;"></div>
+                                                </div>
                                             </div>
                                             <div class="dash-gauge-item">
-                                                <div class="dash-gauge-top"><span data-i18n="dash_tax_bar2_label">공용 관리비 세금계산서 (4,430건)</span><span>100% 완료</span></div>
-                                                <div class="dash-gauge-bar"><div class="dash-gauge-fill" style="width: 100%;"></div></div>
+                                                <div class="dash-gauge-top"><span data-i18n="dash_tax_bar2_label">공용 관리비
+                                                        세금계산서 (4,430건)</span><span>100% 완료</span></div>
+                                                <div class="dash-gauge-bar">
+                                                    <div class="dash-gauge-fill" style="width: 100%;"></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="dash-right-panel">
                                         <div class="security-status-widget">
-                                            <div class="security-status-widget-header"><i class="fal fa-receipt"></i> <span data-i18n="dash_tax_w1_title">현금영수증 실시간 자동 발행</span></div>
-                                            <div style="font-size:0.8rem; color:#94A3B8;" data-i18n="dash_tax_w1_desc">자진발급 및 소득공제용 현금영수증 국세청 동시 통보 및 고객 알림</div>
+                                            <div class="security-status-widget-header"><i class="fal fa-receipt"></i>
+                                                <span data-i18n="dash_tax_w1_title">현금영수증 실시간 자동 발행</span>
+                                            </div>
+                                            <div style="font-size:0.8rem; color:#94A3B8;" data-i18n="dash_tax_w1_desc">
+                                                자진발급 및 소득공제용 현금영수증 국세청 동시 통보 및 고객 알림</div>
                                         </div>
                                         <div class="security-status-widget">
-                                            <div class="security-status-widget-header"><i class="fal fa-file-spreadsheet"></i> <span data-i18n="dash_tax_w2_title">부가세 매입매출 자동 집계</span></div>
-                                            <div style="font-size:0.8rem; color:#94A3B8;" data-i18n="dash_tax_w2_desc">분기별 부가세 신고용 합계표 엑셀/PDF 원클릭 다운로드 지원</div>
+                                            <div class="security-status-widget-header"><i
+                                                    class="fal fa-file-spreadsheet"></i> <span
+                                                    data-i18n="dash_tax_w2_title">부가세 매입매출 자동 집계</span></div>
+                                            <div style="font-size:0.8rem; color:#94A3B8;" data-i18n="dash_tax_w2_desc">
+                                                분기별 부가세 신고용 합계표 엑셀/PDF 원클릭 다운로드 지원</div>
                                         </div>
                                     </div>
                                 </div>
@@ -620,14 +764,18 @@
                                     <div class="dash-main-center">
                                         <div class="kpi-row">
                                             <div class="kpi-card">
-                                                <div class="kpi-title" data-i18n="dash_erp_kpi1_title">월 결산 마감 소요 기간</div>
+                                                <div class="kpi-title" data-i18n="dash_erp_kpi1_title">월 결산 마감 소요 기간
+                                                </div>
                                                 <div class="kpi-value" data-i18n="dash_erp_kpi1_val">0.5일</div>
-                                                <div class="kpi-trend" data-i18n="dash_erp_kpi1_trend"><i class="fal fa-bolt"></i> 기존 7영업일에서 93% 단축</div>
+                                                <div class="kpi-trend" data-i18n="dash_erp_kpi1_trend"><i
+                                                        class="fal fa-bolt"></i> 기존 7영업일에서 93% 단축</div>
                                             </div>
                                             <div class="kpi-card">
-                                                <div class="kpi-title" data-i18n="dash_erp_kpi2_title">ERP 전표 자동 생성율</div>
+                                                <div class="kpi-title" data-i18n="dash_erp_kpi2_title">ERP 전표 자동 생성율
+                                                </div>
                                                 <div class="kpi-value">100%</div>
-                                                <div class="kpi-trend" data-i18n="dash_erp_kpi2_trend"><i class="fal fa-check-circle"></i> 수기 입력 오류 0건 실현</div>
+                                                <div class="kpi-trend" data-i18n="dash_erp_kpi2_trend"><i
+                                                        class="fal fa-check-circle"></i> 수기 입력 오류 0건 실현</div>
                                             </div>
                                         </div>
                                         <div class="dash-content-card">
@@ -637,15 +785,18 @@
                                             </div>
                                             <div class="dash-mini-table">
                                                 <div class="dash-mini-row">
-                                                    <span data-i18n="dash_erp_row1">임대수익 발생 ➔ [ERP 수익 계정 전표] 자동 기표 완료</span>
+                                                    <span data-i18n="dash_erp_row1">임대수익 발생 ➔ [ERP 수익 계정 전표] 자동 기표
+                                                        완료</span>
                                                     <span class="dash-tag-status dash-tag-success">MAPPED</span>
                                                 </div>
                                                 <div class="dash-mini-row">
-                                                    <span data-i18n="dash_erp_row2">관리비 실비 정산 ➔ [ERP 비용/선급금 정산] 자동 분개 완료</span>
+                                                    <span data-i18n="dash_erp_row2">관리비 실비 정산 ➔ [ERP 비용/선급금 정산] 자동 분개
+                                                        완료</span>
                                                     <span class="dash-tag-status dash-tag-success">JOURNAL</span>
                                                 </div>
                                                 <div class="dash-mini-row">
-                                                    <span data-i18n="dash_erp_row3">보증금 입출금 ➔ [ERP 예수보증금 계정] 자동 정합성 검증 완료</span>
+                                                    <span data-i18n="dash_erp_row3">보증금 입출금 ➔ [ERP 예수보증금 계정] 자동 정합성 검증
+                                                        완료</span>
                                                     <span class="dash-tag-status dash-tag-blue">AUDITED</span>
                                                 </div>
                                             </div>
@@ -653,12 +804,18 @@
                                     </div>
                                     <div class="dash-right-panel">
                                         <div class="security-status-widget">
-                                            <div class="security-status-widget-header"><i class="fal fa-archive"></i> <span data-i18n="dash_erp_w1_title">결산용 감사 증빙 자동 패키징</span></div>
-                                            <div style="font-size:0.8rem; color:#94A3B8;" data-i18n="dash_erp_w1_desc">외부 회계감사용 임대차 원장 및 수지명세서 완벽 패키징 지원</div>
+                                            <div class="security-status-widget-header"><i class="fal fa-archive"></i>
+                                                <span data-i18n="dash_erp_w1_title">결산용 감사 증빙 자동 패키징</span>
+                                            </div>
+                                            <div style="font-size:0.8rem; color:#94A3B8;" data-i18n="dash_erp_w1_desc">
+                                                외부 회계감사용 임대차 원장 및 수지명세서 완벽 패키징 지원</div>
                                         </div>
                                         <div class="security-status-widget">
-                                            <div class="security-status-widget-header"><i class="fal fa-sitemap"></i> <span data-i18n="dash_erp_w2_title">다중 법인/SPC 통합 결산</span></div>
-                                            <div style="font-size:0.8rem; color:#94A3B8;" data-i18n="dash_erp_w2_desc">리츠 및 PFV 산하 복수 시행사·자회사 별도 결산 완벽 대응</div>
+                                            <div class="security-status-widget-header"><i class="fal fa-sitemap"></i>
+                                                <span data-i18n="dash_erp_w2_title">다중 법인/SPC 통합 결산</span>
+                                            </div>
+                                            <div style="font-size:0.8rem; color:#94A3B8;" data-i18n="dash_erp_w2_desc">
+                                                리츠 및 PFV 산하 복수 시행사·자회사 별도 결산 완벽 대응</div>
                                         </div>
                                     </div>
                                 </div>
@@ -668,14 +825,18 @@
                                     <div class="dash-main-center">
                                         <div class="kpi-row">
                                             <div class="kpi-card">
-                                                <div class="kpi-title" data-i18n="dash_api_kpi1_title">일일 RESTful API 호출량</div>
+                                                <div class="kpi-title" data-i18n="dash_api_kpi1_title">일일 RESTful API
+                                                    호출량</div>
                                                 <div class="kpi-value" data-i18n="dash_api_kpi1_val">1,420,800 req</div>
-                                                <div class="kpi-trend" data-i18n="dash_api_kpi1_trend"><i class="fal fa-bolt"></i> 평균 응답 속도 16ms 초고속</div>
+                                                <div class="kpi-trend" data-i18n="dash_api_kpi1_trend"><i
+                                                        class="fal fa-bolt"></i> 평균 응답 속도 16ms 초고속</div>
                                             </div>
                                             <div class="kpi-card">
-                                                <div class="kpi-title" data-i18n="dash_api_kpi2_title">연동 엔터프라이즈 시스템</div>
+                                                <div class="kpi-title" data-i18n="dash_api_kpi2_title">연동 엔터프라이즈 시스템
+                                                </div>
                                                 <div class="kpi-value" data-i18n="dash_api_kpi2_val">32개 시스템</div>
-                                                <div class="kpi-trend" data-i18n="dash_api_kpi2_trend"><i class="fal fa-plug"></i> 그룹웨어, 사내포털, 모바일 앱</div>
+                                                <div class="kpi-trend" data-i18n="dash_api_kpi2_trend"><i
+                                                        class="fal fa-plug"></i> 그룹웨어, 사내포털, 모바일 앱</div>
                                             </div>
                                         </div>
                                         <div class="dash-content-card">
@@ -684,27 +845,34 @@
                                                 <span class="dash-tag-status dash-tag-success">99.99% UP</span>
                                             </div>
                                             <div class="dash-api-line">
-                                                <span><span class="dash-api-method method-get">GET</span> /v2/properties/vacancy</span>
+                                                <span><span class="dash-api-method method-get">GET</span>
+                                                    /v2/properties/vacancy</span>
                                                 <span class="dash-tag-status dash-tag-success">200 OK (12ms)</span>
                                             </div>
                                             <div class="dash-api-line">
-                                                <span><span class="dash-api-method method-post">POST</span> /v2/contracts/sync</span>
+                                                <span><span class="dash-api-method method-post">POST</span>
+                                                    /v2/contracts/sync</span>
                                                 <span class="dash-tag-status dash-tag-success">200 OK (21ms)</span>
                                             </div>
                                             <div class="dash-api-line">
-                                                <span><span class="dash-api-method method-get">GET</span> /v2/billing/ledger</span>
+                                                <span><span class="dash-api-method method-get">GET</span>
+                                                    /v2/billing/ledger</span>
                                                 <span class="dash-tag-status dash-tag-success">200 OK (15ms)</span>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="dash-right-panel">
                                         <div class="security-status-widget">
-                                            <div class="security-status-widget-header"><i class="fal fa-key"></i> <span data-i18n="dash_api_w1_title">OAuth 2.0 / JWT 토큰 보안</span></div>
-                                            <div style="font-size:0.8rem; color:#94A3B8;" data-i18n="dash_api_w1_desc">금융기관급 기밀 토큰 만료 관리 및 IP 화이트리스트 접근 통제</div>
+                                            <div class="security-status-widget-header"><i class="fal fa-key"></i> <span
+                                                    data-i18n="dash_api_w1_title">OAuth 2.0 / JWT 토큰 보안</span></div>
+                                            <div style="font-size:0.8rem; color:#94A3B8;" data-i18n="dash_api_w1_desc">
+                                                금융기관급 기밀 토큰 만료 관리 및 IP 화이트리스트 접근 통제</div>
                                         </div>
                                         <div class="security-status-widget">
-                                            <div class="security-status-widget-header"><i class="fal fa-bell"></i> <span data-i18n="dash_api_w2_title">웹훅(Webhook) 실시간 이벤트</span></div>
-                                            <div style="font-size:0.8rem; color:#94A3B8;" data-i18n="dash_api_w2_desc">입금 완료, 계약 체결 시 고객사 시스템으로 즉시 자동 Push</div>
+                                            <div class="security-status-widget-header"><i class="fal fa-bell"></i> <span
+                                                    data-i18n="dash_api_w2_title">웹훅(Webhook) 실시간 이벤트</span></div>
+                                            <div style="font-size:0.8rem; color:#94A3B8;" data-i18n="dash_api_w2_desc">
+                                                입금 완료, 계약 체결 시 고객사 시스템으로 즉시 자동 Push</div>
                                         </div>
                                     </div>
                                 </div>
@@ -714,32 +882,40 @@
                                     <div class="dash-main-center">
                                         <div class="kpi-row">
                                             <div class="kpi-card">
-                                                <div class="kpi-title" data-i18n="dash_sec_kpi1_title">CSAP 클라우드 표준 보안</div>
+                                                <div class="kpi-title" data-i18n="dash_sec_kpi1_title">CSAP 클라우드 표준 보안
+                                                </div>
                                                 <div class="kpi-value" data-i18n="dash_sec_kpi1_val">STANDARD</div>
-                                                <div class="kpi-trend" data-i18n="dash_sec_kpi1_trend"><i class="fal fa-shield-check"></i> 국가 공인 보안 인증 획득</div>
+                                                <div class="kpi-trend" data-i18n="dash_sec_kpi1_trend"><i
+                                                        class="fal fa-shield-check"></i> 국가 공인 보안 인증 획득</div>
                                             </div>
                                             <div class="kpi-card">
-                                                <div class="kpi-title" data-i18n="dash_sec_kpi2_title">비인가 접근 차단 이력</div>
+                                                <div class="kpi-title" data-i18n="dash_sec_kpi2_title">비인가 접근 차단 이력
+                                                </div>
                                                 <div class="kpi-value" data-i18n="dash_sec_kpi2_val">0건 침해</div>
-                                                <div class="kpi-trend" data-i18n="dash_sec_kpi2_trend"><i class="fal fa-lock"></i> 금융보안원 가이드라인 100% 준수</div>
+                                                <div class="kpi-trend" data-i18n="dash_sec_kpi2_trend"><i
+                                                        class="fal fa-lock"></i> 금융보안원 가이드라인 100% 준수</div>
                                             </div>
                                         </div>
                                         <div class="dash-content-card">
                                             <div class="dash-card-header">
                                                 <span data-i18n="dash_sec_audit_title">실시간 관리자 접속 및 데이터 조작 감사 로그</span>
-                                                <span class="dash-tag-status dash-tag-secure" data-i18n="dash_status_secure">안전</span>
+                                                <span class="dash-tag-status dash-tag-secure"
+                                                    data-i18n="dash_status_secure">안전</span>
                                             </div>
                                             <div class="dash-mini-table">
                                                 <div class="dash-mini-row">
-                                                    <span data-i18n="dash_sec_log1">[인증] 자산운용 본부장 계정 2차 OTP 로그인 성공 (IP: 10.20.*.*)</span>
+                                                    <span data-i18n="dash_sec_log1">[인증] 자산운용 본부장 계정 2차 OTP 로그인 성공 (IP:
+                                                        10.20.*.*)</span>
                                                     <span class="dash-tag-status dash-tag-success">PASS</span>
                                                 </div>
                                                 <div class="dash-mini-row">
-                                                    <span data-i18n="dash_sec_log2">[권한] 수납 담당자 권한 (임대료 수납 전표 승인 완료)</span>
+                                                    <span data-i18n="dash_sec_log2">[권한] 수납 담당자 권한 (임대료 수납 전표 승인
+                                                        완료)</span>
                                                     <span class="dash-tag-status dash-tag-blue">LOGGED</span>
                                                 </div>
                                                 <div class="dash-mini-row">
-                                                    <span data-i18n="dash_sec_log3">[보안] 비정상 다중 접속 시도 사전 차단 및 세션 강제 종료</span>
+                                                    <span data-i18n="dash_sec_log3">[보안] 비정상 다중 접속 시도 사전 차단 및 세션 강제
+                                                        종료</span>
                                                     <span class="dash-tag-status dash-tag-warning">BLOCKED</span>
                                                 </div>
                                             </div>
@@ -747,12 +923,18 @@
                                     </div>
                                     <div class="dash-right-panel">
                                         <div class="security-status-widget">
-                                            <div class="security-status-widget-header"><i class="fal fa-shield-alt"></i> <span data-i18n="dash_sec_w1_title">AES-256 데이터 암호화</span></div>
-                                            <div style="font-size:0.8rem; color:#94A3B8;" data-i18n="dash_sec_w1_desc">주민번호, 계좌번호 등 고객 개인정보 완전 암호화 저장 및 전송</div>
+                                            <div class="security-status-widget-header"><i class="fal fa-shield-alt"></i>
+                                                <span data-i18n="dash_sec_w1_title">AES-256 데이터 암호화</span>
+                                            </div>
+                                            <div style="font-size:0.8rem; color:#94A3B8;" data-i18n="dash_sec_w1_desc">
+                                                주민번호, 계좌번호 등 고객 개인정보 완전 암호화 저장 및 전송</div>
                                         </div>
                                         <div class="security-status-widget">
-                                            <div class="security-status-widget-header"><i class="fal fa-user-shield"></i> <span data-i18n="dash_sec_w2_title">역할 기반 접근 제어(RBAC)</span></div>
-                                            <div style="font-size:0.8rem; color:#94A3B8;" data-i18n="dash_sec_w2_desc">오너, PM, 회계담당, 현장관리자 4단계 권한 철저 분리</div>
+                                            <div class="security-status-widget-header"><i
+                                                    class="fal fa-user-shield"></i> <span
+                                                    data-i18n="dash_sec_w2_title">역할 기반 접근 제어(RBAC)</span></div>
+                                            <div style="font-size:0.8rem; color:#94A3B8;" data-i18n="dash_sec_w2_desc">
+                                                오너, PM, 회계담당, 현장관리자 4단계 권한 철저 분리</div>
                                         </div>
                                     </div>
                                 </div>
@@ -826,10 +1008,14 @@
 
             <!-- 이지램스 지원 4대 핵심 부동산 자산 유형 -->
             <div class="asset-types-row" data-aos="fade-up" data-aos-delay="100">
-                <span class="asset-type-item asset-type-residential"><i class="fal fa-home-alt"></i> <span data-i18n="asset_type_residential">임대주택</span></span>
-                <span class="asset-type-item asset-type-office"><i class="fal fa-building"></i> <span data-i18n="asset_type_office">오피스</span></span>
-                <span class="asset-type-item asset-type-retail"><i class="fal fa-store"></i> <span data-i18n="asset_type_retail">리테일</span></span>
-                <span class="asset-type-item asset-type-senior"><i class="fal fa-hands-heart"></i> <span data-i18n="asset_type_senior">시니어 레지던스</span></span>
+                <span class="asset-type-item asset-type-residential"><i class="fal fa-home-alt"></i> <span
+                        data-i18n="asset_type_residential">임대주택</span></span>
+                <span class="asset-type-item asset-type-office"><i class="fal fa-building"></i> <span
+                        data-i18n="asset_type_office">오피스</span></span>
+                <span class="asset-type-item asset-type-retail"><i class="fal fa-store"></i> <span
+                        data-i18n="asset_type_retail">리테일</span></span>
+                <span class="asset-type-item asset-type-senior"><i class="fal fa-hands-heart"></i> <span
+                        data-i18n="asset_type_senior">시니어 레지던스</span></span>
             </div>
         </section>
 
@@ -840,22 +1026,22 @@
             <!-- Landmark Ambient Background Slider (자동 크로스페이드 순환) -->
             <div class="landmark-bg-slider" id="landmarkBgSlider" aria-hidden="true">
                 <div class="landmark-bg-slide active">
-                    <img src="./resources/images/landmark/lotte-tower.jpg" alt="롯데월드타워" class="landmark-slide-img">
+                    <img src="./resources/images/landmark/lotte-tower.png" alt="lotte-tower" class="landmark-slide-img">
                 </div>
                 <div class="landmark-bg-slide">
-                    <img src="./resources/images/landmark/mangrove.jpg" alt="맹그로브" class="landmark-slide-img">
+                    <img src="./resources/images/landmark/mangrove.png" alt="mangrove" class="landmark-slide-img">
                 </div>
                 <div class="landmark-bg-slide">
-                    <img src="./resources/images/landmark/one-grove.png" alt="원그로브" class="landmark-slide-img">
+                    <img src="./resources/images/landmark/one-grove.png" alt="one-grove" class="landmark-slide-img">
                 </div>
                 <div class="landmark-bg-slide">
-                    <img src="./resources/images/landmark/remarkvill.png" alt="리마크빌" class="landmark-slide-img">
+                    <img src="./resources/images/landmark/remarkvill.png" alt="remarkvill" class="landmark-slide-img">
                 </div>
                 <div class="landmark-bg-slide">
-                    <img src="./resources/images/landmark/starfield.jpg" alt="스타필드" class="landmark-slide-img">
+                    <img src="./resources/images/landmark/starfield.jpg" alt="starfield" class="landmark-slide-img">
                 </div>
                 <div class="landmark-bg-slide">
-                    <img src="./resources/images/landmark/vl-lewest.jpg" alt="VL르웨스트" class="landmark-slide-img">
+                    <img src="./resources/images/landmark/vl-lewest.jpg" alt="vl-lewest" class="landmark-slide-img">
                 </div>
             </div>
             <!-- Vignette & Dark Contrast Overlay (글자 가독성 유지 레이어) -->
@@ -873,31 +1059,50 @@
 
             <div class="landmarks-grid" data-aos="fade-up" data-aos-delay="100">
                 <!-- 리테일 (Retail: 앰버 골드 색상) -->
-                <div class="landmark-chip type-retail"><i class="fal fa-store"></i> <span data-i18n="lm_starfield">스타필드</span></div>
-                <div class="landmark-chip type-retail"><i class="fal fa-city"></i> <span data-i18n="lm_times_square">타임스퀘어</span></div>
-                <div class="landmark-chip type-retail"><i class="fal fa-shopping-bag"></i> <span data-i18n="lm_pamiers_mall">파미어스몰</span></div>
-                <div class="landmark-chip type-retail"><i class="fal fa-store"></i> <span data-i18n="lm_anyoung_insadong">안녕인사동</span></div>
-                <div class="landmark-chip type-retail"><i class="fal fa-street-view"></i> <span data-i18n="lm_alleyway">엘리웨이</span></div>
-                <div class="landmark-chip type-retail"><i class="fal fa-water"></i> <span data-i18n="lm_lake_como">레이크꼬모</span></div>
-                <div class="landmark-chip type-retail"><i class="fal fa-sparkles"></i> <span data-i18n="lm_lacmon">라끄몽</span></div>
-                <div class="landmark-chip type-retail"><i class="fal fa-tv"></i> <span data-i18n="lm_etland">전자랜드</span></div>
+                <div class="landmark-chip type-retail"><i class="fal fa-store"></i> <span
+                        data-i18n="lm_starfield">스타필드</span></div>
+                <div class="landmark-chip type-retail"><i class="fal fa-city"></i> <span
+                        data-i18n="lm_times_square">타임스퀘어</span></div>
+                <div class="landmark-chip type-retail"><i class="fal fa-shopping-bag"></i> <span
+                        data-i18n="lm_pamiers_mall">파미어스몰</span></div>
+                <div class="landmark-chip type-retail"><i class="fal fa-store"></i> <span
+                        data-i18n="lm_anyoung_insadong">안녕인사동</span></div>
+                <div class="landmark-chip type-retail"><i class="fal fa-street-view"></i> <span
+                        data-i18n="lm_alleyway">엘리웨이</span></div>
+                <div class="landmark-chip type-retail"><i class="fal fa-water"></i> <span
+                        data-i18n="lm_lake_como">레이크꼬모</span></div>
+                <div class="landmark-chip type-retail"><i class="fal fa-sparkles"></i> <span
+                        data-i18n="lm_lacmon">라끄몽</span></div>
+                <div class="landmark-chip type-retail"><i class="fal fa-tv"></i> <span data-i18n="lm_etland">전자랜드</span>
+                </div>
 
                 <!-- 오피스 (Office: 사이버 블루 색상) -->
-                <div class="landmark-chip type-office"><i class="fal fa-monument"></i> <span data-i18n="lm_lotte_tower">롯데타워</span></div>
-                <div class="landmark-chip type-office"><i class="fal fa-building"></i> <span data-i18n="lm_parnas">파르나스타워·몰</span></div>
-                <div class="landmark-chip type-office"><i class="fal fa-landmark"></i> <span data-i18n="lm_parc1">파크원</span></div>
-                <div class="landmark-chip type-office"><i class="fal fa-building"></i> <span data-i18n="lm_one_grove">원그로브</span></div>
-                <div class="landmark-chip type-office"><i class="fal fa-hotel"></i> <span data-i18n="lm_josun_hotel">조선호텔</span></div>
-                <div class="landmark-chip type-office"><i class="fal fa-hospital"></i> <span data-i18n="lm_snuh">서울대병원</span></div>
-                <div class="landmark-chip type-office"><i class="fal fa-building"></i> <span data-i18n="lm_dcamp">디캠프·FRONT1</span></div>
+                <div class="landmark-chip type-office"><i class="fal fa-monument"></i> <span
+                        data-i18n="lm_lotte_tower">롯데타워</span></div>
+                <div class="landmark-chip type-office"><i class="fal fa-building"></i> <span
+                        data-i18n="lm_parnas">파르나스타워·몰</span></div>
+                <div class="landmark-chip type-office"><i class="fal fa-landmark"></i> <span
+                        data-i18n="lm_parc1">파크원</span></div>
+                <div class="landmark-chip type-office"><i class="fal fa-building"></i> <span
+                        data-i18n="lm_one_grove">원그로브</span></div>
+                <div class="landmark-chip type-office"><i class="fal fa-hotel"></i> <span
+                        data-i18n="lm_josun_hotel">조선호텔</span></div>
+                <div class="landmark-chip type-office"><i class="fal fa-hospital"></i> <span
+                        data-i18n="lm_snuh">서울대병원</span></div>
+                <div class="landmark-chip type-office"><i class="fal fa-building"></i> <span
+                        data-i18n="lm_dcamp">디캠프·FRONT1</span></div>
 
                 <!-- 임대주택 (Residential: 에메랄드 그린 색상) -->
-                <div class="landmark-chip type-residential"><i class="fal fa-home-alt"></i> <span data-i18n="lm_remarkville">리마크빌</span></div>
-                <div class="landmark-chip type-residential"><i class="fal fa-seedling"></i> <span data-i18n="lm_mangrove">맹그로브</span></div>
+                <div class="landmark-chip type-residential"><i class="fal fa-home-alt"></i> <span
+                        data-i18n="lm_remarkville">리마크빌</span></div>
+                <div class="landmark-chip type-residential"><i class="fal fa-seedling"></i> <span
+                        data-i18n="lm_mangrove">맹그로브</span></div>
 
                 <!-- 시니어 레지던스 (Senior: 바이올렛 퍼플 색상) -->
-                <div class="landmark-chip type-senior"><i class="fal fa-hands-heart"></i> <span data-i18n="lm_vl_lewest">VL르웨스트</span></div>
-                <div class="landmark-chip type-senior"><i class="fal fa-tree"></i> <span data-i18n="lm_baekun_morning">백운호수·숲속의아침</span></div>
+                <div class="landmark-chip type-senior"><i class="fal fa-hands-heart"></i> <span
+                        data-i18n="lm_vl_lewest">VL르웨스트</span></div>
+                <div class="landmark-chip type-senior"><i class="fal fa-tree"></i> <span
+                        data-i18n="lm_baekun_morning">백운호수·숲속의아침</span></div>
             </div>
         </section>
 
@@ -908,7 +1113,8 @@
             <div class="section-header" data-aos="fade-up">
                 <span class="section-tag" data-i18n="bento_tag">CORE CAPABILITIES</span>
                 <h2 class="section-heading tech-gradient-text" data-i18n="bento_title">엔터프라이즈를 위한 6대 핵심 기술</h2>
-                <p class="section-subheading" data-i18n="bento_subtitle">모든 부동산 유형과 반복적인 금융 전산 업무를 단일 클라우드 엔진으로 통합합니다.</p>
+                <p class="section-subheading" data-i18n="bento_subtitle">모든 부동산 유형과 반복적인 금융 전산 업무를 단일 클라우드 엔진으로 통합합니다.
+                </p>
             </div>
 
             <div class="bento-grid">
@@ -921,10 +1127,13 @@
                             은행 CMS(자동이체) 및 가상계좌 실시간 연동으로 월 수백억 원의 임대료와 관리비를 1초 만에 자동 대사하고, 미수 발생 시 연체료를 자동 계산합니다.
                         </p>
                     </div>
-                    <div style="background: rgba(14, 165, 233, 0.08); border: 1px solid rgba(14, 165, 233, 0.2); border-radius: 12px; padding: 18px; display: flex; align-items: center; justify-content: space-between;">
+                    <div
+                        style="background: rgba(14, 165, 233, 0.08); border: 1px solid rgba(14, 165, 233, 0.2); border-radius: 12px; padding: 18px; display: flex; align-items: center; justify-content: space-between;">
                         <div>
-                            <span style="font-size:0.85rem; color:#94A3B8;" data-i18n="b1_metric_label">수납 대사 소요 시간</span>
-                            <div style="font-size:1.4rem; font-weight:800; color:#38BDF8;" data-i18n="b1_metric_val">3일 소요 → 즉시(1초) 완결</div>
+                            <span style="font-size:0.85rem; color:#94A3B8;" data-i18n="b1_metric_label">수납 대사 소요
+                                시간</span>
+                            <div style="font-size:1.4rem; font-weight:800; color:#38BDF8;" data-i18n="b1_metric_val">3일
+                                소요 → 즉시(1초) 완결</div>
                         </div>
                         <i class="fal fa-money-check-edit-alt" style="font-size: 2.2rem; color: #38BDF8;"></i>
                     </div>
@@ -948,7 +1157,7 @@
                         <div class="bento-card-tag" data-i18n="b3_tag">Tax & Billing</div>
                         <h3 class="bento-card-title" data-i18n="b3_title">1클릭 전자세금계산서 대량 발행</h3>
                         <p class="bento-card-desc" data-i18n="b3_desc">
-                            국세청 홈택스 시스템과 직접 연동되어 매월 수천 건의 세금계산서 및 현금영수증을 단 1회의 클릭으로 일괄 자동 전송합니다.
+                            청구서 이메일 발송 뿐만아니라 네이버전자문서로 발송하고, 국세청 홈택스 시스템과 직접 연동되어 매월 수천 건의 세금계산서 및 현금영수증을 단 1회의 클릭으로 일괄 자동 전송합니다.
                         </p>
                     </div>
                     <div class="bento-card-icon"><i class="fal fa-calculator"></i></div>
@@ -979,8 +1188,10 @@
                 </div>
 
                 <!-- Bento 6: Wide (bento-col-12) -->
-                <div class="bento-card bento-col-12" data-aos="fade-up" data-aos-delay="300" style="background: linear-gradient(135deg, #111C30 0%, #152744 100%);">
-                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+                <div class="bento-card bento-col-12" data-aos="fade-up" data-aos-delay="300"
+                    style="background: linear-gradient(135deg, #111C30 0%, #152744 100%);">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
                         <div style="max-width: 800px;">
                             <div class="bento-card-tag" data-i18n="b6_tag">Bank-Grade Security</div>
                             <h3 class="bento-card-title" data-i18n="b6_title">CSAP 금융기관급 클라우드 보안</h3>
@@ -988,7 +1199,8 @@
                                 KISA CSAP 표준등급을 획득하여 금융기관 및 공공기관의 까다로운 보안 감사를 완벽하게 통과하는 최고 수준의 인프라를 보장합니다.
                             </p>
                         </div>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOO18akLULTgK-XD6x8gj6WgpFNXiW2z_m3AC2mVgXUVUDGA/viewform" target="_blank" class="btn-crimson-cta">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOO18akLULTgK-XD6x8gj6WgpFNXiW2z_m3AC2mVgXUVUDGA/viewform"
+                            target="_blank" class="btn-crimson-cta">
                             <i class="fal fa-file-alt"></i> <span data-i18n="b6_cta_btn">보안 백서 및 도입 안내서 신청</span>
                         </a>
                     </div>
@@ -1007,7 +1219,8 @@
             </div>
 
             <div class="persona-tabs-nav" data-aos="fade-up" data-aos-delay="100">
-                <button type="button" class="persona-tab-btn active" data-target="tabAmc" data-i18n="tab_amc">리츠사 · AMC · 오너</button>
+                <button type="button" class="persona-tab-btn active" data-target="tabAmc" data-i18n="tab_amc">리츠사 · AMC
+                    · 오너</button>
                 <button type="button" class="persona-tab-btn" data-target="tabPm" data-i18n="tab_pm">자산관리사 · PM</button>
                 <button type="button" class="persona-tab-btn" data-target="tabFm" data-i18n="tab_fm">시설관리 · FM</button>
             </div>
@@ -1018,17 +1231,24 @@
                     <div class="persona-left">
                         <h3 data-i18n="amc_h3">미수금 누수 차단 및 자산 가치(Value-Up) 극대화</h3>
                         <p data-i18n="amc_p">
-                            연체 자동 감지와 법적 절차 연동으로 연체율을 0%에 수렴시킵니다. 공실률, 수익률, 지출 현황을 실시간 데이터로 시각화하여 투자자 및 오너 보고서를 클릭 한 번에 완성합니다.
+                            연체 자동 감지와 법적 절차 연동으로 연체율을 0%에 수렴시킵니다. 공실률, 수익률, 지출 현황을 실시간 데이터로 시각화하여 투자자 및 오너 보고서를 클릭 한 번에
+                            완성합니다.
                         </p>
                         <ul class="persona-feature-list">
-                            <li><i class="fal fa-check-circle"></i> <span data-i18n="amc_feat1">연체료 자동 산정 및 즉시 청구</span></li>
-                            <li><i class="fal fa-check-circle"></i> <span data-i18n="amc_feat2">월간 오너 정산 리포트 원클릭 생성</span></li>
-                            <li><i class="fal fa-check-circle"></i> <span data-i18n="amc_feat3">실시간 포트폴리오 자산 가치 분석</span></li>
+                            <li><i class="fal fa-check-circle"></i> <span data-i18n="amc_feat1">연체료 자동 산정 및 즉시 청구</span>
+                            </li>
+                            <li><i class="fal fa-check-circle"></i> <span data-i18n="amc_feat2">월간 리포트 (MR보고서) 원클릭
+                                    생성</span></li>
+                            <li><i class="fal fa-check-circle"></i> <span data-i18n="amc_feat3">실시간 포트폴리오 자산 가치
+                                    분석</span></li>
                         </ul>
                     </div>
                     <div class="persona-right">
-                        <div style="font-size:0.9rem; color:#0EA5E9; font-weight:700; margin-bottom:12px;" data-i18n="amc_kpi_title">AMC 핵심 성과 지표</div>
-                        <div style="font-size:2.2rem; font-weight:900; color:#fff; margin-bottom:8px;">98% <span style="font-size:1.2rem; font-weight:500;" data-i18n="amc_kpi_label">미수금 회수율</span></div>
+                        <div style="font-size:0.9rem; color:#0EA5E9; font-weight:700; margin-bottom:12px;"
+                            data-i18n="amc_kpi_title">AMC 핵심 성과 지표</div>
+                        <div style="font-size:2.2rem; font-weight:900; color:#fff; margin-bottom:8px;">98% <span
+                                style="font-size:1.2rem; font-weight:500;" data-i18n="amc_kpi_label">미수금 회수율</span>
+                        </div>
                         <div style="font-size:0.95rem; color:#94A3B8; line-height:1.6;" data-i18n="amc_quote">
                             "사람이 직접 독촉할 필요 없이, 시스템이 공신력 있는 절차에 따라 채권을 관리하여 감정 소모 없이 회수율을 극대화합니다."
                         </div>
@@ -1040,17 +1260,24 @@
                     <div class="persona-left">
                         <h3 data-i18n="pm_h3">엑셀 수작업 지옥 탈출, 수납부터 계약까지 자동화</h3>
                         <p data-i18n="pm_p">
-                            매달 수작업으로 대조하던 수백 행의 엑셀 정산과 세금계산서 발행을 시스템이 대신 처리합니다. 서류와 도장 없는 비대면 전자계약으로 행정 소요 시간을 80% 이상 단축합니다.
+                            매달 수작업으로 대조하던 수백 행의 엑셀 정산과 세금계산서 발행을 시스템이 대신 처리합니다. 서류와 도장 없는 비대면 전자계약으로 행정 소요 시간을 80% 이상
+                            단축합니다.
                         </p>
                         <ul class="persona-feature-list">
-                            <li><i class="fal fa-check-circle"></i> <span data-i18n="pm_feat1">CMS 및 가상계좌 입금 실시간 자동 대사</span></li>
-                            <li><i class="fal fa-check-circle"></i> <span data-i18n="pm_feat2">국토부 공식 전자계약 비대면 체결</span></li>
-                            <li><i class="fal fa-check-circle"></i> <span data-i18n="pm_feat3">부가세 및 세무 신고 데이터 일괄 연동</span></li>
+                            <li><i class="fal fa-check-circle"></i> <span data-i18n="pm_feat1">CMS 및 가상계좌 입금 실시간 자동
+                                    대사</span></li>
+                            <li><i class="fal fa-check-circle"></i> <span data-i18n="pm_feat2">국토부 공식 전자계약 비대면 체결</span>
+                            </li>
+                            <li><i class="fal fa-check-circle"></i> <span data-i18n="pm_feat3">부가세 및 세무 신고 데이터 일괄
+                                    연동</span></li>
                         </ul>
                     </div>
                     <div class="persona-right">
-                        <div style="font-size:0.9rem; color:#0EA5E9; font-weight:700; margin-bottom:12px;" data-i18n="pm_kpi_title">PM 핵심 성과 지표</div>
-                        <div style="font-size:2.2rem; font-weight:900; color:#fff; margin-bottom:8px;">-80% <span style="font-size:1.2rem; font-weight:500;" data-i18n="pm_kpi_label">단순 반복 업무 시간</span></div>
+                        <div style="font-size:0.9rem; color:#0EA5E9; font-weight:700; margin-bottom:12px;"
+                            data-i18n="pm_kpi_title">PM 핵심 성과 지표</div>
+                        <div style="font-size:2.2rem; font-weight:900; color:#fff; margin-bottom:8px;">-80% <span
+                                style="font-size:1.2rem; font-weight:500;" data-i18n="pm_kpi_label">단순 반복 업무 시간</span>
+                        </div>
                         <div style="font-size:0.95rem; color:#94A3B8; line-height:1.6;" data-i18n="pm_quote">
                             "매달 말일과 10일 야근을 유발하던 엑셀 입금 확인 및 영수증 발행 업무를 1클릭으로 끝내고 가치 있는 자산 분석에 집중합니다."
                         </div>
@@ -1062,17 +1289,24 @@
                     <div class="persona-left">
                         <h3 data-i18n="fm_h3">시설 점검 및 안전관리 업무의 완벽한 디지털화</h3>
                         <p data-i18n="fm_p">
-                            수기 장부와 종이 서류 대신 모바일로 현장 시설을 점검하고 중대재해처벌법 대응 안전관리 문서를 체계적으로 전산화합니다. 임차인 민원 접수 및 처리 상태를 실시간 공유합니다.
+                            수기 장부와 종이 서류 대신 모바일로 현장 시설을 점검하고 중대재해처벌법 대응 안전관리 문서를 체계적으로 전산화합니다. 임차인 민원 접수 및 처리 상태를 실시간
+                            공유합니다.
                         </p>
                         <ul class="persona-feature-list">
-                            <li><i class="fal fa-check-circle"></i> <span data-i18n="fm_feat1">모바일 현장 점검 및 하자 접수</span></li>
-                            <li><i class="fal fa-check-circle"></i> <span data-i18n="fm_feat2">법정 안전점검 일지 클라우드 아카이빙</span></li>
-                            <li><i class="fal fa-check-circle"></i> <span data-i18n="fm_feat3">임차인 모바일 전용 앱(ezREMS Connect) 연동</span></li>
+                            <li><i class="fal fa-check-circle"></i> <span data-i18n="fm_feat1">모바일 현장 점검 및 하자 접수</span>
+                            </li>
+                            <li><i class="fal fa-check-circle"></i> <span data-i18n="fm_feat2">법정 안전점검 일지 클라우드
+                                    아카이빙</span></li>
+                            <li><i class="fal fa-check-circle"></i> <span data-i18n="fm_feat3">임차인 모바일 전용 앱(ezREMS
+                                    Connect) 연동</span></li>
                         </ul>
                     </div>
                     <div class="persona-right">
-                        <div style="font-size:0.9rem; color:#0EA5E9; font-weight:700; margin-bottom:12px;" data-i18n="fm_kpi_title">FM 핵심 성과 지표</div>
-                        <div style="font-size:2.2rem; font-weight:900; color:#fff; margin-bottom:8px;">100% <span style="font-size:1.2rem; font-weight:500;" data-i18n="fm_kpi_label">점검 이력 전산화</span></div>
+                        <div style="font-size:0.9rem; color:#0EA5E9; font-weight:700; margin-bottom:12px;"
+                            data-i18n="fm_kpi_title">FM 핵심 성과 지표</div>
+                        <div style="font-size:2.2rem; font-weight:900; color:#fff; margin-bottom:8px;">100% <span
+                                style="font-size:1.2rem; font-weight:500;" data-i18n="fm_kpi_label">점검 이력 전산화</span>
+                        </div>
                         <div style="font-size:0.95rem; color:#94A3B8; line-height:1.6;" data-i18n="fm_quote">
                             "현장에서 스마트폰으로 사진을 찍어 등록하면 본사와 임차인에게 즉시 상태가 공유되며, 법적 보관 서류가 안전하게 클라우드에 영구 저장됩니다."
                         </div>
@@ -1095,7 +1329,8 @@
                     <div class="metric-label" data-i18n="metric_units">전국 관리 세대수</div>
                 </div>
                 <div class="metric-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="metric-number">₩ <span class="counter">650</span><span data-i18n="metric_billing_unit">억+</span></div>
+                    <div class="metric-number">₩ <span class="counter">650</span><span
+                            data-i18n="metric_billing_unit">억+</span></div>
                     <div class="metric-label" data-i18n="metric_billing">월 관리 청구 규모</div>
                 </div>
                 <div class="metric-card" data-aos="fade-up" data-aos-delay="300">
@@ -1112,22 +1347,30 @@
             <div class="section-header" data-aos="fade-up">
                 <span class="section-tag" data-i18n="preview_tag">SYSTEM PREVIEW</span>
                 <h2 class="section-heading tech-gradient-text" data-i18n="preview_title">전문가를 위한 직관적인 통합 관제 화면</h2>
-                <p class="section-subheading" data-i18n="preview_subtitle">복잡한 자산 현황을 한눈에 파악할 수 있는 사용자 중심의 대시보드를 직접 경험해보세요.</p>
+                <p class="section-subheading" data-i18n="preview_subtitle">복잡한 자산 현황을 한눈에 파악할 수 있는 사용자 중심의 대시보드를 직접
+                    경험해보세요.</p>
             </div>
 
-            <div style="background:var(--bg-surface-dark); border:1px solid var(--border-dark); border-radius:20px; padding:32px; box-shadow:0 30px 80px rgba(0,0,0,0.5);" data-aos="zoom-in">
+            <div style="background:var(--bg-surface-dark); border:1px solid var(--border-dark); border-radius:20px; padding:32px; box-shadow:0 30px 80px rgba(0,0,0,0.5);"
+                data-aos="zoom-in">
                 <div class="row align-items-center">
                     <div class="col-lg-7">
-                        <img src="./resources/images/preview_img08.gif" alt="통합 관제 시스템 화면" class="img-fluid" style="border-radius:12px; border:1px solid rgba(255,255,255,0.1); box-shadow:0 10px 30px rgba(0,0,0,0.4); width:100%; height:auto;" />
+                        <img src="./resources/images/preview_img08.gif" alt="통합 관제 시스템 화면" class="img-fluid"
+                            style="border-radius:12px; border:1px solid rgba(255,255,255,0.1); box-shadow:0 10px 30px rgba(0,0,0,0.4); width:100%; height:auto;" />
                     </div>
                     <div class="col-lg-5 mt-4 mt-lg-0 ps-lg-4">
-                        <div style="color:var(--color-cyber-cyan); font-weight:700; font-size:0.9rem; margin-bottom:8px;">ALL-IN-ONE PLATFORM</div>
-                        <h3 style="font-size:1.8rem; font-weight:800; color:#fff; margin-bottom:16px;" data-i18n="preview_card_title">한눈에 통제하는 자산 관리 허브</h3>
-                        <p style="color:var(--text-secondary-dark); line-height:1.7; margin-bottom:24px;" data-i18n="preview_card_desc">
+                        <div
+                            style="color:var(--color-cyber-cyan); font-weight:700; font-size:0.9rem; margin-bottom:8px;">
+                            ALL-IN-ONE PLATFORM</div>
+                        <h3 style="font-size:1.8rem; font-weight:800; color:#fff; margin-bottom:16px;"
+                            data-i18n="preview_card_title">한눈에 통제하는 자산 관리 허브</h3>
+                        <p style="color:var(--text-secondary-dark); line-height:1.7; margin-bottom:24px;"
+                            data-i18n="preview_card_desc">
                             입주 현황, 청구/수납 대사, 계약 만기 예고, 민원 및 시설 점검까지 분산되어 있던 전산 업무를 단일 통합 화면에서 마우스 몇 번으로 모두 완결할 수 있습니다.
                         </p>
                         <a href="https://pms.ezrems.com/" target="_blank" class="btn-outline-tech">
-                            <i class="fal fa-external-link-alt"></i> <span data-i18n="preview_demo_btn">기업형 데모 화면 둘러보기</span>
+                            <i class="fal fa-external-link-alt"></i> <span data-i18n="preview_demo_btn">기업형 데모 화면
+                                둘러보기</span>
                         </a>
                     </div>
                 </div>
@@ -1161,7 +1404,8 @@
                         <i class="fal fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer" data-i18n="faq_a2">
-                        KT, 롯데건설, 롯데물산, SK D&D, 우미건설, 파크원디벨롭먼트, 라이크홈, 해피투게더하우스 등 많은 기업들이 솔루션 기반으로 구축하였습니다. 기업 환경에 맞도록 구축형으로 가능합니다. 구축기간은 보통 6개월 정도 소요됩니다.
+                        KT, 롯데건설, 롯데물산, SK D&D, 우미건설, 파크원디벨롭먼트, 라이크홈, 해피투게더하우스 등 많은 기업들이 솔루션 기반으로 구축하였습니다. 기업 환경에 맞도록
+                        구축형으로 가능합니다. 구축기간은 보통 6개월 정도 소요됩니다.
                     </div>
                 </div>
 
@@ -1181,7 +1425,8 @@
                         <i class="fal fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer" data-i18n="faq_a4">
-                        사용자매뉴얼과 초기 데이터 셋팅 외 별도로 담당자 교육을 진행합니다. 이지램스를 사용하고 있는 중에도, 업무지원팀과의 핫라인을 통해 VoC, 문의사항 등 업무 소통이 가능합니다.
+                        사용자매뉴얼과 초기 데이터 셋팅 외 별도로 담당자 교육을 진행합니다. 이지램스를 사용하고 있는 중에도, 업무지원팀과의 핫라인을 통해 VoC, 문의사항 등 업무 소통이
+                        가능합니다.
                     </div>
                 </div>
 
@@ -1191,7 +1436,8 @@
                         <i class="fal fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer" data-i18n="faq_a5">
-                        이지램스는 고객사에 계약, 청구, 수납 등 입주 관련 API를 제공하기 때문에 각 기업 특성에 맞는 입주민 편의서비스 제공이 가능합니다. 제온스의 다양한 협력사들이 이지램스 제공 API를 활용해 각 사 입주민 플랫폼을 운영하고 있습니다.
+                        이지램스는 고객사에 계약, 청구, 수납 등 입주 관련 API를 제공하기 때문에 각 기업 특성에 맞는 입주민 편의서비스 제공이 가능합니다. 제온스의 다양한 협력사들이 이지램스
+                        제공 API를 활용해 각 사 입주민 플랫폼을 운영하고 있습니다.
                     </div>
                 </div>
 
@@ -1221,7 +1467,8 @@
                         <i class="fal fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer" data-i18n="faq_a8">
-                        이지램스는 KISA CSAP 표준등급 클라우드 보안 인증을 획득하여 국내 주요 금융지주 계열사, 대기업 자산관리사, 공공기관의 까다로운 보안 심사를 모두 통과한 검증된 플랫폼입니다.
+                        이지램스는 KISA CSAP 표준등급 클라우드 보안 인증을 획득하여 국내 주요 금융지주 계열사, 대기업 자산관리사, 공공기관의 까다로운 보안 심사를 모두 통과한 검증된
+                        플랫폼입니다.
                     </div>
                 </div>
             </div>
@@ -1234,13 +1481,14 @@
             <div class="cta-box-inner" data-aos="fade-up">
                 <span class="cta-box-badge" data-i18n="cta_badge">START YOUR DIGITAL TRANSFORMATION</span>
                 <h2 class="cta-box-title" data-i18n="cta_title">
-                    부동산 자산관리, 이제는 사람이 아닌<br/><span style="color:#EC2527;">'엔터프라이즈 플랫폼'</span>의 영역입니다.
+                    부동산 자산관리, 이제는 사람이 아닌<br /><span style="color:#EC2527;">'엔터프라이즈 플랫폼'</span>의 영역입니다.
                 </h2>
                 <p class="cta-box-desc" data-i18n="cta_desc">
                     이지램스 전문 컨설턴트가 귀사의 포트폴리오 규모에 맞춘 최적 도입 플랜과 데모 계정을 48시간 내에 안내해 드립니다.
                 </p>
 
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOO18akLULTgK-XD6x8gj6WgpFNXiW2z_m3AC2mVgXUVUDGA/viewform" target="_blank" class="btn-hero-primary" style="font-size:1.15rem; padding:18px 44px;">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOO18akLULTgK-XD6x8gj6WgpFNXiW2z_m3AC2mVgXUVUDGA/viewform"
+                    target="_blank" class="btn-hero-primary" style="font-size:1.15rem; padding:18px 44px;">
                     <i class="fal fa-paper-plane"></i>
                     <span data-i18n="cta_btn">1:1 엔터프라이즈 도입 문의</span>
                 </a>
@@ -1280,19 +1528,24 @@
                     <p data-i18n="foot_email">EMAIL : support@zeons.co.kr</p>
                     <p data-i18n="foot_biz">사업자등록번호 : 220-88-84510 | 통신판매업신고번호 : 2016-서울강남-02252</p>
                     <p data-i18n="foot_addr">본사 : 서울시 강남구 선릉로 93길 40 (역삼동, 스파크플러스 선릉3호점)</p>
-                    <p style="margin-top:10px; color:#475569;" data-i18n="foot_copy">COPYRIGHT © 2018 ZEONS, Inc. All rights reserved.</p>
+                    <p style="margin-top:10px; color:#475569;" data-i18n="foot_copy">COPYRIGHT © 2018 ZEONS, Inc. All
+                        rights reserved.</p>
                 </div>
             </div>
 
             <!-- Certifications -->
             <div style="display:flex; flex-direction:column; gap:16px; justify-content:center;">
-                <div style="display:flex; align-items:center; gap:12px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.06); padding:10px 16px; border-radius:10px;">
+                <div
+                    style="display:flex; align-items:center; gap:12px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.06); padding:10px 16px; border-radius:10px;">
                     <img src="./resources/images/footer_mark_nipa.png" alt="NIPA 인증" style="height:36px;" />
-                    <div style="font-size:0.8rem; color:#94A3B8;" data-i18n="foot_cert_nipa">클라우드 컴퓨팅 서비스<br/>품질·성능 검증 획득</div>
+                    <div style="font-size:0.8rem; color:#94A3B8;" data-i18n="foot_cert_nipa">클라우드 컴퓨팅 서비스<br />품질·성능 검증
+                        획득</div>
                 </div>
-                <div style="display:flex; align-items:center; gap:12px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.06); padding:10px 16px; border-radius:10px;">
+                <div
+                    style="display:flex; align-items:center; gap:12px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.06); padding:10px 16px; border-radius:10px;">
                     <img src="./resources/images/footer_mark_kaci.png" alt="KACI 인증" style="height:36px;" />
-                    <div style="font-size:0.8rem; color:#94A3B8;" data-i18n="foot_cert_kaci">클라우드 서비스 확인제 인증<br/>한국클라우드산업협회</div>
+                    <div style="font-size:0.8rem; color:#94A3B8;" data-i18n="foot_cert_kaci">클라우드 서비스 확인제
+                        인증<br />한국클라우드산업협회</div>
                 </div>
             </div>
         </div>
@@ -1340,16 +1593,16 @@
             });
 
             // Mobile Navigation Menu Toggle
-            $('#mobileNavToggle').click(function(e) {
+            $('#mobileNavToggle').click(function (e) {
                 e.stopPropagation();
                 $('#headerNav').toggleClass('mobile-active');
             });
 
-            $('#headerNav a').click(function() {
+            $('#headerNav a').click(function () {
                 $('#headerNav').removeClass('mobile-active');
             });
 
-            $(document).click(function(e) {
+            $(document).click(function (e) {
                 if (!$(e.target).closest('#enterpriseHeader').length) {
                     $('#headerNav').removeClass('mobile-active');
                 }
@@ -1428,13 +1681,13 @@
                 // 1. localStorage에 24시간 만료 시각 저장
                 try {
                     localStorage.setItem(NOTICE_STORAGE_KEY, expireTime.toString());
-                } catch (e) {}
+                } catch (e) { }
 
                 // 2. Cookie에도 저장
                 try {
                     document.cookie = NOTICE_COOKIE_KEY + "=Y; expires=" + expireDate.toUTCString() + "; path=/; SameSite=Lax";
                     document.cookie = "close=Y; expires=" + expireDate.toUTCString() + "; path=/; SameSite=Lax";
-                } catch (e) {}
+                } catch (e) { }
             }
 
             // 팝업 표시 여부 결정
@@ -1656,22 +1909,22 @@
                 function syncSliderImages(imgList) {
                     if (!Array.isArray(imgList) || imgList.length === 0) return;
 
-                    var validImages = imgList.filter(function(item) {
+                    var validImages = imgList.filter(function (item) {
                         var name = typeof item === 'string' ? item : (item.name || '');
                         return name && /\.(jpe?g|png|webp|avif|gif)$/i.test(name) && !name.includes('~');
-                    }).map(function(item) {
+                    }).map(function (item) {
                         return typeof item === 'string' ? item : item.name;
                     });
 
                     if (validImages.length === 0) return;
 
                     // 현재 슬라이더 이미지 목록과 비교
-                    var currentImgs = Array.from(slider.querySelectorAll('.landmark-slide-img')).map(function(img) {
+                    var currentImgs = Array.from(slider.querySelectorAll('.landmark-slide-img')).map(function (img) {
                         var parts = (img.getAttribute('src') || '').split('/');
                         return parts[parts.length - 1];
                     });
 
-                    var isIdentical = validImages.length === currentImgs.length && validImages.every(function(name, i) {
+                    var isIdentical = validImages.length === currentImgs.length && validImages.every(function (name, i) {
                         return name.toLowerCase() === (currentImgs[i] || '').toLowerCase();
                     });
 
@@ -1681,7 +1934,7 @@
                     var activeIndex = currentSlide < validImages.length ? currentSlide : 0;
                     stopTimer();
                     slider.innerHTML = '';
-                    validImages.forEach(function(fileName, idx) {
+                    validImages.forEach(function (fileName, idx) {
                         var slideDiv = document.createElement('div');
                         slideDiv.className = 'landmark-bg-slide' + (idx === activeIndex ? ' active' : '');
 
@@ -1707,33 +1960,34 @@
 
                 // 2단계: landmarks.json 실시간 fetch (캐시 방지 ?t= 파라미터 적용)
                 fetch('./resources/images/landmark/landmarks.json?t=' + Date.now())
-                    .then(function(res) {
+                    .then(function (res) {
                         if (res.ok) return res.json();
                         throw new Error('Local json error');
                     })
-                    .then(function(list) {
+                    .then(function (list) {
                         syncSliderImages(list);
                     })
-                    .catch(function() {});
+                    .catch(function () { });
 
                 // 3단계: GitHub Pages 환경 시 GitHub API로 폴더 실시간 자동 감지 (최신 파일 자동 포착)
                 var isGitHubPages = window.location.hostname.indexOf('github.io') !== -1;
                 if (isGitHubPages) {
                     fetch('https://api.github.com/repos/ZEONS/ezrems-landing-renewal/contents/resources/images/landmark')
-                        .then(function(res) {
+                        .then(function (res) {
                             if (res.ok) return res.json();
                             throw new Error('GitHub API Error: ' + res.status);
                         })
-                        .then(function(files) {
+                        .then(function (files) {
                             if (Array.isArray(files)) {
-                                var names = files.filter(function(f) { return f.type === 'file'; }).map(function(f) { return f.name; });
+                                var names = files.filter(function (f) { return f.type === 'file'; }).map(function (f) { return f.name; });
                                 syncSliderImages(names);
                             }
                         })
-                        .catch(function() {});
+                        .catch(function () { });
                 }
             })();
         });
     </script>
 </body>
+
 </html>
