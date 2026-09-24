@@ -1211,22 +1211,22 @@ body.enterprise-body {
 
 /* 4대 부동산 자산 포트폴리오 (임대주택, 오피스, 리테일, 시니어 레지던스) */
 .asset-types-row {
-    margin-top: 28px;
+    margin-top: 15px;
     display: flex;
     justify-content: center;
-    gap: 12px;
+    gap: 8px;
     flex-wrap: wrap;
-    padding: 0 20px;
+    padding: 0 15px;
 }
 
 .asset-type-item {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
     color: #F8FAFC;
-    font-size: 0.92rem;
-    font-weight: 700;
-    padding: 8px 20px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 4px 13px;
     border-radius: 100px;
     white-space: nowrap;
     backdrop-filter: blur(8px);
@@ -1235,16 +1235,16 @@ body.enterprise-body {
 }
 
 .asset-type-item i {
-    font-size: 1.05rem;
+    font-size: 0.85rem;
     transition: transform 0.25s ease;
 }
 
 .asset-type-item:hover {
-    transform: translateY(-2px);
+    transform: translateY(-1px);
 }
 
 .asset-type-item:hover i {
-    transform: scale(1.15);
+    transform: scale(1.1);
 }
 
 /* 1. 임대주택: 에메랄드 / 그린 */
@@ -1391,7 +1391,7 @@ body.enterprise-body {
     position: relative;
     z-index: 3;
     margin-top: 0;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .section-landmarks .landmarks-grid {
