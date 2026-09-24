@@ -1368,21 +1368,20 @@
     };
 
     // =========================================================================
-    // [설정] 다국어 자동 치환 일시 정지 스위치
-    // 사용자가 index.html을 직접 수정하는 동안 브라우저에서 원래 텍스트가 덮어씌워지지 않도록 정지합니다.
-    // 최종 컨텐츠 수정 완료 후 다국어를 다시 켜려면 아래 값을 false로 변경하십시오.
+    // [설정] 다국어 자동 치환 스위치 (활성화)
     // =========================================================================
-    const IS_I18N_PAUSED = true;
+    const IS_I18N_PAUSED = false;
 
     let currentLang = 'ko';
 
-    function setLanguage(lang) {
+    function setLanguage(lang, force) {
         if (IS_I18N_PAUSED) {
             console.log('[i18n] 다국어 엔진이 일시 정지(PAUSED) 상태입니다. (HTML 직접 수정 모드)');
             return;
         }
 
         if (!translations[lang]) lang = 'ko';
+        const prevLang = currentLang;
         currentLang = lang;
         localStorage.setItem('ezrems_lang', lang);
         document.documentElement.lang = lang;
@@ -1396,6 +1395,11 @@
         const currentLangEl = document.getElementById('currentLangLabel');
         if (currentLangEl) {
             currentLangEl.textContent = translations[lang].lang_label;
+        }
+
+        // 초기 진입 시 기본 ko이고 force 플래그가 없는 경우 원본 HTML 마크업 보존
+        if (lang === 'ko' && !force && prevLang === 'ko') {
+            return;
         }
 
         // Replace all DOM text with data-i18n attribute
@@ -1425,14 +1429,14 @@
         const savedLang = localStorage.getItem('ezrems_lang');
 
         const initialLang = urlLang || savedLang || 'ko';
-        setLanguage(initialLang);
+        setLanguage(initialLang, initialLang !== 'ko');
 
         // Bind clicks on language selector buttons
         document.querySelectorAll('.lang-select-btn').forEach(btn => {
             btn.addEventListener('click', function (e) {
                 e.preventDefault();
                 const selectedLang = this.getAttribute('data-lang');
-                setLanguage(selectedLang);
+                setLanguage(selectedLang, true);
                 
                 // Close language dropdown if open
                 const dropdownMenu = document.querySelector('.lang-dropdown-menu');

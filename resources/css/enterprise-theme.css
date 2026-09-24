@@ -2817,6 +2817,10 @@ body.enterprise-body {
     #enterpriseHeader {
         height: 64px;
     }
+    .lang-dropdown-btn {
+        padding: 5px 8px;
+        font-size: 0.78rem;
+    }
     .enterprise-hero {
         padding-top: 100px;
     }
