@@ -3579,6 +3579,14 @@ body.enterprise-body {
     position: relative;
 }
 
+.universe-tag-wrap {
+    margin-bottom: 26px;
+}
+
+.universe-tag-wrap .section-tag {
+    margin-bottom: 0;
+}
+
 .universe-bubble-wrap {
     display: inline-flex;
     align-items: center;
