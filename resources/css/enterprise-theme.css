@@ -1312,7 +1312,7 @@ body.enterprise-body {
    ========================================================================== */
 .section-landmarks {
     padding: 75px 20px 90px;
-    background-color: var(--bg-midnight-deep);
+    background-color: #060913;
     border-bottom: 1px solid var(--border-dark);
     text-align: center;
     position: relative;
@@ -1322,7 +1322,8 @@ body.enterprise-body {
 /* Landmark Ambient Background Slider Container */
 .landmark-bg-slider {
     position: absolute;
-    inset: 0;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -1333,37 +1334,77 @@ body.enterprise-body {
 /* Individual Background Slide with Blur & Tone Control for High Contrast */
 .landmark-bg-slide {
     position: absolute;
-    inset: -20px;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     opacity: 0;
-    filter: blur(10px) brightness(0.32) saturate(1.25);
-    transform: scale(1.06);
+    transform: scale(1.05);
     transition: opacity 1.8s cubic-bezier(0.4, 0, 0.2, 1),
                 transform 8s ease-out;
     will-change: opacity, transform;
 }
 
 .landmark-bg-slide.active {
-    opacity: 0.35;
+    opacity: 0.70;
     transform: scale(1.0);
+}
+
+.landmark-slide-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    filter: blur(1px) brightness(0.95);
 }
 
 /* Dark Gradient & Vignette Overlay (글자 가독성 극대화) */
 .landmark-bg-overlay {
     position: absolute;
-    inset: 0;
-    background: radial-gradient(ellipse at 50% 50%, rgba(11, 17, 32, 0.72) 0%, rgba(7, 11, 20, 0.94) 100%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, 
+        rgba(6, 9, 19, 0.82) 0%, 
+        rgba(6, 9, 19, 0.35) 25%, 
+        rgba(6, 9, 19, 0.40) 75%, 
+        rgba(6, 9, 19, 0.88) 100%
+    );
     pointer-events: none;
     z-index: 2;
 }
 
 /* Ensure Landmark Content Stacks on Top of Background */
-.section-landmarks .section-header,
+.section-landmarks .section-header {
+    position: relative;
+    z-index: 3;
+    max-width: 900px;
+    margin: 0 auto 35px;
+    padding: 14px 20px;
+    background: radial-gradient(ellipse at center, rgba(6, 9, 19, 0.70) 0%, rgba(6, 9, 19, 0) 75%);
+    border-radius: 20px;
+}
+
 .section-landmarks .landmarks-grid {
     position: relative;
     z-index: 3;
+}
+
+.section-landmarks .section-heading {
+    color: #FFFFFF !important;
+    background: none !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.02em !important;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.95), 0 2px 6px rgba(0, 0, 0, 0.85) !important;
+}
+
+.section-landmarks .section-subheading {
+    color: #F8FAFC !important;
+    font-weight: 500 !important;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.95) !important;
 }
 
 .landmarks-grid {
@@ -1387,9 +1428,11 @@ body.enterprise-body {
     font-weight: 700;
     color: #F8FAFC;
     letter-spacing: -0.01em;
-    backdrop-filter: blur(8px);
+    background-color: rgba(11, 17, 32, 0.80);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.45);
     cursor: default;
 }
 

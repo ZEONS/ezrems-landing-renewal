@@ -34,7 +34,96 @@
     <link rel="stylesheet" type="text/css" href="./resources/css/common/swiper.min.css">
     
     <!-- Enterprise High-Tech Theme (v2.1) -->
-    <link rel="stylesheet" type="text/css" href="./resources/css/enterprise-theme.css">
+    <link rel="stylesheet" type="text/css" href="./resources/css/enterprise-theme.css?v=20260924_1145">
+
+    <!-- Critical Inline Styles for Landmark Slider (캐시 방지 및 시인성 보장) -->
+    <style>
+        .section-landmarks {
+            position: relative !important;
+            overflow: hidden !important;
+            background-color: #060913 !important;
+        }
+        .landmark-bg-slider {
+            position: absolute !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: 100% !important;
+            height: 100% !important;
+            overflow: hidden !important;
+            pointer-events: none !important;
+            z-index: 1 !important;
+        }
+        .landmark-bg-slide {
+            position: absolute !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: 100% !important;
+            height: 100% !important;
+            opacity: 0;
+            transform: scale(1.05);
+            transition: opacity 1.8s cubic-bezier(0.4, 0, 0.2, 1), transform 8s ease-out !important;
+            will-change: opacity, transform;
+        }
+        .landmark-bg-slide.active {
+            opacity: 0.70 !important;
+            transform: scale(1.0) !important;
+        }
+        .landmark-slide-img {
+            width: 100% !important;
+            height: 100% !important;
+            object-fit: cover !important;
+            object-position: center !important;
+            display: block !important;
+            filter: blur(1px) brightness(0.95) !important;
+        }
+        .landmark-bg-overlay {
+            position: absolute !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: 100% !important;
+            height: 100% !important;
+            background: linear-gradient(180deg, 
+                rgba(6, 9, 19, 0.82) 0%, 
+                rgba(6, 9, 19, 0.35) 25%, 
+                rgba(6, 9, 19, 0.40) 75%, 
+                rgba(6, 9, 19, 0.88) 100%
+            ) !important;
+            pointer-events: none !important;
+            z-index: 2 !important;
+        }
+        .section-landmarks .section-header {
+            position: relative !important;
+            z-index: 3 !important;
+            max-width: 900px !important;
+            margin: 0 auto 35px !important;
+            padding: 14px 20px !important;
+            background: radial-gradient(ellipse at center, rgba(6, 9, 19, 0.70) 0%, rgba(6, 9, 19, 0) 75%) !important;
+            border-radius: 20px !important;
+        }
+        .section-landmarks .landmarks-grid {
+            position: relative !important;
+            z-index: 3 !important;
+        }
+        .section-landmarks .section-heading {
+            color: #FFFFFF !important;
+            background: none !important;
+            -webkit-text-fill-color: #FFFFFF !important;
+            font-weight: 800 !important;
+            letter-spacing: -0.02em !important;
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.95), 0 2px 6px rgba(0, 0, 0, 0.85) !important;
+        }
+        .section-landmarks .section-subheading {
+            color: #F8FAFC !important;
+            font-weight: 500 !important;
+            text-shadow: 0 2px 12px rgba(0, 0, 0, 0.95) !important;
+        }
+        .landmark-chip {
+            background-color: rgba(11, 17, 32, 0.82) !important;
+            backdrop-filter: blur(12px) !important;
+            -webkit-backdrop-filter: blur(12px) !important;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.45) !important;
+        }
+    </style>
 
     <!-- Core Scripts -->
     <script src="./resources/js/jquery-3.3.1.min.js"></script>
@@ -747,9 +836,18 @@
         <section class="section-landmarks" id="sectionLandmarks">
             <!-- Landmark Ambient Background Slider (자동 크로스페이드 순환) -->
             <div class="landmark-bg-slider" id="landmarkBgSlider" aria-hidden="true">
-                <div class="landmark-bg-slide active" style="background-image: url('./resources/images/landmark/starfield.jpg');"></div>
-                <div class="landmark-bg-slide" style="background-image: url('./resources/images/landmark/lotte-tower.jpg');"></div>
-                <div class="landmark-bg-slide" style="background-image: url('./resources/images/landmark/one-grove.png');"></div>
+                <div class="landmark-bg-slide active">
+                    <img src="./resources/images/landmark/starfield.jpg" alt="스타필드" class="landmark-slide-img">
+                </div>
+                <div class="landmark-bg-slide">
+                    <img src="./resources/images/landmark/lotte-tower.jpg" alt="롯데월드타워" class="landmark-slide-img">
+                </div>
+                <div class="landmark-bg-slide">
+                    <img src="./resources/images/landmark/one-grove.png" alt="원그로브" class="landmark-slide-img">
+                </div>
+                <div class="landmark-bg-slide">
+                    <img src="./resources/images/landmark/vl-lewest.jpg" alt="VL르웨스트" class="landmark-slide-img">
+                </div>
             </div>
             <!-- Vignette & Dark Contrast Overlay (글자 가독성 유지 레이어) -->
             <div class="landmark-bg-overlay" aria-hidden="true"></div>
