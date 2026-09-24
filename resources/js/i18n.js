@@ -7,6 +7,8 @@
     const translations = {
         ko: {
             lang_label: "한국어",
+            top_login: "로그인",
+            top_inquiry: "도입 문의",
             nav_solutions_features: "솔루션·기능",
             nav_solution: "엔터프라이즈 솔루션",
             nav_features: "핵심기능",
@@ -510,6 +512,8 @@
         },
         en: {
             lang_label: "English",
+            top_login: "Login",
+            top_inquiry: "Contact Sales",
             nav_solutions_features: "Solutions & Features",
             nav_solution: "Enterprise Solutions",
             nav_features: "Features",
@@ -1013,6 +1017,8 @@
         },
         ja: {
             lang_label: "日本語",
+            top_login: "ログイン",
+            top_inquiry: "導入お問い合わせ",
             nav_solutions_features: "ソリューション・機能",
             nav_solution: "エンタープライズソリューション",
             nav_features: "主要機能",
@@ -1516,6 +1522,8 @@
         },
         zh: {
             lang_label: "简体中文",
+            top_login: "登录",
+            top_inquiry: "合作咨询",
             nav_solutions_features: "解决方案与功能",
             nav_solution: "企业级解决方案",
             nav_features: "核心功能",
