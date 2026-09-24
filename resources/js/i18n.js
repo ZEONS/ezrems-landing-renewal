@@ -146,6 +146,7 @@
             cta_title: "부동산 자산관리, 이제는 사람이 아닌<br/><span style='color:#EC2527;'>'엔터프라이즈 플랫폼'</span>의 영역입니다.",
             cta_desc: "이지램스 전문 컨설턴트가 귀사의 포트폴리오 규모에 맞춘 최적 도입 플랜과 데모 계정을 48시간 내에 안내해 드립니다.",
             cta_btn: "1:1 엔터프라이즈 도입 문의",
+            cta_btn_voucher: "K-비대면 서비스 바우처 신청",
             cta_phone: "전화 문의: 070-8811-8880",
             cta_email: "이메일: sales@zeons.co.kr",
 
@@ -654,6 +655,7 @@
             cta_title: "Real Estate Asset Management is Now Driven by<br/><span style='color:#EC2527;'>'Enterprise Cloud Platforms'</span>",
             cta_desc: "Our senior consultants will deliver a tailored enterprise plan and demo access within 48 hours.",
             cta_btn: "Request 1:1 Enterprise Consultation",
+            cta_btn_voucher: "K-Voucher Program Application",
             cta_phone: "Phone: +82-70-8811-8880",
             cta_email: "Email: sales@zeons.co.kr",
 
@@ -1162,6 +1164,7 @@
             cta_title: "不動産資産管理は今や、人ではなく<br/><span style='color:#EC2527;'>「エンタープライズクラウド」</span>の時代です",
             cta_desc: "専門コンサルタントがお客様の資産規模に最適な導入プランとデモアカウントを48時間以内にご案内いたします。",
             cta_btn: "1:1 エンタープライズ導入相談",
+            cta_btn_voucher: "K-バウチャー申請",
             cta_phone: "お電話: +82-70-8811-8880",
             cta_email: "メール: sales@zeons.co.kr",
 
@@ -1670,6 +1673,7 @@
             cta_title: "房地产资产管理，现已全面进入<br/><span style='color:#EC2527;'>“企业级智能云平台”</span>时代",
             cta_desc: "ezREMS资深业务顾问将在48小时内为您提供量身定制的导入方案及演示测试账户。",
             cta_btn: "申请1对1企业顾问咨询",
+            cta_btn_voucher: "K-Voucher企业券申请",
             cta_phone: "电话咨询: +82-70-8811-8880",
             cta_email: "电子邮箱: sales@zeons.co.kr",
 
@@ -2057,6 +2061,11 @@
         currentLang = lang;
         localStorage.setItem('ezrems_lang', lang);
         document.documentElement.lang = lang;
+
+        // Toggle Korean-only elements
+        document.querySelectorAll('.ko-only').forEach(el => {
+            el.style.display = (lang === 'ko') ? '' : 'none';
+        });
 
         // Update active class on dropdown items
         document.querySelectorAll('.lang-select-btn').forEach(btn => {

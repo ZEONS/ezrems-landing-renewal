@@ -3000,6 +3000,61 @@ body.enterprise-body {
     word-break: keep-all;
 }
 
+/* Final CTA Action Buttons Wrap */
+.cta-actions-wrap {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+}
+
+.btn-cta-voucher {
+    background: linear-gradient(135deg, rgba(14, 165, 233, 0.12) 0%, rgba(16, 185, 129, 0.08) 100%);
+    border: 1px solid rgba(56, 189, 248, 0.45);
+    color: #38BDF8;
+    font-size: 1.15rem;
+    font-weight: 700;
+    padding: 18px 36px;
+    border-radius: 12px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 8px 24px rgba(14, 165, 233, 0.18), inset 0 0 12px rgba(56, 189, 248, 0.1);
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.btn-cta-voucher:hover {
+    background: linear-gradient(135deg, rgba(14, 165, 233, 0.25) 0%, rgba(16, 185, 129, 0.2) 100%);
+    border-color: #38BDF8;
+    color: #FFFFFF;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 32px rgba(14, 165, 233, 0.35), 0 0 16px rgba(56, 189, 248, 0.5);
+}
+
+.btn-cta-voucher i {
+    font-size: 1.1rem;
+    color: #38BDF8;
+    transition: transform 0.25s ease;
+}
+
+.btn-cta-voucher:hover i {
+    color: #FFFFFF;
+    transform: scale(1.1);
+}
+
+/* 한국어 전용 엘리먼트 제어 */
+html:not([lang="ko"]) .ko-only,
+html[lang="en"] .ko-only,
+html[lang="ja"] .ko-only,
+html[lang="zh"] .ko-only {
+    display: none !important;
+}
+
 .cta-contacts-row {
     margin-top: 36px;
     display: flex;
@@ -3258,7 +3313,7 @@ body.enterprise-body {
         flex-direction: column;
         width: 100%;
     }
-    .btn-hero-primary, .btn-hero-secondary {
+    .btn-hero-primary, .btn-hero-secondary, .btn-cta-voucher {
         width: 100%;
         justify-content: center;
     }
