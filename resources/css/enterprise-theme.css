@@ -1390,8 +1390,14 @@ body.enterprise-body {
 .section-landmarks .asset-types-row {
     position: relative;
     z-index: 3;
-    margin-top: 28px;
+    margin-top: 52px;
     margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .section-landmarks .asset-types-row {
+        margin-top: 36px;
+    }
 }
 
 .section-landmarks .landmarks-grid {
