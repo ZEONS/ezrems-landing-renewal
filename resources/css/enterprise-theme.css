@@ -2452,8 +2452,9 @@ body.enterprise-body {
    7. Enterprise Metrics / Counters
    ========================================================================== */
 .section-metrics {
-    padding: 80px 20px;
+    padding: 100px 20px;
     background: radial-gradient(circle at 50% 50%, #152238 0%, var(--bg-midnight) 80%);
+    border-bottom: 1px solid var(--border-dark);
 }
 
 .metrics-grid {
