@@ -477,6 +477,7 @@
             fm_quote: "\"종이 점검표는 이제 그만. 민원 전화 놓쳐 곤란했던 경험, 다시는 없게 해드립니다. 스마트폰 하나로 현장을 기록하세요.\"",
 
             // [유무형 자산 유니버스 섹션 - KO]
+            uni_tag: "PROPOSAL",
             uni_bubble: "부동산 만?",
             uni_title: "수익형 <span class=\"asset-highlight-box\">모든</span> 자산 이제는 운영이 핵심이다.",
             uni_a1_t: "주택 / 쉐어하우스",
@@ -501,6 +502,7 @@
             uni_a10_s: "신규 유무형 비즈니스 모델",
             uni_platform_sub: "스마트 자산관리 ERP 플랫폼",
             uni_brand: "이지램스 (ezREMS)™",
+            uni_btn_proposal: "플랫폼 제안서 보기",
         },
         en: {
             lang_label: "English",
@@ -974,6 +976,7 @@
             fm_quote: "\"Say goodbye to paper inspection logs and missed tenant calls. Record every corner of your property with your smartphone.\"",
 
             // [유무형 자산 유니버스 섹션 - EN]
+            uni_tag: "PROPOSAL",
             uni_bubble: "Real Estate Only?",
             uni_title: "For <span class=\"asset-highlight-box\">ALL</span> Revenue Assets, Operations Are Key.",
             uni_a1_t: "Residential / Co-Living",
@@ -998,6 +1001,7 @@
             uni_a10_s: "Innovative Tangible & Intangible Assets",
             uni_platform_sub: "Smart Asset Management ERP Platform",
             uni_brand: "ezREMS™",
+            uni_btn_proposal: "View Platform Proposal",
         },
         ja: {
             lang_label: "日本語",
@@ -1471,6 +1475,7 @@
             fm_quote: "「紙の点検表はもう卒業。電話の聞き逃しで困る経験は二度とさせません。スマホ1台で現場を確実に記録してください。」",
 
             // [유무형 자산 유니버스 섹션 - JA]
+            uni_tag: "PROPOSAL",
             uni_bubble: "不動産だけ？",
             uni_title: "収益型<span class=\"asset-highlight-box\">すべて</span>の資産、これからは運営が鍵となる。",
             uni_a1_t: "住宅 / シェアハウス",
@@ -1495,6 +1500,7 @@
             uni_a10_s: "新しい有形・無形ビジネスモデル",
             uni_platform_sub: "スマート資産管理ERPプラットフォーム",
             uni_brand: "ezREMS™",
+            uni_btn_proposal: "プラットフォーム提案書を見る",
         },
         zh: {
             lang_label: "简体中文",
@@ -1968,6 +1974,7 @@
             fm_quote: "“告别破旧纸质巡检夹，不再因遗漏租户电话而手忙脚乱。一部智能手机，轻松把控整栋大厦的现场动态。”",
 
             // [유무형 자산 유니버스 섹션 - ZH]
+            uni_tag: "PROPOSAL",
             uni_bubble: "仅限房地产？",
             uni_title: "收益型<span class=\"asset-highlight-box\">所有</span>资产，精细化运营才是核心。",
             uni_a1_t: "住宅 / 青年合租公寓",
@@ -1991,7 +1998,8 @@
             uni_a10_t: "探索新商业业态",
             uni_a10_s: "全新有形与无形资产运营模式",
             uni_platform_sub: "智能资产管理ERP云平台",
-            uni_brand: "ezREMS™"
+            uni_brand: "ezREMS™",
+            uni_btn_proposal: "查看平台方案书"
         }
     };
 
