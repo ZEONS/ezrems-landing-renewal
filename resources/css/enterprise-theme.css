@@ -1390,8 +1390,8 @@ body.enterprise-body {
 .section-landmarks .asset-types-row {
     position: relative;
     z-index: 3;
-    margin-top: 0;
-    margin-bottom: 20px;
+    margin-top: 28px;
+    margin-bottom: 0;
 }
 
 .section-landmarks .landmarks-grid {
