@@ -136,6 +136,9 @@
     <!-- ezREMS Multilingual (i18n) Engine -->
     <script src="./resources/js/i18n.js"></script>
 
+    <!-- ezREMS Landmarks Registry (로컬 file:/// 및 오프라인 즉시 로딩용) -->
+    <script src="./resources/images/landmark/landmarks-data.js?v=20260924_1158"></script>
+
     <!-- Google Tag Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-102197268-1"></script>
     <script>
@@ -837,22 +840,22 @@
             <!-- Landmark Ambient Background Slider (자동 크로스페이드 순환) -->
             <div class="landmark-bg-slider" id="landmarkBgSlider" aria-hidden="true">
                 <div class="landmark-bg-slide active">
-                    <img src="./resources/images/landmark/starfield.jpg" alt="스타필드" class="landmark-slide-img">
+                    <img src="./resources/images/landmark/lotte-tower.jpg" alt="롯데월드타워" class="landmark-slide-img">
                 </div>
                 <div class="landmark-bg-slide">
-                    <img src="./resources/images/landmark/lotte-tower.jpg" alt="롯데월드타워" class="landmark-slide-img">
+                    <img src="./resources/images/landmark/mangrove.jpg" alt="맹그로브" class="landmark-slide-img">
                 </div>
                 <div class="landmark-bg-slide">
                     <img src="./resources/images/landmark/one-grove.png" alt="원그로브" class="landmark-slide-img">
                 </div>
                 <div class="landmark-bg-slide">
-                    <img src="./resources/images/landmark/vl-lewest.jpg" alt="VL르웨스트" class="landmark-slide-img">
-                </div>
-                <div class="landmark-bg-slide">
                     <img src="./resources/images/landmark/remarkvill.png" alt="리마크빌" class="landmark-slide-img">
                 </div>
                 <div class="landmark-bg-slide">
-                    <img src="./resources/images/landmark/mangrove.png" alt="맹그로브" class="landmark-slide-img">
+                    <img src="./resources/images/landmark/starfield.jpg" alt="스타필드" class="landmark-slide-img">
+                </div>
+                <div class="landmark-bg-slide">
+                    <img src="./resources/images/landmark/vl-lewest.jpg" alt="VL르웨스트" class="landmark-slide-img">
                 </div>
             </div>
             <!-- Vignette & Dark Contrast Overlay (글자 가독성 유지 레이어) -->
@@ -1648,82 +1651,75 @@
                 startTimer();
 
                 // ----------------------------------------------------------
-                // [Zero-Build 자동화 엔진] 폴더 내 신규 이미지 자동 감지 및 실시간 등록
+                // [Single Source of Truth] landmarks.json / data.js 기반 슬라이더 완전 동기화
                 // ----------------------------------------------------------
-                function registerNewImages(imgList) {
+                function syncSliderImages(imgList) {
                     if (!Array.isArray(imgList) || imgList.length === 0) return;
 
-                    var existingSrcs = Array.from(slider.querySelectorAll('.landmark-slide-img')).map(function(img) {
+                    var validImages = imgList.filter(function(item) {
+                        var name = typeof item === 'string' ? item : (item.name || '');
+                        return name && /\.(jpe?g|png|webp|avif|gif)$/i.test(name) && !name.includes('~');
+                    }).map(function(item) {
+                        return typeof item === 'string' ? item : item.name;
+                    });
+
+                    if (validImages.length === 0) return;
+
+                    // 현재 슬라이더 이미지 목록과 비교
+                    var currentImgs = Array.from(slider.querySelectorAll('.landmark-slide-img')).map(function(img) {
                         var parts = (img.getAttribute('src') || '').split('/');
-                        return parts[parts.length - 1].toLowerCase();
+                        return parts[parts.length - 1];
                     });
 
-                    var addedCount = 0;
-                    imgList.forEach(function(item) {
-                        var fileName = typeof item === 'string' ? item : (item.name || '');
-                        if (!fileName) return;
-
-                        // 지원 이미지 확장자 검증
-                        if (!/\.(jpe?g|png|webp|avif|gif)$/i.test(fileName)) return;
-
-                        var cleanName = fileName.toLowerCase();
-                        if (existingSrcs.indexOf(cleanName) === -1) {
-                            // 신규 이미지 발견 시 슬라이드 요소 동적 생성
-                            var slideDiv = document.createElement('div');
-                            slideDiv.className = 'landmark-bg-slide';
-
-                            var imgEl = document.createElement('img');
-                            imgEl.src = './resources/images/landmark/' + fileName;
-                            imgEl.alt = fileName.replace(/\.[^/.]+$/, '');
-                            imgEl.className = 'landmark-slide-img';
-                            imgEl.loading = 'lazy';
-
-                            slideDiv.appendChild(imgEl);
-                            slider.appendChild(slideDiv);
-                            existingSrcs.push(cleanName);
-                            addedCount++;
-                        }
+                    var isIdentical = validImages.length === currentImgs.length && validImages.every(function(name, i) {
+                        return name.toLowerCase() === (currentImgs[i] || '').toLowerCase();
                     });
 
-                    if (addedCount > 0) {
-                        slides = slider.querySelectorAll('.landmark-bg-slide');
-                        console.log('[ezREMS Landmark] 새로운 이미지 ' + addedCount + '개가 자동으로 슬라이더에 추가되었습니다. (총 ' + slides.length + '개)');
-                    }
+                    if (isIdentical) return;
+
+                    // 변경사항이 있으면 landmarks.json 목록을 기준으로 슬라이더 즉각 재구성
+                    var activeIndex = currentSlide < validImages.length ? currentSlide : 0;
+                    stopTimer();
+                    slider.innerHTML = '';
+                    validImages.forEach(function(fileName, idx) {
+                        var slideDiv = document.createElement('div');
+                        slideDiv.className = 'landmark-bg-slide' + (idx === activeIndex ? ' active' : '');
+
+                        var imgEl = document.createElement('img');
+                        imgEl.src = './resources/images/landmark/' + fileName;
+                        imgEl.alt = fileName.replace(/\.[^/.]+$/, '');
+                        imgEl.className = 'landmark-slide-img';
+
+                        slideDiv.appendChild(imgEl);
+                        slider.appendChild(slideDiv);
+                    });
+
+                    currentSlide = activeIndex;
+                    slides = slider.querySelectorAll('.landmark-bg-slide');
+                    startTimer();
+                    console.log('[ezREMS Landmark] 랜드마크 슬라이더 동기화 완료: ' + validImages.join(', '));
                 }
 
-                // 1단계: landmarks.json 정적 매니페스트 확인 (로컬 및 오프라인 즉시 로딩)
-                fetch('./resources/images/landmark/landmarks.json')
+                // 1단계: window.EZREMS_LANDMARK_IMAGES 확인 (file:/// 로컬 CORS 우회 및 즉시 로드)
+                if (window.EZREMS_LANDMARK_IMAGES && Array.isArray(window.EZREMS_LANDMARK_IMAGES)) {
+                    syncSliderImages(window.EZREMS_LANDMARK_IMAGES);
+                }
+
+                // 2단계: landmarks.json 실시간 fetch (캐시 방지 ?t= 파라미터 적용)
+                fetch('./resources/images/landmark/landmarks.json?t=' + Date.now())
                     .then(function(res) {
                         if (res.ok) return res.json();
-                        throw new Error('No local json');
+                        throw new Error('Local json error');
                     })
                     .then(function(list) {
-                        registerNewImages(list);
+                        syncSliderImages(list);
                     })
-                    .catch(function() {
-                        // landmarks.json 부재 시 GitHub API로 폴백
-                    });
+                    .catch(function() {});
 
-                // 2단계: GitHub Pages 환경 시 GitHub API로 폴더 실시간 자동 스캔 (완전 자동 감지)
+                // 3단계: GitHub Pages 환경 시 GitHub API로 폴더 실시간 자동 감지 (최신 파일 자동 포착)
                 var isGitHubPages = window.location.hostname.indexOf('github.io') !== -1;
-                var ghApiUrl = 'https://api.github.com/repos/ZEONS/ezrems-landing-renewal/contents/resources/images/landmark';
-
-                var CACHE_KEY = 'ezrems_landmark_imgs_cache';
-                var cachedData = null;
-                try {
-                    var rawCache = sessionStorage.getItem(CACHE_KEY);
-                    if (rawCache) {
-                        var parsed = JSON.parse(rawCache);
-                        if (Date.now() - parsed.timestamp < 10 * 60 * 1000) {
-                            cachedData = parsed.data;
-                        }
-                    }
-                } catch(e) {}
-
-                if (cachedData) {
-                    registerNewImages(cachedData);
-                } else if (isGitHubPages) {
-                    fetch(ghApiUrl)
+                if (isGitHubPages) {
+                    fetch('https://api.github.com/repos/ZEONS/ezrems-landing-renewal/contents/resources/images/landmark')
                         .then(function(res) {
                             if (res.ok) return res.json();
                             throw new Error('GitHub API Error: ' + res.status);
@@ -1731,15 +1727,10 @@
                         .then(function(files) {
                             if (Array.isArray(files)) {
                                 var names = files.filter(function(f) { return f.type === 'file'; }).map(function(f) { return f.name; });
-                                registerNewImages(names);
-                                try {
-                                    sessionStorage.setItem(CACHE_KEY, JSON.stringify({ timestamp: Date.now(), data: names }));
-                                } catch(e) {}
+                                syncSliderImages(names);
                             }
                         })
-                        .catch(function(err) {
-                            // API 제한 등의 경우에도 기본 슬라이드로 안정 동작
-                        });
+                        .catch(function() {});
                 }
             })();
         });
