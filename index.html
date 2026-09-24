@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="./resources/css/common/swiper.min.css">
 
     <!-- Enterprise High-Tech Theme (v2.1) -->
-    <link rel="stylesheet" type="text/css" href="./resources/css/enterprise-theme.css?v=20260924_2246">
+    <link rel="stylesheet" type="text/css" href="./resources/css/enterprise-theme.css?v=20260924_2252">
 
     <!-- Critical Inline Styles for Landmark Slider (캐시 방지 및 시인성 보장) -->
     <style>
@@ -152,7 +152,7 @@
     <script src="./resources/js/jquery.counterup.min.js"></script>
 
     <!-- ezREMS Multilingual (i18n) Engine -->
-    <script src="./resources/js/i18n.js?v=20260924_2246"></script>
+    <script src="./resources/js/i18n.js?v=20260924_2252"></script>
 
     <!-- ezREMS Landmarks Registry (로컬 file:/// 및 오프라인 즉시 로딩용) -->
     <script src="./resources/images/landmark/landmarks-data.js?v=20260924_1158"></script>
@@ -243,15 +243,49 @@
        1. Enterprise Header / GNB
        ========================================================================== -->
     <header id="enterpriseHeader">
-        <!-- Top Utility Bar (최상단 1줄 레이어: 로그인, 도입 문의) -->
+        <!-- Top Utility Bar (최상단 1줄 레이어: 다국어 선택, 로그인, 도입 문의) -->
         <div class="header-top-bar">
             <div class="header-top-inner">
                 <div class="header-top-right">
-                    <a href="https://pms.ezrems.com/" target="_blank" class="top-bar-link">
-                        <i class="fal fa-sign-in-alt"></i>
-                        <span data-i18n="top_login">로그인</span>
-                    </a>
+                    <!-- 1. Multilingual Language Selector (탑바로 이동) -->
+                    <div class="top-lang-wrapper" id="topLangWrapper">
+                        <button type="button" class="top-bar-btn" id="langDropdownToggle" aria-label="Language Selector">
+                            <i class="fal fa-globe"></i>
+                            <span id="currentLangLabel">한국어</span>
+                            <i class="fal fa-chevron-down top-arrow"></i>
+                        </button>
+                        <div class="top-dropdown-menu lang-dropdown-menu">
+                            <button type="button" class="lang-select-btn active" data-lang="ko">🇰🇷 한국어</button>
+                            <button type="button" class="lang-select-btn" data-lang="en">🇺🇸 English</button>
+                            <button type="button" class="lang-select-btn" data-lang="ja">🇯🇵 日本語</button>
+                            <button type="button" class="lang-select-btn" data-lang="zh">🇨🇳 简体中文</button>
+                        </div>
+                    </div>
+
                     <span class="top-bar-divider">|</span>
+
+                    <!-- 2. 로그인 (간편형 / 기업형 선택 드롭다운) -->
+                    <div class="top-login-wrapper" id="topLoginWrapper">
+                        <button type="button" class="top-bar-btn" id="topLoginToggle" aria-label="Login Options">
+                            <i class="fal fa-sign-in-alt"></i>
+                            <span data-i18n="top_login">로그인</span>
+                            <i class="fal fa-chevron-down top-arrow"></i>
+                        </button>
+                        <div class="top-dropdown-menu top-login-menu">
+                            <a href="https://basic.ezrems.com/" target="_blank" class="top-dropdown-item">
+                                <span class="top-item-badge badge-basic" data-i18n="btn_basic">간편형</span>
+                                <span data-i18n="login_basic">간편형 로그인</span>
+                            </a>
+                            <a href="https://pms.ezrems.com/" target="_blank" class="top-dropdown-item">
+                                <span class="top-item-badge badge-pms" data-i18n="btn_pms">기업형</span>
+                                <span data-i18n="login_pms">기업형 로그인</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <span class="top-bar-divider">|</span>
+
+                    <!-- 3. 도입 문의 -->
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOO18akLULTgK-XD6x8gj6WgpFNXiW2z_m3AC2mVgXUVUDGA/viewform"
                         target="_blank" class="top-bar-link top-contact-link">
                         <i class="fal fa-paper-plane"></i>
@@ -318,32 +352,6 @@
             </nav>
 
             <div class="header-actions">
-                <!-- Multilingual Language Selector -->
-                <div class="lang-dropdown-wrapper">
-                    <button type="button" class="lang-dropdown-btn" id="langDropdownToggle"
-                        aria-label="Language Selector">
-                        <i class="fal fa-globe"></i>
-                        <span id="currentLangLabel">한국어</span>
-                        <i class="fal fa-chevron-down" style="font-size:0.75rem;"></i>
-                    </button>
-                    <div class="lang-dropdown-menu">
-                        <button type="button" class="lang-select-btn active" data-lang="ko">🇰🇷 한국어</button>
-                        <button type="button" class="lang-select-btn" data-lang="en">🇺🇸 English</button>
-                        <button type="button" class="lang-select-btn" data-lang="ja">🇯🇵 日本語</button>
-                        <button type="button" class="lang-select-btn" data-lang="zh">🇨🇳 简体中文</button>
-                    </div>
-                </div>
-
-                <a href="https://basic.ezrems.com/" target="_blank" class="btn-ghost-nav d-none d-sm-inline-block"
-                    data-i18n="btn_basic">간편형</a>
-                <a href="https://pms.ezrems.com/" target="_blank" class="btn-outline-tech d-none d-md-inline-block"
-                    data-i18n="btn_pms">기업형</a>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOO18akLULTgK-XD6x8gj6WgpFNXiW2z_m3AC2mVgXUVUDGA/viewform"
-                    target="_blank" class="btn-crimson-cta">
-                    <i class="fal fa-paper-plane"></i>
-                    <span data-i18n="btn_counsel">도입 문의</span>
-                </a>
-
                 <!-- Mobile Navigation Toggle -->
                 <button type="button" class="mobile-nav-toggle" id="mobileNavToggle" aria-label="메뉴 열기">
                     <i class="fal fa-bars"></i>
@@ -2315,7 +2323,19 @@
                 $('#navSolutionsDropdown').removeClass('mobile-open');
             });
 
+            // Top Login Dropdown Toggle
+            $('#topLoginToggle').click(function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                $('#topLoginWrapper .top-login-menu').toggleClass('show');
+                $('#topLoginWrapper').toggleClass('active');
+            });
+
             $(document).click(function (e) {
+                if (!$(e.target).closest('#topLoginWrapper').length) {
+                    $('#topLoginWrapper .top-login-menu').removeClass('show');
+                    $('#topLoginWrapper').removeClass('active');
+                }
                 if (!$(e.target).closest('#enterpriseHeader').length) {
                     $('#headerNav').removeClass('mobile-active');
                     $('#navSolutionsDropdown').removeClass('mobile-open');
