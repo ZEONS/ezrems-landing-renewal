@@ -3556,4 +3556,227 @@ body.enterprise-body {
     }
 }
 
+/* ==========================================================================
+   8-1. Revenue Asset Universe Section (부동산을 넘어 모든 유무형 자산으로)
+   ========================================================================== */
+.section-asset-universe {
+    padding: 85px 20px 95px;
+    background: radial-gradient(ellipse at 50% 30%, rgba(14, 165, 233, 0.08) 0%, rgba(6, 9, 19, 0.98) 75%);
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    position: relative;
+    overflow: hidden;
+}
+
+.asset-universe-container {
+    max-width: 1240px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.universe-header {
+    margin-bottom: 48px;
+    position: relative;
+}
+
+.universe-bubble-wrap {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 8px;
+    transform: rotate(-4deg);
+}
+
+.universe-bubble {
+    color: #34D399;
+    font-size: 1.15rem;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    text-shadow: 0 0 12px rgba(52, 211, 153, 0.4);
+}
+
+.universe-arrow {
+    color: #34D399;
+    font-size: 0.95rem;
+    transform: rotate(25deg);
+}
+
+.universe-title {
+    font-size: 2.35rem;
+    font-weight: 800;
+    color: #FFFFFF;
+    letter-spacing: -0.02em;
+    line-height: 1.35;
+    margin: 0;
+}
+
+.asset-highlight-box {
+    border: 2.5px solid #22C55E;
+    border-radius: 8px;
+    padding: 2px 16px;
+    color: #FFFFFF;
+    background: rgba(34, 197, 94, 0.12);
+    box-shadow: 0 0 24px rgba(34, 197, 94, 0.35);
+    display: inline-block;
+    margin: 0 6px;
+    vertical-align: middle;
+}
+
+/* 10 Items Grid Layout */
+.universe-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    margin-bottom: 48px;
+}
+
+.universe-card {
+    background: rgba(17, 28, 48, 0.65);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 22px 14px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    backdrop-filter: blur(10px);
+    transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.universe-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(52, 211, 153, 0.45);
+    background: rgba(22, 36, 62, 0.85);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(52, 211, 153, 0.15);
+}
+
+.uni-icon-box {
+    width: 58px;
+    height: 58px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+    margin-bottom: 14px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: transform 0.28s ease;
+}
+
+.universe-card:hover .uni-icon-box {
+    transform: scale(1.1);
+}
+
+/* Icon Color Palettes */
+.uni-icon-box.icon-emerald { color: #34D399; border-color: rgba(52, 211, 153, 0.3); background: rgba(52, 211, 153, 0.08); }
+.uni-icon-box.icon-amber { color: #FBBF24; border-color: rgba(251, 191, 36, 0.3); background: rgba(251, 191, 36, 0.08); }
+.uni-icon-box.icon-blue { color: #38BDF8; border-color: rgba(56, 189, 248, 0.3); background: rgba(56, 189, 248, 0.08); }
+.uni-icon-box.icon-orange { color: #FB923C; border-color: rgba(251, 146, 60, 0.3); background: rgba(251, 146, 60, 0.08); }
+.uni-icon-box.icon-cyan { color: #22D3EE; border-color: rgba(34, 211, 238, 0.3); background: rgba(34, 211, 238, 0.08); }
+.uni-icon-box.icon-purple { color: #C084FC; border-color: rgba(192, 132, 252, 0.3); background: rgba(192, 132, 252, 0.08); }
+.uni-icon-box.icon-sky { color: #60A5FA; border-color: rgba(96, 165, 250, 0.3); background: rgba(96, 165, 250, 0.08); }
+.uni-icon-box.icon-rose { color: #FB7185; border-color: rgba(251, 113, 133, 0.3); background: rgba(251, 113, 133, 0.08); }
+.uni-icon-box.icon-indigo { color: #818CF8; border-color: rgba(129, 140, 248, 0.3); background: rgba(129, 140, 248, 0.08); }
+.uni-icon-box.icon-gold { color: #FACC15; border-color: rgba(250, 204, 21, 0.3); background: rgba(250, 204, 21, 0.08); }
+
+.uni-card-name {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #F8FAFC;
+    margin-bottom: 4px;
+    letter-spacing: -0.01em;
+}
+
+.uni-card-sub {
+    font-size: 0.74rem;
+    color: #94A3B8;
+    line-height: 1.35;
+    letter-spacing: -0.01em;
+}
+
+/* Special New Business Card */
+.universe-card.card-new-biz {
+    border-color: rgba(250, 204, 21, 0.35);
+}
+
+.uni-badge-new {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: linear-gradient(135deg, #F59E0B, #EF4444);
+    color: #FFFFFF;
+    font-size: 0.62rem;
+    font-weight: 800;
+    padding: 2px 7px;
+    border-radius: 6px;
+    letter-spacing: 0.5px;
+    box-shadow: 0 0 10px rgba(245, 158, 11, 0.5);
+    animation: pulseGlow 2s infinite ease-in-out;
+}
+
+@keyframes pulseGlow {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.08); opacity: 0.85; }
+}
+
+/* Universe Bottom Branding */
+.universe-footer {
+    padding-top: 10px;
+}
+
+.universe-platform-sub {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #F1F5F9;
+    margin-bottom: 6px;
+    letter-spacing: -0.01em;
+}
+
+.universe-brand-name {
+    font-size: 1.85rem;
+    font-weight: 800;
+    color: var(--color-cyber-cyan);
+    letter-spacing: -0.02em;
+    margin: 0;
+    text-shadow: 0 0 20px rgba(14, 165, 233, 0.35);
+}
+
+/* Responsive */
+@media screen and (max-width: 991px) {
+    .universe-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .universe-title {
+        font-size: 1.95rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .section-asset-universe {
+        padding: 65px 16px 75px;
+    }
+    .universe-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+    .universe-title {
+        font-size: 1.55rem;
+    }
+    .universe-bubble {
+        font-size: 1rem;
+    }
+    .asset-highlight-box {
+        padding: 2px 10px;
+        margin: 0 3px;
+    }
+    .universe-platform-sub {
+        font-size: 1.1rem;
+    }
+    .universe-brand-name {
+        font-size: 1.5rem;
+    }
+}
+
 
