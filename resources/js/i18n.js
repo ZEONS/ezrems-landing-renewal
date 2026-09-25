@@ -114,9 +114,10 @@
             fm_feat3: "임차인 모바일 전용 앱(ezREMS Connect) 연동",
 
             metric_clients: "관리 자산",
-            metric_units: "전국 관리 세대수",
-            metric_billing: "월 관리 청구 규모",
+            metric_units: "전국 관리 세대/Unit 수",
+            metric_billing: "월 임대료/관리비 청구 규모",
             metric_recovery: "미수금 자동 회수율",
+            metric_note: "※ 구축형 (On-Premise) 고객사의 데이터 제외 기준",
 
             preview_tag: "SYSTEM PREVIEW",
             preview_title: "전문가를 위한 직관적인 통합 관제 화면",
@@ -626,6 +627,7 @@
             metric_units: "Units Managed Nationwide",
             metric_billing: "Monthly Billing Volume",
             metric_recovery: "Auto-Recovery Rate",
+            metric_note: "※ Standard excluding data from On-Premise client companies",
 
             preview_tag: "SYSTEM PREVIEW",
             preview_title: "Intuitive Integrated Control for Professionals",
@@ -1132,9 +1134,10 @@
             fm_feat3: "テナント専用モバイルアプリ（ezREMS Connect）連携",
 
             metric_clients: "管理資産",
-            metric_units: "全国管理戸数",
-            metric_billing: "月間請求規模",
-            metric_recovery: "自動回収率",
+            metric_units: "全国管理戸数/Unit数",
+            metric_billing: "月間賃料・管理費請求規模",
+            metric_recovery: "未収金自動回収率",
+            metric_note: "※ 構築型 (オンプレミス) 導入企業のデータ除外基準",
 
             preview_tag: "SYSTEM PREVIEW",
             preview_title: "専門家のための直感的な統合管理画面",
@@ -1641,9 +1644,10 @@
             fm_feat3: "租户专属移动端APP(ezREMS Connect)联动",
 
             metric_clients: "管理资产",
-            metric_units: "全国在管物业套数",
-            metric_billing: "月度账单经办规模",
+            metric_units: "全国管理套数/Unit数",
+            metric_billing: "月度租金·物业费账单规模",
             metric_recovery: "欠款自动清缴率",
+            metric_note: "※ 不包含本地部署 (On-Premise) 客户企业的数据标准",
 
             preview_tag: "SYSTEM PREVIEW",
             preview_title: "专为行业专家打造的直观综合控制台",

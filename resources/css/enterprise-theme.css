@@ -2914,6 +2914,35 @@ body.enterprise-body {
     font-weight: 600;
 }
 
+.metrics-footnote {
+    max-width: 1200px;
+    margin: 32px auto 0;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.metrics-note {
+    display: inline-block;
+    font-size: 0.875rem;
+    color: var(--text-secondary-dark);
+    opacity: 0.85;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    margin: 0;
+    line-height: 1.5;
+    word-break: keep-all;
+}
+
+@media (max-width: 768px) {
+    .metrics-footnote {
+        margin-top: 24px;
+        padding: 0 12px;
+    }
+    .metrics-note {
+        font-size: 0.8rem;
+    }
+}
+
 /* ==========================================================================
    8. FAQ Accordion
    ========================================================================== */
